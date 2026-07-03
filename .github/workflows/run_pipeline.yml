@@ -1,17 +1,17 @@
-name: MANTRA Market Data Ingestion
+name: MANTRA Market Data Ingestion & Analytics
 
 on:
   schedule:
-    # Dit draait de pipeline elk uur (op het hele uur) van maandag t/m vrijdag
+    # Runs the pipeline every hour on the hour, Monday through Friday
     - cron: '0 * * * 1-5'
   workflow_dispatch:
-    # Hiermee kun je de pipeline op elk gewenst moment handmatig starten via de GitHub UI
+    # Allows manual triggering of the pipeline via the GitHub Actions user interface
 
 jobs:
-  ingest-data:
+  ingest-and-process:
     runs-on: ubuntu-latest
     
-    # Geef GitHub toestemming om wijzigingen terug te pushen naar je repository
+    # Grants write permissions to the repository's contents to allow committing updated data and charts
     permissions:
       contents: write
 
@@ -19,13 +19,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0 # Haal de volledige geschiedenis op om rebase-conflicten te voorkomen
+        fetch-depth: 0 # Fetches the full history to prevent rebase conflicts during pushes
 
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-        cache: 'pip' # Slaat downloads op voor snellere opeenvolgende runs
+        cache: 'pip' # Leverages caching of pip dependencies for accelerated subsequent runs
 
     - name: Install dependencies
       run: |
@@ -38,28 +38,32 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
         X_CAP_API_KEY: ${{ secrets.X_CAP_API_KEY }}
       run: |
-        # Voer het script opeenvolgend uit voor je gewenste assets
-        # Pas de --epic codes aan op basis van de exacte Capital.com symbolen die je gebruikt
+        # Sequentially fetch 1-minute historical data streams for target asset classes
         python src/data_ingestion.py --epic OIL_CRUDE
         python src/data_ingestion.py --epic GOLD
         python src/data_ingestion.py --epic US500
 
-    - name: Commit and Push Updated Data
+    - name: Execute Data Processing and Visualization
+      run: |
+        # Merges asynchronous asset tickers into a single master CSV and renders the trend plot
+        python src/data_processing.py
+
+    - name: Commit and Push Updated Data & Graphics
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # Zorg dat de runner de allerlaatste status heeft voordat we pushen
+        # Pull latest changes from remote using rebase to maintain a linear commit history
         git pull origin main --rebase
         
-        # Voeg de data map toe
+        # Stage the entire data folder containing updated data feeds and analytics graphics
         git add data/
         
-        # Alleen committen als er daadwerkelijk nieuwe rijen zijn toegevoegd
+        # Verify if actual differences exist before initiating a commit to prevent empty pipeline noise
         if git diff --quiet && git diff --staged --quiet; then
-          echo "⚠️ Geen nieuwe data om te committen."
+          echo "⚠️ No new market variations or artifacts detected. Skipping commit."
         else
-          git commit -m "📊 Automated data ingestion: $(date -u +'%Y-%m-%d %H:%M:%S') UTC"
+          git commit -m "📊 Automated pipeline run: Master CSV & Trend Analytics updated"
           git push origin main
-          echo "✅ Nieuwe data succesvol gepusht naar de repository!"
+          echo "✅ Asset parameters synchronized and multi-panel charts pushed successfully to main branch."
         fi
