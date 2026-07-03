@@ -12,7 +12,7 @@ parser.add_argument('--epic', type=str, required=True, help='The EPIC symbol (e.
 args = parser.parse_args()
 
 EPIC_SYMBOL = args.epic
-DATA_DIR = "data"  # Centralized data repository folder
+DATA_DIR = os.path.join("data", "raw")  # Set storage landing zone to data/raw
 
 # Global Session Tokens
 SECURITY_TOKEN = None
@@ -44,17 +44,15 @@ def fetch_session_tokens():
     conn.request("POST", "/api/v1/session", payload, headers)
     res = conn.getresponse()
     
-    # Fail-fast block to prevent downstream downstream header errors
     if res.status != 200:
         print(f"❌ Authentication Failed: {res.status} {res.reason}")
-        print("👉 Please verify that your registered repository credentials/secrets are valid.")
         sys.exit(1)
         
     CST = res.getheader("CST")
     SECURITY_TOKEN = res.getheader("X-SECURITY-TOKEN")
     
     if not CST or not SECURITY_TOKEN:
-        print("❌ Protocol Error: Session established but critical telemetry headers (CST/X-SECURITY-TOKEN) are missing.")
+        print("❌ Protocol Error: Session established but critical telemetry headers are missing.")
         sys.exit(1)
         
     return SECURITY_TOKEN, CST
@@ -85,7 +83,6 @@ def fetch_market_prices():
         print(f"⚠️ Empty Frame Warning: No active pricing arrays returned for {EPIC_SYMBOL}")
         return pd.DataFrame()
 
-    # Filter and map structural market features
     df = df[[  
         'snapshotTime',
         'openPrice.bid', 'highPrice.bid', 'lowPrice.bid', 'closePrice.bid',
@@ -99,38 +96,33 @@ def fetch_market_prices():
         'volume'
     ]
     
-    # Guarantee unified ISO time format strings for subsequent cross-asset merging
     df['time'] = pd.to_datetime(df['time']).dt.strftime('%Y-%m-%d %H:%M:%S')
     return df
 
 if __name__ == "__main__":
     print(f"🚀 Initializing Data Ingestion Engine for Target Epic: {EPIC_SYMBOL}")
     
-    # Establish local data storage structures
+    # Establish local raw directory storage structure
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR)
         print(f"📂 Storage Architecture initialized at: {DATA_DIR}")
 
-    # Process execution chain
     fetch_session_tokens()
     df_new = fetch_market_prices()
 
     if not df_new.empty:
         filename = os.path.join(DATA_DIR, f"{EPIC_SYMBOL}.csv")
         
-        # Incremental state integration logic
         if os.path.exists(filename):
-            print(f"🔄 Existing master file found for {EPIC_SYMBOL}. Executing delta append...")
+            print(f"🔄 Existing raw file found for {EPIC_SYMBOL}. Executing delta append...")
             df_existing = pd.read_csv(filename)
             df_combined = pd.concat([df_existing, df_new], ignore_index=True)
         else:
             print(f"📝 Initializing fresh time-series ledger for {EPIC_SYMBOL}...")
             df_combined = df_new
 
-        # Core Data Engineering: Resolve transactional overlaps and preserve chronological line
         df_combined = df_combined.drop_duplicates(subset=['time'], keep='last')
         df_combined = df_combined.sort_values(by='time').reset_index(drop=True)
 
-        # Commit back to data storage system
         df_combined.to_csv(filename, index=False)
-        print(f"✅ State Matrix updated successfully ({len(df_combined)} records total): {filename}\n")
+        print(f"✅ Raw Matrix updated successfully ({len(df_combined)} records total): {filename}\n")
