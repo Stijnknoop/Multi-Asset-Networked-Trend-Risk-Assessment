@@ -124,5 +124,26 @@
         "minutely_return_pct": -0.10837412381563549
       }
     }
+  },
+  {
+    "timestamp_utc": "2026-07-03 16:47:00",
+    "telemetry_metrics": {
+      "isolation_decision_score": -0.0024337108182450606,
+      "systemic_anomaly_flag": 1
+    },
+    "market_state": {
+      "US500": {
+        "close_index": 7507.4,
+        "minutely_return_pct": 0.015986784258337217
+      },
+      "OIL_CRUDE": {
+        "close_price_usd": 68.665,
+        "minutely_return_pct": -0.10910677916786682
+      },
+      "GOLD": {
+        "close_price_usd": 4167.69,
+        "minutely_return_pct": 0.07515799988471183
+      }
+    }
   }
 ]
