@@ -41,7 +41,7 @@ jobs:
         # Sequentially fetch 1-minute historical data streams for target asset classes
         python src/data_ingestion.py --epic OIL_CRUDE
         python src/data_ingestion.py --epic GOLD
-        python src/data_ingestion.py --epic US500
+        python src/data_using.py --epic US500
 
     - name: Execute Data Processing and Visualization
       run: |
@@ -53,17 +53,20 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # Pull latest changes from remote using rebase to maintain a linear commit history
-        git pull origin main --rebase
-        
-        # Stage the entire data folder containing updated data feeds and analytics graphics
+        # 1. Stage the data directory first to clear the "unstaged changes" state
         git add data/
         
-        # Verify if actual differences exist before initiating a commit to prevent empty pipeline noise
-        if git diff --quiet && git diff --staged --quiet; then
+        # 2. Check if any actual data changes are staged for commit
+        if git diff --staged --quiet; then
           echo "⚠️ No new market variations or artifacts detected. Skipping commit."
         else
+          # 3. Commit locally to keep the working directory completely clean
           git commit -m "📊 Automated pipeline run: Master CSV & Trend Analytics updated"
+          
+          # 4. Pull remote changes safely; your local commit will be replayed on top
+          git pull origin main --rebase
+          
+          # 5. Push the final synchronized state back to GitHub
           git push origin main
           echo "✅ Asset parameters synchronized and multi-panel charts pushed successfully to main branch."
         fi
