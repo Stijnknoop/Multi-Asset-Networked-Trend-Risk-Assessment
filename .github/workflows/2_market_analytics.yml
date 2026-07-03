@@ -5,12 +5,12 @@ on:
     workflows: ["MANTRA Market Data Ingestion"]
     types:
       - completed
-  workflow_dispatch: # Zodat je hem ook altijd zelf handmatig kunt starten
+  workflow_dispatch: # Allows manual triggering anytime
 
 jobs:
   machine-learning:
-    # Voer dit alleen uit als de vorige workflow daadwerkelijk geslaagd is (en niet gecrasht)
-    if: ${{ gitea && github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    # Trigger only if the ingestion workflow succeeded OR if triggered manually
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -34,17 +34,22 @@ jobs:
 
     - name: Execute Machine Learning Anomaly Detection
       run: |
+        # Computes mathematical returns and applies unsupervised Isolation Forest to flag shocks
         python src/anomaly_detection.py
 
     - name: Commit and Push ML Artifacts
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+        
+        # Stage only the processed data directory containing the ML reports and graphics
         git add data/processed/
+        
         if git diff --staged --quiet; then
           echo "⚠️ No new ML insights or report variations detected."
         else
           git commit -m "🧠 ML Inference Sync: Anomaly detection vectors and graphics updated"
           git pull origin main --rebase
           git push origin main
+          echo "✅ Machine learning artifacts successfully synchronized with main branch."
         fi
