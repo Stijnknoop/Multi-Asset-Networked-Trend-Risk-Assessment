@@ -2,34 +2,39 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-DATA_DIR = "data"
-OUTPUT_CSV = os.path.join(DATA_DIR, "master_market_data.csv")
-OUTPUT_PLOT = os.path.join(DATA_DIR, "market_trends.png")
+RAW_DIR = os.path.join("data", "raw")
+PROCESSED_DIR = os.path.join("data", "processed")
+
+OUTPUT_CSV = os.path.join(PROCESSED_DIR, "master_market_data.csv")
+OUTPUT_PLOT = os.path.join(PROCESSED_DIR, "market_trends.png")
 
 def process_and_align_assets():
-    """Transforms standalone asset data feeds into an integrated multi-asset data ledger."""
+    """Transforms standalone raw data feeds into an integrated processed data ledger."""
     target_assets = ["OIL_CRUDE", "GOLD", "US500"]
     dataframe_registry = {}
 
     print("🔄 Initializing multi-asset temporal alignment layers...")
 
-    # 1. Parse, scrub, and register separate source files
+    # 1. Ensure processed storage directory exists
+    if not os.path.exists(PROCESSED_DIR):
+        os.makedirs(PROCESSED_DIR)
+        print(f"📂 Processed Storage Architecture initialized at: {PROCESSED_DIR}")
+
+    # 2. Parse and register separate source files from the raw layer
     for asset in target_assets:
-        file_path = os.path.join(DATA_DIR, f"{asset}.csv")
+        file_path = os.path.join(RAW_DIR, f"{asset}.csv")
         if not os.path.exists(file_path):
-            print(f"❌ Pipeline Interrupted: Missing source file for registered asset: {asset}")
+            print(f"❌ Pipeline Interrupted: Missing raw source file for registered asset: {asset}")
             return
         
         df = pd.read_csv(file_path)
         df['time'] = pd.to_datetime(df['time'])
         df = df.sort_values('time')
         
-        # Isolate close parameter and map distinct column headings to avoid namespace collisions
         df = df[['time', 'close_bid']].rename(columns={'close_bid': f'{asset}_close'})
         dataframe_registry[asset] = df
 
-    # 2. Execute High-Performance Asynchronous Time-Series Matching (pd.merge_asof)
-    # Uses 'backward' matching to link decoupled tick feeds safely without forward data leakage
+    # 3. Execute High-Performance Asynchronous Time-Series Matching (pd.merge_asof)
     master_dataframe = dataframe_registry[target_assets[0]]
     for asset in target_assets[1:]:
         master_dataframe = pd.merge_asof(
@@ -39,15 +44,14 @@ def process_and_align_assets():
             direction='backward'
         )
 
-    # Export normalized master database matrix
+    # Export normalized master database matrix to processed layer
     master_dataframe.to_csv(OUTPUT_CSV, index=False)
-    print(f"✅ Integrated Master Core saved successfully: {OUTPUT_CSV} ({len(master_dataframe)} rows matched)")
+    print(f"✅ Integrated Master Core saved successfully to Processed Layer: {OUTPUT_CSV} ({len(master_dataframe)} rows matched)")
 
-    # 3. Render Enterprise-Grade Visualization Analytics
+    # 4. Render Enterprise-Grade Visualization Analytics
     print("📊 Generating dynamic multi-panel market trending charts...")
     fig, axes = plt.subplots(3, 1, figsize=(14, 10), sharex=True)
     
-    # Institutional/Quant color palette configurations
     graph_colors = ['#d95f02', '#fdbf6f', '#1f78b4'] 
     
     for idx, asset in enumerate(target_assets):
@@ -64,12 +68,12 @@ def process_and_align_assets():
         axes[idx].legend(loc="upper left")
         
     plt.xlabel("Execution Timeline (UTC)", fontsize=10)
-    plt.gcf().autofmt_xdate()  # Intelligently realigns x-axis timestamps diagonally
+    plt.gcf().autofmt_xdate()
     plt.tight_layout()
     
-    # Save visualization to disk
+    # Save visualization to processed layer
     plt.savefig(OUTPUT_PLOT, dpi=300)
-    print(f"✅ Analytical graphic matrix rendered and saved: {OUTPUT_PLOT}")
+    print(f"✅ Analytical graphic matrix rendered and saved to Processed Layer: {OUTPUT_PLOT}")
 
 if __name__ == "__main__":
     process_and_align_assets()
