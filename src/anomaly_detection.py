@@ -12,7 +12,7 @@ INPUT_CSV = os.path.join(PROCESSED_DIR, "master_market_data.csv")
 OUTPUT_CSV = os.path.join(ANALYZED_DIR, "analyzed_market_data.csv") 
 OUTPUT_COMPARE_PLOT = os.path.join(ANALYZED_DIR, "anomaly_diagnostic_dashboard.png")
 OUTPUT_ROLLING_PLOT = os.path.join(ANALYZED_DIR, "rolling_anomaly_report.png")
-OUTPUT_JSON = os.path.join(ANALYZED_DIR, "rolling_anomalies.json") # <--- CENTRALE AI-AGENT FEED
+OUTPUT_JSON = os.path.join(ANALYZED_DIR, "rolling_anomalies.json")
 
 def detect_market_anomalies():
     """Applies Dual-Method Isolation Forests and exports structured JSON telemetry for AI agents."""
@@ -77,16 +77,16 @@ def detect_market_anomalies():
     df.to_csv(OUTPUT_CSV, index=False)
 
     # =========================================================================
-    # 🧾 NIEUWE STAP: High-Fidelity JSON Extractie voor AI Risk Committee
+    # 🧾 JSON EXTRACTION FOR AI RISK COMMITTEE (Fixed Variable Definitions)
     # =========================================================================
     print("📝 Extracting active out-of-sample rolling anomalies into JSON ledger...")
     
-    # Filter puur op de actieve rolling anomalies (vlag == 1)
+    # Isolate active out-of-sample rolling anomaly observations
     active_rolling_df = df.iloc[window_size:].reset_index(drop=True)
-    anomalies_only = active_rolling_df[active_rolling_df['is_anomaly_rolling'] == 1]
+    active_anomalies = active_rolling_df[active_rolling_df['is_anomaly_rolling'] == 1]
     
     json_payload = []
-    for _, row in anomalies_only.iterrows():
+    for _, row in active_anomalies.iterrows():
         anomaly_entry = {
             "timestamp_utc": row['time'].strftime('%Y-%m-%d %H:%M:%S'),
             "telemetry_metrics": {
@@ -110,13 +110,12 @@ def detect_market_anomalies():
         }
         json_payload.append(anomaly_entry)
         
-    # Schrijf de gestructureerde JSON-file weg
     with open(OUTPUT_JSON, 'w') as json_file:
         json.dump(json_payload, json_file, indent=2)
     print(f"✅ AI-Agent Risk Ledger successfully exported ({len(json_payload)} entries): {OUTPUT_JSON}")
 
     # =========================================================================
-    # 📊 DASHBOARD GENERATION (OUTPUT 1 & OUTPUT 2)
+    # 📊 DASHBOARD GENERATION (Removed Emojis to Prevent Linux Font Glyphs Errors)
     # =========================================================================
     print("📊 Constructing comparative 6-panel anomaly verification dashboard...")
     fig, axes = plt.subplots(3, 2, figsize=(16, 16))
@@ -125,32 +124,32 @@ def detect_market_anomalies():
     normal_df = df[(df['is_anomaly_batch'] == 0) & (df['is_anomaly_rolling'] == 0)]
 
     axes[0, 0].scatter(normal_df['US500_return'] * 100, normal_df['OIL_CRUDE_return'] * 100, color='gray', alpha=0.3, s=15, label='Normal Minutes')
-    axes[0, 0].scatter(batch_anomalies['US500_return'] * 100, batch_anomalies['OIL_CRUDE_return'] * 100, color='red', edgecolor='black', s=45, label='Batch Anomaly (🔴)', zorder=5)
+    axes[0, 0].scatter(batch_anomalies['US500_return'] * 100, batch_anomalies['OIL_CRUDE_return'] * 100, color='red', edgecolor='black', s=45, label='Batch Anomaly (Red Cirlce)', zorder=5)
     axes[0, 0].set_title("Method 1: Batch Risk Space (US500 vs OIL)", fontsize=11, fontweight='bold', loc='left')
     axes[0, 0].set_xlabel("US500 Return (%)"); axes[0, 0].set_ylabel("OIL_CRUDE Return (%)")
     axes[0, 0].grid(True, linestyle=':', alpha=0.6); axes[0, 0].legend(loc="upper right")
 
     axes[0, 1].scatter(normal_df['US500_return'] * 100, normal_df['OIL_CRUDE_return'] * 100, color='gray', alpha=0.3, s=15, label='Normal Minutes')
-    axes[0, 1].scatter(rolling_anomalies_df['US500_return'] * 100, rolling_anomalies_df['OIL_CRUDE_return'] * 100, color='purple', edgecolor='black', marker='^', s=55, label='Rolling Anomaly (💜)', zorder=5)
+    axes[0, 1].scatter(rolling_anomalies_df['US500_return'] * 100, rolling_anomalies_df['OIL_CRUDE_return'] * 100, color='purple', edgecolor='black', marker='^', s=55, label='Rolling Anomaly (Purple Triangle)', zorder=5)
     axes[0, 1].set_title("Method 2: 240-Min Rolling Risk Space (US500 vs OIL)", fontsize=11, fontweight='bold', loc='left')
     axes[0, 1].set_xlabel("US500 Return (%)"); axes[0, 1].set_ylabel("OIL_CRUDE Return (%)")
     axes[0, 1].grid(True, linestyle=':', alpha=0.6); axes[0, 1].legend(loc="upper right")
 
     axes[1, 0].plot(df['time'], df['OIL_CRUDE_close'], color='#d95f02', alpha=0.6, label='OIL Baseline')
-    axes[1, 0].scatter(batch_anomalies['time'], batch_anomalies['OIL_CRUDE_close'], color='red', s=30, label='Batch (🔴)', zorder=5)
-    axes[1, 0].scatter(rolling_anomalies_df['time'], rolling_anomalies_df['OIL_CRUDE_close'], color='purple', marker='^', s=45, label='Rolling (💜)', zorder=6)
+    axes[1, 0].scatter(batch_anomalies['time'], batch_anomalies['OIL_CRUDE_close'], color='red', s=30, label='Batch (Red)', zorder=5)
+    axes[1, 0].scatter(rolling_anomalies_df['time'], rolling_anomalies_df['OIL_CRUDE_close'], color='purple', marker='^', s=45, label='Rolling (Purple)', zorder=6)
     axes[1, 0].set_title("Timeline Context: OIL_CRUDE Spot Comparison", fontsize=11, fontweight='bold', loc='left')
     axes[1, 0].set_ylabel("Crude Price ($)"); axes[1, 0].grid(True, linestyle=':'); axes[1, 0].legend(loc="upper left")
 
     axes[1, 1].plot(df['time'], df['GOLD_close'], color='#fdbf6f', alpha=0.7, label='GOLD Baseline')
-    axes[1, 1].scatter(batch_anomalies['time'], batch_anomalies['GOLD_close'], color='red', s=30, label='Batch (🔴)', zorder=5)
-    axes[1, 1].scatter(rolling_anomalies_df['time'], rolling_anomalies_df['GOLD_close'], color='purple', marker='^', s=45, label='Rolling (💜)', zorder=6)
+    axes[1, 1].scatter(batch_anomalies['time'], batch_anomalies['GOLD_close'], color='red', s=30, label='Batch (Red)', zorder=5)
+    axes[1, 1].scatter(rolling_anomalies_df['time'], rolling_anomalies_df['GOLD_close'], color='purple', marker='^', s=45, label='Rolling (Purple)', zorder=6)
     axes[1, 1].set_title("Timeline Context: GOLD Spot Comparison", fontsize=11, fontweight='bold', loc='left')
     axes[1, 1].set_ylabel("Gold Price ($)"); axes[1, 1].grid(True, linestyle=':'); axes[1, 1].legend(loc="upper left")
 
     axes[2, 0].plot(df['time'], df['US500_close'], color='#1f78b4', alpha=0.6, label='US500 Baseline')
-    axes[2, 0].scatter(batch_anomalies['time'], batch_anomalies['US500_close'], color='red', s=30, label='Batch (🔴)', zorder=5)
-    axes[2, 0].scatter(rolling_anomalies_df['time'], rolling_anomalies_df['US500_close'], color='purple', marker='^', s=45, label='Rolling (💜)', zorder=6)
+    axes[2, 0].scatter(batch_anomalies['time'], batch_anomalies['US500_close'], color='red', s=30, label='Batch (Red)', zorder=5)
+    axes[2, 0].scatter(rolling_anomalies_df['time'], rolling_anomalies_df['US500_close'], color='purple', marker='^', s=45, label='Rolling (Purple)', zorder=6)
     axes[2, 0].set_title("Timeline Context: US500 Spot Comparison", fontsize=11, fontweight='bold', loc='left')
     axes[2, 0].set_ylabel("Index Price"); axes[2, 0].grid(True, linestyle=':'); axes[2, 0].legend(loc="upper left")
 
@@ -175,7 +174,7 @@ def detect_market_anomalies():
     
     for idx, asset in enumerate(assets):
         axes_roll[idx].plot(active_rolling_df['time'], active_rolling_df[f'{asset}_close'], color=asset_colors[idx], alpha=0.8, label=f'{asset} Price Baseline', linewidth=1.2)
-        axes_roll[idx].scatter(active_anomalies['time'], active_anomalies[f'{asset}_close'], color='purple', marker='^', s=40, label='Out-of-Sample Rolling Anomaly (💜)', zorder=5)
+        axes_roll[idx].scatter(active_anomalies['time'], active_anomalies[f'{asset}_close'], color='purple', marker='^', s=40, label='Out-of-Sample Rolling Anomaly (Purple)', zorder=5)
         axes_roll[idx].set_title(f"MANTRA Production Node: Real-Time 240-Min Rolling Anomaly Feed - {asset}", fontsize=11, fontweight='bold', loc='left')
         axes_roll[idx].set_ylabel(asset_labels[idx], fontsize=9)
         axes_roll[idx].grid(True, linestyle=':', alpha=0.5)
