@@ -33,7 +33,6 @@ jobs:
 
     - name: Execute Machine Learning Anomaly Detection
       run: |
-        # Computes mathematical returns and applies unsupervised Isolation Forest to flag shocks
         python src/anomaly_detection.py
 
     - name: Commit and Push ML Artifacts
