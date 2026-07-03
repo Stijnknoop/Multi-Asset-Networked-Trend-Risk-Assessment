@@ -42,14 +42,14 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        # Stage only the processed data directory containing the ML reports and graphics
-        git add data/processed/
+        # --- FIXED: Now tracks and stages the new analyzed gold-layer directory ---
+        git add data/analyzed/
         
         if git diff --staged --quiet; then
-          echo "⚠️ No new ML insights or report variations detected."
+          echo "⚠️ No new ML insights or dashboard updates detected."
         else
-          git commit -m "🧠 ML Inference Sync: Anomaly detection vectors and graphics updated"
+          git commit -m "🧠 ML Gold Layer Sync: Diagnostic dashboard and analyzed data vectors updated"
           git pull origin main --rebase
           git push origin main
-          echo "✅ Machine learning artifacts successfully synchronized with main branch."
+          echo "✅ Advanced machine learning artifacts successfully synchronized with analyzed layer."
         fi
