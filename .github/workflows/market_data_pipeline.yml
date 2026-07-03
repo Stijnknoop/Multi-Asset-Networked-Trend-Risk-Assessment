@@ -41,7 +41,7 @@ jobs:
         # Sequentially fetch 1-minute historical data streams for target asset classes
         python src/data_ingestion.py --epic OIL_CRUDE
         python src/data_ingestion.py --epic GOLD
-        python src/data_using.py --epic US500
+        python src/data_ingestion.py --epic US500
 
     - name: Execute Data Processing and Visualization
       run: |
