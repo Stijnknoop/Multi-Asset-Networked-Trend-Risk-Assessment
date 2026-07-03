@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 
 INPUT_CSV = os.path.join("data", "analyzed", "analyzed_market_data.csv")
-OUTPUT_DIR = os.path.join("data", "analyzed")
+# NEW LOCATION: Dedicated directory for backtest output
+OUTPUT_DIR = os.path.join("data", "backtest_results")
 OUTPUT_MD = os.path.join(OUTPUT_DIR, "backtest_performance.md")
 
 def run_multi_strategy_backtest():
@@ -19,8 +20,8 @@ def run_multi_strategy_backtest():
     df = df.sort_values('time').reset_index(drop=True)
 
     assets = ["OIL_CRUDE", "GOLD", "US500"]
-    holding_period = 15  # Holding horizon in minutes
-    cooldown_ticks = 15  # Cooldown block to prevent cluster overtrading
+    holding_period = 15  
+    cooldown_ticks = 15  
     
     pnl_mean_reversion = 0.0
     pnl_momentum = 0.0
@@ -67,7 +68,7 @@ def run_multi_strategy_backtest():
             option_premium_cost = 0.0004 
             pnl_volatility_straddle += (abs(future_return) - option_premium_cost)
 
-    # 3. Determine best strategy (FIXED: Corrected syntax error)
+    # 3. Determine best strategy
     results = {
         "Mean-Reversion Spread": pnl_mean_reversion,
         "Momentum Breakout": pnl_momentum,
@@ -81,23 +82,23 @@ def run_multi_strategy_backtest():
     
     report_content = f"""# 📊 MANTRA Quantitative Strategy Simulation
     
-    This automated research node evaluates the mathematical exploitability of detected rolling anomaly clusters using three concurrent institutional execution frameworks.
+This automated research node evaluates the mathematical exploitability of detected rolling anomaly clusters using three concurrent institutional execution frameworks.
     
-    ### 🔬 Simulation Parameters
-    * **Captured Anomaly Signals (Post-Cooldown):** {trade_count}
-    * **Position Holding Horizon:** {holding_period} Minutes
-    * **Cluster Cooldown Window:** {cooldown_ticks} Minutes
+### 🔬 Simulation Parameters
+* **Captured Anomaly Signals (Post-Cooldown):** {trade_count}
+* **Position Holding Horizon:** {holding_period} Minutes
+* **Cluster Cooldown Window:** {cooldown_ticks} Minutes
     
-    ### 📈 Performance Leaderboard
-    | Execution Architecture | Total Simulated PnL (%) | Status |
-    | :--- | :--- | :--- |
-    | **🔄 Strategy 1: Mean-Reversion Spread** | {pnl_mean_reversion * 100:+.4f}% | {"🟢 Profitable" if pnl_mean_reversion > 0 else "🔴 Unprofitable"} |
-    | **🚀 Strategy 2: Momentum Breakout** | {pnl_momentum * 100:+.4f}% | {"🟢 Profitable" if pnl_momentum > 0 else "🔴 Unprofitable"} |
-    | **🎭 Strategy 3: Options Volatility Straddle** | {pnl_volatility_straddle * 100:+.4f}% | {"🟢 Profitable" if pnl_volatility_straddle > 0 else "🔴 Unprofitable"} |
+### 📈 Performance Leaderboard
+| Execution Architecture | Total Simulated PnL (%) | Status |
+| :--- | :--- | :--- |
+| **🔄 Strategy 1: Mean-Reversion Spread** | {pnl_mean_reversion * 100:+.4f}% | {"🟢 Profitable" if pnl_mean_reversion > 0 else "🔴 Unprofitable"} |
+| **🚀 Strategy 2: Momentum Breakout** | {pnl_momentum * 100:+.4f}% | {"🟢 Profitable" if pnl_momentum > 0 else "🔴 Unprofitable"} |
+| **🎭 Strategy 3: Options Volatility Straddle** | {pnl_volatility_straddle * 100:+.4f}% | {"🟢 Profitable" if pnl_volatility_straddle > 0 else "🔴 Unprofitable"} |
     
-    ### 🏁 Research Verdict
-    > **OPTIMAL REGIME DEPLOYMENT:** The data streams isolate the **{best_strat}** engine as the alpha generator for this specific market matrix, yielding a total risk-adjusted return of **{best_pnl:+.3f}%**.
-    """
+### 🏁 Research Verdict
+> **OPTIMAL REGIME DEPLOYMENT:** The data streams isolate the **{best_strat}** engine as the alpha generator for this specific market matrix, yielding a total risk-adjusted return of **{best_pnl:+.3f}%**.
+"""
     
     with open(OUTPUT_MD, "w") as f:
         f.write(report_content)
