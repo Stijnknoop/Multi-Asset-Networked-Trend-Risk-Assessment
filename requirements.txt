@@ -1,0 +1,10 @@
+# Core Data Processing
+pandas>=2.1.0
+numpy>=1.24.0
+
+# Machine Learning & Analytics
+scikit-learn>=1.3.0
+
+# AI Agent Orchestration & LLMs
+crewai>=0.28.0
+google-generativeai>=0.3.0
