@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp_utc": "2026-07-03 08:05:00",
+    "telemetry_metrics": {
+      "isolation_decision_score": -0.026287711518778623,
+      "systemic_anomaly_flag": 1
+    },
+    "market_state": {
+      "US500": {
+        "close_index": 7506.2,
+        "minutely_return_pct": 0.02665174169131923
+      },
+      "OIL_CRUDE": {
+        "close_price_usd": 69.09,
+        "minutely_return_pct": -0.05786199913205836
+      },
+      "GOLD": {
+        "close_price_usd": 4168.42,
+        "minutely_return_pct": 0.08739957452734703
+      }
+    }
+  },
+  {
+    "timestamp_utc": "2026-07-03 10:46:00",
+    "telemetry_metrics": {
+      "isolation_decision_score": -0.02698312915416634,
+      "systemic_anomaly_flag": 1
+    },
+    "market_state": {
+      "US500": {
+        "close_index": 7496.3,
+        "minutely_return_pct": -0.02400608154066175
+      },
+      "OIL_CRUDE": {
+        "close_price_usd": 68.405,
+        "minutely_return_pct": 0.0073099415204502804
+      },
+      "GOLD": {
+        "close_price_usd": 4180.51,
+        "minutely_return_pct": -0.08938280456473047
+      }
+    }
+  },
+  {
+    "timestamp_utc": "2026-07-03 15:05:00",
+    "telemetry_metrics": {
+      "isolation_decision_score": -0.01934574687129953,
+      "systemic_anomaly_flag": 1
+    },
+    "market_state": {
+      "US500": {
+        "close_index": 7499.0,
+        "minutely_return_pct": -0.02133162680318934
+      },
+      "OIL_CRUDE": {
+        "close_price_usd": 68.425,
+        "minutely_return_pct": 0.08776420683098696
+      },
+      "GOLD": {
+        "close_price_usd": 4171.0,
+        "minutely_return_pct": -0.06684572055614124
+      }
+    }
+  },
+  {
+    "timestamp_utc": "2026-07-03 15:30:00",
+    "telemetry_metrics": {
+      "isolation_decision_score": -0.040716638788121706,
+      "systemic_anomaly_flag": 1
+    },
+    "market_state": {
+      "US500": {
+        "close_index": 7503.7,
+        "minutely_return_pct": 0.03332800085320553
+      },
+      "OIL_CRUDE": {
+        "close_price_usd": 68.64,
+        "minutely_return_pct": 0.05830903790089437
+      },
+      "GOLD": {
+        "close_price_usd": 4167.54,
+        "minutely_return_pct": -0.09516937511836465
+      }
+    }
+  },
+  {
+    "timestamp_utc": "2026-07-03 15:34:00",
+    "telemetry_metrics": {
+      "isolation_decision_score": -0.04397214740461386,
+      "systemic_anomaly_flag": 1
+    },
+    "market_state": {
+      "US500": {
+        "close_index": 7500.9,
+        "minutely_return_pct": -0.04663930494109847
+      },
+      "OIL_CRUDE": {
+        "close_price_usd": 68.665,
+        "minutely_return_pct": 0.08745718242111344
+      },
+      "GOLD": {
+        "close_price_usd": 4167.17,
+        "minutely_return_pct": 0.027604284184890027
+      }
+    }
+  },
+  {
+    "timestamp_utc": "2026-07-03 16:08:00",
+    "telemetry_metrics": {
+      "isolation_decision_score": -0.006334112409128956,
+      "systemic_anomaly_flag": 1
+    },
+    "market_state": {
+      "US500": {
+        "close_index": 7498.4,
+        "minutely_return_pct": 0.0
+      },
+      "OIL_CRUDE": {
+        "close_price_usd": 68.835,
+        "minutely_return_pct": -0.07983742197708033
+      },
+      "GOLD": {
+        "close_price_usd": 4157.0,
+        "minutely_return_pct": -0.10837412381563549
+      }
+    }
+  }
+]
