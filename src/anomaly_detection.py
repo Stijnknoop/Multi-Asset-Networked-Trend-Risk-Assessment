@@ -1,4 +1,5 @@
 import os
+import json
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,10 +11,11 @@ ANALYZED_DIR = os.path.join("data", "analyzed")
 INPUT_CSV = os.path.join(PROCESSED_DIR, "master_market_data.csv")
 OUTPUT_CSV = os.path.join(ANALYZED_DIR, "analyzed_market_data.csv") 
 OUTPUT_COMPARE_PLOT = os.path.join(ANALYZED_DIR, "anomaly_diagnostic_dashboard.png")
-OUTPUT_ROLLING_PLOT = os.path.join(ANALYZED_DIR, "rolling_anomaly_report.png") # <--- NIEUWE SEPARATE OUTPUT
+OUTPUT_ROLLING_PLOT = os.path.join(ANALYZED_DIR, "rolling_anomaly_report.png")
+OUTPUT_JSON = os.path.join(ANALYZED_DIR, "rolling_anomalies.json") # <--- CENTRALE AI-AGENT FEED
 
 def detect_market_anomalies():
-    """Applies both Batch and Rolling window Isolation Forests and saves separate visual reports."""
+    """Applies Dual-Method Isolation Forests and exports structured JSON telemetry for AI agents."""
     print("🧠 Initializing Dual-Method Machine Learning Inference Engine...")
 
     if not os.path.exists(INPUT_CSV):
@@ -71,11 +73,50 @@ def detect_market_anomalies():
     df['anomaly_score_rolling'] = rolling_scores
     df['is_anomaly_rolling'] = rolling_anomalies
 
-    print(f"✅ Statistical Summary Calculated.")
+    print(f"✅ State Matrices populated. Saving full analysis to CSV...")
     df.to_csv(OUTPUT_CSV, index=False)
 
     # =========================================================================
-    # 📊 OUTPUT 1: Het bestaande 6-Panel vergelijkingsdashboard (Batch vs Rolling)
+    # 🧾 NIEUWE STAP: High-Fidelity JSON Extractie voor AI Risk Committee
+    # =========================================================================
+    print("📝 Extracting active out-of-sample rolling anomalies into JSON ledger...")
+    
+    # Filter puur op de actieve rolling anomalies (vlag == 1)
+    active_rolling_df = df.iloc[window_size:].reset_index(drop=True)
+    anomalies_only = active_rolling_df[active_rolling_df['is_anomaly_rolling'] == 1]
+    
+    json_payload = []
+    for _, row in anomalies_only.iterrows():
+        anomaly_entry = {
+            "timestamp_utc": row['time'].strftime('%Y-%m-%d %H:%M:%S'),
+            "telemetry_metrics": {
+                "isolation_decision_score": float(row['anomaly_score_rolling']),
+                "systemic_anomaly_flag": int(row['is_anomaly_rolling'])
+            },
+            "market_state": {
+                "US500": {
+                    "close_index": float(row['US500_close']),
+                    "minutely_return_pct": float(row['US500_return'] * 100)
+                },
+                "OIL_CRUDE": {
+                    "close_price_usd": float(row['OIL_CRUDE_close']),
+                    "minutely_return_pct": float(row['OIL_CRUDE_return'] * 100)
+                },
+                "GOLD": {
+                    "close_price_usd": float(row['GOLD_close']),
+                    "minutely_return_pct": float(row['GOLD_return'] * 100)
+                }
+            }
+        }
+        json_payload.append(anomaly_entry)
+        
+    # Schrijf de gestructureerde JSON-file weg
+    with open(OUTPUT_JSON, 'w') as json_file:
+        json.dump(json_payload, json_file, indent=2)
+    print(f"✅ AI-Agent Risk Ledger successfully exported ({len(json_payload)} entries): {OUTPUT_JSON}")
+
+    # =========================================================================
+    # 📊 DASHBOARD GENERATION (OUTPUT 1 & OUTPUT 2)
     # =========================================================================
     print("📊 Constructing comparative 6-panel anomaly verification dashboard...")
     fig, axes = plt.subplots(3, 2, figsize=(16, 16))
@@ -95,7 +136,6 @@ def detect_market_anomalies():
     axes[0, 1].set_xlabel("US500 Return (%)"); axes[0, 1].set_ylabel("OIL_CRUDE Return (%)")
     axes[0, 1].grid(True, linestyle=':', alpha=0.6); axes[0, 1].legend(loc="upper right")
 
-    # Asset tijdlijnen voor vergelijking
     axes[1, 0].plot(df['time'], df['OIL_CRUDE_close'], color='#d95f02', alpha=0.6, label='OIL Baseline')
     axes[1, 0].scatter(batch_anomalies['time'], batch_anomalies['OIL_CRUDE_close'], color='red', s=30, label='Batch (🔴)', zorder=5)
     axes[1, 0].scatter(rolling_anomalies_df['time'], rolling_anomalies_df['OIL_CRUDE_close'], color='purple', marker='^', s=45, label='Rolling (💜)', zorder=6)
@@ -126,28 +166,16 @@ def detect_market_anomalies():
             plt.xticks(rotation=30)
     plt.tight_layout()
     plt.savefig(OUTPUT_COMPARE_PLOT, dpi=300)
-    plt.close() # Sluit figuur om geheugen vrij te maken
+    plt.close()
 
-    # =========================================================================
-    # 📊 OUTPUT 2: NIEUW! Puur dedicated Rolling Window Rapport (3x1 indeling)
-    # =========================================================================
     print("📊 Generating standalone Out-of-Sample Rolling Window Report...")
     fig_roll, axes_roll = plt.subplots(3, 1, figsize=(14, 12), sharex=True)
-    
-    # We tonen alleen de data vanaf de burn-in periode (index 240+) omdat daar het rolling model actief is
-    active_rolling_df = df.iloc[window_size:].reset_index(drop=True)
-    active_anomalies = active_rolling_df[active_rolling_df['is_anomaly_rolling'] == 1]
-    
     asset_colors = ['#d95f02', '#fdbf6f', '#1f78b4']
     asset_labels = ['OIL_CRUDE ($)', 'GOLD ($)', 'US500 Index']
     
     for idx, asset in enumerate(assets):
-        # Plot de schone markt-tijdlijn
         axes_roll[idx].plot(active_rolling_df['time'], active_rolling_df[f'{asset}_close'], color=asset_colors[idx], alpha=0.8, label=f'{asset} Price Baseline', linewidth=1.2)
-        
-        # Plot EXCLUSIEF de paarse rolling window anomalieën
         axes_roll[idx].scatter(active_anomalies['time'], active_anomalies[f'{asset}_close'], color='purple', marker='^', s=40, label='Out-of-Sample Rolling Anomaly (💜)', zorder=5)
-        
         axes_roll[idx].set_title(f"MANTRA Production Node: Real-Time 240-Min Rolling Anomaly Feed - {asset}", fontsize=11, fontweight='bold', loc='left')
         axes_roll[idx].set_ylabel(asset_labels[idx], fontsize=9)
         axes_roll[idx].grid(True, linestyle=':', alpha=0.5)
@@ -156,10 +184,9 @@ def detect_market_anomalies():
     plt.xlabel("Streaming Timeline (UTC)", fontsize=10)
     plt.gcf().autofmt_xdate()
     plt.tight_layout()
-    
     plt.savefig(OUTPUT_ROLLING_PLOT, dpi=300)
     plt.close()
-    print(f"✅ Standalone Rolling Window report saved successfully: {OUTPUT_ROLLING_PLOT}\n")
+    print("✅ System run completely processed and committed.\n")
 
 if __name__ == "__main__":
     detect_market_anomalies()
