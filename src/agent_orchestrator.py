@@ -3,9 +3,10 @@ import json
 import sys
 from crewai import Agent, Task, Crew, Process, LLM
 
-ANALYZED_DIR = os.path.join("data", "analyzed")
-INPUT_JSON = os.path.join(ANALYZED_DIR, "rolling_anomalies.json")
-OUTPUT_REPORT = os.path.join(ANALYZED_DIR, "risk_committee_report.md")
+INPUT_JSON = os.path.join("data", "analyzed", "rolling_anomalies.json")
+# Nieuwe dedicated map voor de agent analyses
+OUTPUT_DIR = os.path.join("data", "agentic_analysis_of_rolling_anomalies")
+OUTPUT_REPORT = os.path.join(OUTPUT_DIR, "risk_committee_report.md")
 
 def run_agentic_risk_committee():
     """Orchestrates a CrewAI multi-agent workflow to analyze financial anomalies using Gemini."""
@@ -24,53 +25,55 @@ def run_agentic_risk_committee():
 
     if not anomalies_data:
         print("🕊️ Market Environment Status: Nominal. No active rolling anomalies detected.")
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
         with open(OUTPUT_REPORT, "w") as f:
-            f.write("# MANTRA Risk Committee Briefing\n\n**Status:** NOMINAL\n\nNo systemic anomalies detected. Maintain current structural portfolio allocations.")
+            f.write("# MANTRA Risk Committee Briefing\n\n**Status:** NOMINAL\n\nNo systemic rolling anomalies detected during this tracking interval.")
         return
 
     print(f"📈 Loaded {len(anomalies_data)} systemic anomaly nodes for executive evaluation...")
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    # Configure Gemini 1.5 Flash for cost-efficient, high-speed text generation
+    # Inzet van het stabiele gemini-2.5-flash model via de native CrewAI wrapper
     gemini_llm = LLM(
-        model="gemini/gemini-2.5-flash",
+        model="gemini/gemini-2.5-flash", 
         api_key=os.environ["GEMINI_API_KEY"],
-        temperature=0.15 # Low temperature to enforce strict mathematical/logical consistency
+        temperature=0.10
     )
 
-    # Define Agent 1: The Quantitative Risk Analyst
+    # Analyst Agent met strenge schaalbeperkingen
     quant_analyst = Agent(
         role="Senior Quantitative Risk Analyst",
-        goal="Deconstruct rolling anomaly logs into cross-asset mathematical shock signals.",
+        goal="Deconstruct rolling anomaly logs into cross-asset mathematical shock signals with precise scale awareness.",
         backstory=(
-            "You are an elite quantitative analyst. You process anomaly datastreams "
-            "chronologically. You are strictly forbidden from looking ahead; you evaluate each "
-            "anomaly timestamp purely with the context provided up to that second. Your job is to calculate "
-            "the mathematical velocity of the shock and identify which asset broke its historical bounds first."
+            "You are an elite quantitative analyst. You process minutely anomaly data streams. "
+            "CRITICAL CONTEXT: You evaluate 1-minute interval returns. A 1-minute return between -0.1% and +0.1% "
+            "is a minor intraday fluctuation, NOT a massive 'crash' or a 'rally'. You only use words like 'sharp spike' or "
+            "'rapid drop' if a 1-minute return exceeds absolute 0.15%. You maintain absolute mathematical sobriety."
         ),
         verbose=True,
         llm=gemini_llm
     )
 
-    # Define Agent 2: The Chief Risk Officer (CRO)
+    # CRO Agent met focus op realistische institutionele oordelen
     chief_risk_officer = Agent(
         role="Chief Risk Officer (CRO)",
-        goal="Issue explicit risk execution verdicts (De-risk, Hedge, Hold, Opportunistic Entry) for every market shock.",
+        goal="Issue explicit risk execution verdicts based on institutional volatility baselines.",
         backstory=(
-            "You are the CRO of a major institutional fund. You do not gamble on directional alpha. "
-            "You protect institutional capital. When a rolling anomaly occurs, you look at the analyst's "
-            "metrics and issue a definitive operational command for the trading desk based strictly on risk thresholds."
+            "You are the CRO of a major institutional fund. You translate quant telemetry into C-suite reports. "
+            "CRITICAL: Do not use sensationalist retail trading language. If an asset drops by 0.05% in a minute, "
+            "do NOT call it a crash; call it a minor negative divergence or fractional deviation. Your verdicts must "
+            "be calibrated to institutional scales where only massive multi-asset joint moves trigger emergency hedging."
         ),
         verbose=True,
         llm=gemini_llm
     )
 
-    # Define Tasks - Enforcing strict chronological, out-of-sample execution behavior
     analysis_task = Task(
         description=(
-            f"Analyze this chronological streaming JSON anomaly log:\n\n{json.dumps(anomalies_data, indent=2)}\n\n"
-            "For each timestamp, process the data out-of-sample (assume you do not know what happens in the next timestamps). "
-            "Determine: 1) The exact magnitude of the sudden return spike. 2) The directionality (crash vs rally). "
-            "3) Whether it is an isolated asset event or a coordinated systemic cross-asset market shock."
+            f"Analyze this chronological streaming JSON anomaly log containing 1-minute interval steps:\n\n{json.dumps(anomalies_data, indent=2)}\n\n"
+            "Evaluate each timestamp out-of-sample. Determine the true magnitude of the 1-minute returns. "
+            "Note that a 0.05% move is tiny background ripple, while a 0.2% move is a significant micro-shock. "
+            "Clearly map out the actual cross-asset directionality without exaggerating minor numbers."
         ),
         expected_output="A step-by-step chronological telemetry breakdown showing the mathematical escalation of each anomaly event.",
         agent=quant_analyst
@@ -78,20 +81,17 @@ def run_agentic_risk_committee():
 
     briefing_task = Task(
         description=(
-            "Review the analyst's telemetry. Act as the CRO and generate a formal C-suite Investment Risk Report in Markdown. "
-            "Crucially, for each anomaly timestamp documented, you MUST provide a definitive execution verdict choosing from:\n"
-            "- **🔴 VERDICT: EMERGENCY DE-RISK** (If an asset crashes violently, threatening margin limits)\n"
-            "- **🟡 VERDICT: TACTICAL HEDGE** (If high-velocity cross-asset correlations threaten current portfolio balance)\n"
-            "- **🟢 VERDICT: OPPORTUNISTIC ENTRY** (If an anomaly represents an oversold price dislocation with stabilizing metrics)\n"
-            "- **⚪ VERDICT: MAINTAIN POSITION / HOLD** (If the anomaly is high-volume but within safe risk parameters)\n\n"
-            "Structure the report with clear headers: # MANTRA Executive Risk Briefing, ## Chronological Shock Logs & Operational Verdicts, and ## Strategic Hedging Framework."
+            "Review the analyst's telemetry. Generate a formal C-suite Investment Risk Report in Markdown. "
+            "For each timestamp, provide a definitive execution verdict choosing from: EMERGENCY DE-RISK, TACTICAL HEDGE, "
+            "OPPORTUNISTIC ENTRY, or MAINTAIN POSITION / HOLD. Ensure your text reflects the true scale of the data: "
+            "do not issue aggressive hedge commands for minor fractional fluctuations unless multiple assets show genuine correlation breaks. "
+            "Structure: # MANTRA Executive Risk Briefing, ## Chronological Shock Logs & Operational Verdicts, and ## Strategic Hedging Framework."
         ),
-        expected_output="A highly professional executive risk brief with explicit, time-stamped market verdicts in Markdown format.",
+        expected_output="A polished executive risk brief with realistic, time-stamped market verdicts in Markdown format.",
         agent=chief_risk_officer,
         output_file=OUTPUT_REPORT
     )
 
-    # Run the crew
     financial_crew = Crew(
         agents=[quant_analyst, chief_risk_officer],
         tasks=[analysis_task, briefing_task],
