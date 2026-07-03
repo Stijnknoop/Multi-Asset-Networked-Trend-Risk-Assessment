@@ -1,117 +1,60 @@
-import http.client
-import json
-import pandas as pd
 import os
-import argparse
-import sys
-from datetime import datetime
+import pandas as pd
+import matplotlib.pyplot as plt
 
-# --- Argument Parser ---
-parser = argparse.ArgumentParser(description='Fetch market data.')
-parser.add_argument('--epic', type=str, required=True, help='The EPIC symbol (e.g., OIL_CRUDE, GOLD, or UK100)')
-args = parser.parse_args()
+DATA_DIR = "data"
+OUTPUT_CSV = os.path.join(DATA_DIR, "master_market_data.csv")
+OUTPUT_PLOT = os.path.join(DATA_DIR, "market_trends.png")
 
-EPIC_SYMBOL = args.epic
-DATA_DIR = "data"  # Centrale datamap voor het project
+def process_and_align():
+    assets = ["OIL_CRUDE", "GOLD", "US500"]
+    dfs = {}
 
-# Globale tokens
-SECURITY_TOKEN = None
-CST = None
+    print("🔄 Starten met datakoppeling en uitlijning...")
 
-def load_credentials():
-    return {
-        "identifier": os.environ["IDENTIFIER"],
-        "password": os.environ["PASSWORD"],
-        "api_key": os.environ["X_CAP_API_KEY"]
-    }
+    # 1. Bestanden inlezen en voorbereiden
+    for asset in assets:
+        path = os.path.join(DATA_DIR, f"{asset}.csv")
+        if not os.path.exists(path):
+            print(f"⚠️ Geen data gevonden voor {asset}. Verwerking afgebroken.")
+            return
+        
+        df = pd.read_csv(path)
+        df['time'] = pd.to_datetime(df['time'])
+        df = df.sort_values('time')
+        
+        # Selecteer alleen de tijd en de sluitingsprijs, hernoem deze naar de asset-naam
+        df = df[['time', 'close_bid']].rename(columns={'close_bid': f'{asset}_close'})
+        dfs[asset] = df
 
-def tokens():
-    global SECURITY_TOKEN, CST
-    creds = load_credentials()
+    # 2. De magische 'pd.merge_asof' tijdsynchronisatie
+    master_df = dfs[assets[0]]
+    for asset in assets[1:]:
+        master_df = pd.merge_asof(master_df, dfs[asset], on='time', direction='backward')
+
+    # Sla de gecombineerde dataset op in 1 centrale CSV
+    master_df.to_csv(OUTPUT_CSV, index=False)
+    print(f"✅ Centrale master-tabel succesvol opgeslagen: {OUTPUT_CSV} ({len(master_df)} rijen)")
+
+    # 3. Grafiek genereren (3 gestapelde subplots vanwege de verschillende prijswaarden)
+    print("📊 Trends visualiseren en grafiek genereren...")
+    fig, axes = plt.subplots(3, 1, figsize=(12, 10), sharex=True)
+    colors = ['#d95f02', '#fdbf6f', '#1f78b4'] # Professioneel corporate/tech palette
     
-    conn = http.client.HTTPSConnection("api-capital.backend-capital.com")
-    payload = json.dumps({"identifier": creds['identifier'], "password": creds['password']})
-    headers = {"Content-Type": "application/json", "X-CAP-API-KEY": creds['api_key']}
-
-    conn.request("POST", "/api/v1/session", payload, headers)
-    res = conn.getresponse()
-    CST = res.getheader("CST")
-    SECURITY_TOKEN = res.getheader("X-SECURITY-TOKEN")
-    return SECURITY_TOKEN, CST
-
-def data_nu():
-    global SECURITY_TOKEN, CST
-    conn = http.client.HTTPSConnection("api-capital.backend-capital.com")
-    payload = ''
-    headers = {'X-SECURITY-TOKEN': SECURITY_TOKEN, 'CST': CST}
+    for i, asset in enumerate(assets):
+        axes[i].plot(master_df['time'], master_df[f'{asset}_close'], color=colors[i], label=f'{asset} Close Price', linewidth=1.5)
+        axes[i].set_title(f"{asset} Market Trend", fontsize=12, fontweight='bold', loc='left')
+        axes[i].set_ylabel("Price / Value", fontsize=10)
+        axes[i].grid(True, linestyle='--', alpha=0.5)
+        axes[i].legend(loc="upper left")
+        
+    plt.xlabel("Timestamp (UTC)", fontsize=11)
+    plt.gcf().autofmt_xdate() # Zorgt dat de datums op de X-as netjes schuin staan
+    plt.tight_layout()
     
-    resolution = "MINUTE"
-    max_candles = 1000
-    url = f"/api/v1/prices/{EPIC_SYMBOL}?resolution={resolution}&max={max_candles}"
-
-    conn.request("GET", url, payload, headers)
-    res = conn.getresponse()
-    
-    if res.status != 200:
-        print(f"❌ Fout bij ophalen data voor {EPIC_SYMBOL}: {res.status} {res.reason}")
-        sys.exit(1)
-
-    ohlc = json.loads(res.read().decode("utf-8"))
-    prices = ohlc.get('prices', [])
-
-    df = pd.json_normalize(prices)
-    if df.empty:
-        print(f"⚠️ Geen data ontvangen voor {EPIC_SYMBOL}")
-        return pd.DataFrame()
-
-    df = df[[  
-        'snapshotTime',
-        'openPrice.bid', 'highPrice.bid', 'lowPrice.bid', 'closePrice.bid',
-        'openPrice.ask', 'highPrice.ask', 'lowPrice.ask', 'closePrice.ask',
-        'lastTradedVolume'
-    ]]
-    df.columns = [
-        'time',
-        'open_bid', 'high_bid', 'low_bid', 'close_bid',
-        'open_ask', 'high_ask', 'low_ask', 'close_ask',
-        'volume'
-    ]
-    
-    # Zorg dat de tijdkolom als string of datetime consistent is voor de merge
-    df['time'] = pd.to_datetime(df['time']).dt.strftime('%Y-%m-%d %H:%M:%S')
-    return df
+    # Opslaan als PNG afbeelding
+    plt.savefig(OUTPUT_PLOT, dpi=300)
+    print(f"✅ Trend-afbeelding succesvol opgeslagen: {OUTPUT_PLOT}")
 
 if __name__ == "__main__":
-    print(f"🚀 Starten van data-ingestion voor: {EPIC_SYMBOL}")
-    
-    # Zorg dat de centrale data-map bestaat
-    if not os.path.exists(DATA_DIR):
-        os.makedirs(DATA_DIR)
-        print(f"📂 Centrale datamap aangemaakt: {DATA_DIR}")
-
-    # Haal tokens en nieuwe data op
-    tokens()
-    df_new = data_nu()
-
-    if not df_new.empty:
-        filename = os.path.join(DATA_DIR, f"{EPIC_SYMBOL}.csv")
-        
-        # Incrementele opslag-logica: controleren of bestand al bestaat
-        if os.path.exists(filename):
-            print(f"🔄 Bestaande data gevonden voor {EPIC_SYMBOL}. Samenvoegen en ontdubbelen...")
-            df_existing = pd.read_csv(filename)
-            
-            # Combineer oude en nieuwe data
-            df_combined = pd.concat([df_existing, df_new], ignore_index=True)
-        else:
-            print(f"📝 Geen bestaand bestand gevonden. Nieuwe tabel initialiseren voor {EPIC_SYMBOL}...")
-            df_combined = df_new
-
-        # --- HET MAGISCHE DATA ENGINEERING STUK ---
-        # Ontdubbel op basis van de unieke tijdstempels en sorteer chronologisch
-        df_combined = df_combined.drop_duplicates(subset=['time'], keep='last')
-        df_combined = df_combined.sort_values(by='time').reset_index(drop=True)
-
-        # Overschrijf de mastertabel met de geüpdatete en schone dataset
-        df_combined.to_csv(filename, index=False)
-        print(f"✅ Master-tabel succesvol bijgewerkt ({len(df_combined)} rijen totaal): {filename}")
+    process_and_align()
