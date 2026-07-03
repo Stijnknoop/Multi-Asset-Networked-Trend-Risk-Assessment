@@ -6,7 +6,7 @@ from sklearn.ensemble import IsolationForest
 
 PROCESSED_DIR = os.path.join("data", "processed")
 INPUT_CSV = os.path.join(PROCESSED_DIR, "master_market_data.csv")
-OUTPUT_CSV = os.path.join(PROCESSED_DIR, "master_market_data.csv") # Overwrite with ML features
+OUTPUT_CSV = os.path.join(PROCESSED_DIR, "master_market_data.csv") 
 OUTPUT_PLOT = os.path.join(PROCESSED_DIR, "anomaly_detection_report.png")
 
 def detect_market_anomalies():
@@ -17,7 +17,7 @@ def detect_market_anomalies():
         print(f"❌ ML Engine Aborted: Master data core not found at {INPUT_CSV}")
         return
 
-    # 1. Load data and calculate financial returns (percentage change per minute)
+    # 1. Load data and calculate financial returns
     df = pd.read_csv(INPUT_CSV)
     df['time'] = pd.to_datetime(df['time'])
     df = df.sort_values('time').reset_index(drop=True)
@@ -25,12 +25,11 @@ def detect_market_anomalies():
     assets = ["OIL_CRUDE", "GOLD", "US500"]
     feature_cols = []
 
-    # Drop early rows with NaNs caused by the rolling/shifting operations to keep clean feature vectors
+    # Drop early rows with NaNs to keep clean feature vectors
     df = df.dropna().copy()
 
     for asset in assets:
         return_col = f"{asset}_return"
-        # Calculate log returns or simple returns to normalize the pricing scale differences
         df[return_col] = df[f"{asset}_close"].pct_change()
         feature_cols.append(return_col)
 
@@ -41,16 +40,20 @@ def detect_market_anomalies():
         print("⚠️ Insufficient historical data depth to execute Isolation Forest inference.")
         return
 
-    # 2. Fit Isolation Forest
-    # contamination=0.01 maps to flagging the top 1% most volatile/extreme joint outliers
+    # 2. Configure and Fit Isolation Forest
     model = IsolationForest(contamination=0.01, random_state=42, n_estimators=100)
     
-    # Train and predict across the multi-asset return matrix
-    market_features = df[feature_cols]
+    # Extract underlying numpy matrix to completely prevent feature name warnings
+    market_features = df[feature_cols].values
+    
+    print("🏋️ Training Isolation Forest model on multi-asset matrix...")
+    model.fit(market_features)  # <--- FIXED: Model is now explicitly fitted first!
+    
+    # Execute inference
     df['anomaly_score'] = model.decision_function(market_features)
     predictions = model.predict(market_features)
     
-    # Map scikit-learn's output (-1: anomaly, 1: normal) to explicit flags (1: anomaly, 0: normal)
+    # Map scikit-learn outputs (-1: anomaly, 1: normal) to binary flags (1: anomaly, 0: normal)
     df['is_anomaly'] = np.where(predictions == -1, 1, 0)
     
     anomalies_count = df['is_anomaly'].sum()
@@ -68,12 +71,8 @@ def detect_market_anomalies():
     anomalies_df = df[df['is_anomaly'] == 1]
 
     for idx, asset in enumerate(assets):
-        # Plot continuous baseline price trend line
         axes[idx].plot(df['time'], df[f'{asset}_close'], color=graph_colors[idx], alpha=0.7, label=f'{asset} Baseline', linewidth=1.2)
-        
-        # Overlay structural anomaly intersections as bright red scattered nodes
         axes[idx].scatter(anomalies_df['time'], anomalies_df[f'{asset}_close'], color='red', s=25, label='Systemic Anomaly Flag', zorder=5)
-        
         axes[idx].set_title(f"MANTRA Diagnostic Node: {asset} Anomalies Over Time", fontsize=11, fontweight='bold', loc='left')
         axes[idx].set_ylabel("Index Valuation", fontsize=9)
         axes[idx].grid(True, linestyle=':', alpha=0.5)
