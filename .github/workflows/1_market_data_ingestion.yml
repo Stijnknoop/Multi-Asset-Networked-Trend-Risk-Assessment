@@ -1,0 +1,56 @@
+name: MANTRA Market Data Ingestion
+
+on:
+  schedule:
+    - cron: '0 * * * 1-5' # Every hour, Mon-Fri
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  ingest-and-align:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Data Ingestion
+      env:
+        IDENTIFIER: ${{ secrets.IDENTIFIER }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        X_CAP_API_KEY: ${{ secrets.X_CAP_API_KEY }}
+      run: |
+        python src/data_ingestion.py --epic OIL_CRUDE
+        python src/data_ingestion.py --epic GOLD
+        python src/data_ingestion.py --epic US500
+
+    - name: Execute Data Processing (Merge)
+      run: |
+        python src/data_processing.py
+
+    - name: Commit and Push Raw & Master Data
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add data/
+        if git diff --staged --quiet; then
+          echo "⚠️ No new variations. Skipping commit."
+        else
+          git commit -m "📊 Data Core Sync: Raw feeds & Master CSV updated [Skip CI]"
+          git pull origin main --rebase
+          git push origin main
+        fi
