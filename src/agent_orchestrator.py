@@ -32,7 +32,7 @@ def run_agentic_risk_committee():
 
     # Configure Gemini 1.5 Flash for cost-efficient, high-speed text generation
     gemini_llm = LLM(
-        model="gemini/gemini-1.5-flash",
+        model="gemini/gemini-2.5-flash",
         api_key=os.environ["GEMINI_API_KEY"],
         temperature=0.15 # Low temperature to enforce strict mathematical/logical consistency
     )
