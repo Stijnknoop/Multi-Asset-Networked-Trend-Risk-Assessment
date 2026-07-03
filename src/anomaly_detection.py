@@ -74,7 +74,7 @@ def detect_market_anomalies():
     df.to_csv(OUTPUT_CSV, index=False)
 
     # =========================================================================
-    # ⚡ NEW: TEMPORAL CLUSTERING ALGORITHM (Group consecutive anomalies)
+    # ⚡ TEMPORAL CLUSTERING ALGORITHM
     # =========================================================================
     print("📝 Grouping persistent anomaly clusters into single Macro Shock Events...")
     active_rolling_df = df.iloc[WINDOW_SIZE:].reset_index(drop=True)
@@ -85,8 +85,6 @@ def detect_market_anomalies():
     if anomalies_indices:
         clusters = []
         current_cluster = [anomalies_indices[0]]
-        
-        # Max gap allowed between anomalies to consider them part of the same wave (10 minutes)
         MAX_GAP_MINUTES = 10 
         
         for idx in anomalies_indices[1:]:
@@ -98,11 +96,8 @@ def detect_market_anomalies():
                 current_cluster = [idx]
         clusters.append(current_cluster)
         
-        # Parse each cluster into a high-level corporate event summary
         for event_id, cluster in enumerate(clusters, start=1):
             cluster_df = active_rolling_df.loc[cluster]
-            
-            # Extract peak metrics during this specific volatility wave
             peak_row = cluster_df.loc[cluster_df['anomaly_score_rolling'].idxmin()]
             
             event_entry = {
@@ -128,10 +123,14 @@ def detect_market_anomalies():
     print(f"✅ Aggregated Event Risk Ledger exported ({len(json_payload)} macro events): {OUTPUT_JSON}")
 
     # =========================================================================
-    # 📊 PLOT GENERATION ( dashboards blijven intact)
+    # 📊 DASHBOARD GENERATION (FIXED: Definitions added)
     # =========================================================================
     print("📊 Constructing comparative 6-panel verification dashboard...")
     fig, axes = plt.subplots(3, 2, figsize=(16, 16))
+    
+    # FIX: Hier zijn de ontbrekende variabelen netjes gedefinieerd!
+    batch_anomalies = df[df['is_anomaly_batch'] == 1]
+    rolling_anomalies_df = df[df['is_anomaly_rolling'] == 1]
     normal_df = df[(df['is_anomaly_batch'] == 0) & (df['is_anomaly_rolling'] == 0)]
 
     axes[0, 0].scatter(normal_df['US500_return'] * 100, normal_df['OIL_CRUDE_return'] * 100, color='gray', alpha=0.3, s=15, label='Normal Ticks')
@@ -178,6 +177,7 @@ def detect_market_anomalies():
     plt.savefig(OUTPUT_COMPARE_PLOT, dpi=300)
     plt.close()
 
+    print("📊 Generating standalone Out-of-Sample Rolling Window Report...")
     fig_roll, axes_roll = plt.subplots(3, 1, figsize=(14, 12), sharex=True)
     asset_colors = ['#d95f02', '#fdbf6f', '#1f78b4']
     asset_labels = ['OIL_CRUDE ($)', 'GOLD ($)', 'US500 Index']
