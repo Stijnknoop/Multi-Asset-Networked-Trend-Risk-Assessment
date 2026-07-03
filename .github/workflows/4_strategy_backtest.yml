@@ -5,7 +5,7 @@ on:
     workflows: ["MANTRA Market Analytics & ML"]
     types:
       - completed
-  workflow_dispatch: # Zorgt dat je hem ook altijd handmatig kunt starten
+  workflow_dispatch: # Allows manual triggering anytime
 
 jobs:
   execute-backtest:
@@ -33,25 +33,26 @@ jobs:
 
     - name: Run Multi-Strategy Backtest Simulator
       run: |
-        # Voert de backtest uit op de master_market_data matrices
+        # Executes the backtest and targets the new data/backtest_results directory
         python src/backtest_engine.py
 
     - name: Publish Performance to GitHub Summary
       run: |
-        # Dit injecteert het gegenereerde rapport direct in de GitHub Actions UI startpagina!
-        cat data/analyzed/backtest_performance.md >> $GITHUB_STEP_SUMMARY
+        # Inject the report from the new path into the GitHub Actions UI
+        cat data/backtest_results/backtest_performance.md >> $GITHUB_STEP_SUMMARY
 
     - name: Commit and Push Strategy Artifacts
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        git add data/analyzed/backtest_performance.md
+        # Track and stage the new dedicated backtest directory
+        git add data/backtest_results/
         
         if git diff --staged --quiet; then
           echo "⚠️ No changes in quantitative strategy returns detected."
         else
-          git commit -m "📊 Quantitative Strategy Sync: Multi-strategy performance ledger updated [Skip CI]"
+          git commit -m "📊 Quantitative Strategy Sync: Backtest results repository updated [Skip CI]"
           git pull origin main --rebase
           git push origin main
           echo "✅ Backtest simulation ledger successfully synced with repository."
