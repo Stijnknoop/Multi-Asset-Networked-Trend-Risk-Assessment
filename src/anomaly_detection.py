@@ -77,11 +77,10 @@ def detect_market_anomalies():
     df.to_csv(OUTPUT_CSV, index=False)
 
     # =========================================================================
-    # 🧾 JSON EXTRACTION FOR AI RISK COMMITTEE (Fixed Variable Definitions)
+    # 🧾 JSON EXTRACTION FOR AI RISK COMMITTEE
     # =========================================================================
     print("📝 Extracting active out-of-sample rolling anomalies into JSON ledger...")
     
-    # Isolate active out-of-sample rolling anomaly observations
     active_rolling_df = df.iloc[window_size:].reset_index(drop=True)
     active_anomalies = active_rolling_df[active_rolling_df['is_anomaly_rolling'] == 1]
     
@@ -115,7 +114,7 @@ def detect_market_anomalies():
     print(f"✅ AI-Agent Risk Ledger successfully exported ({len(json_payload)} entries): {OUTPUT_JSON}")
 
     # =========================================================================
-    # 📊 DASHBOARD GENERATION (Removed Emojis to Prevent Linux Font Glyphs Errors)
+    # 📊 DASHBOARD GENERATION (Zonder Emojis in labels)
     # =========================================================================
     print("📊 Constructing comparative 6-panel anomaly verification dashboard...")
     fig, axes = plt.subplots(3, 2, figsize=(16, 16))
