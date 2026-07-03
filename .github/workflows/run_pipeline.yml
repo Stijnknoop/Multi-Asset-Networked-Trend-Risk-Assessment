@@ -1,0 +1,65 @@
+name: MANTRA Market Data Ingestion
+
+on:
+  schedule:
+    # Dit draait de pipeline elk uur (op het hele uur) van maandag t/m vrijdag
+    - cron: '0 * * * 1-5'
+  workflow_dispatch:
+    # Hiermee kun je de pipeline op elk gewenst moment handmatig starten via de GitHub UI
+
+jobs:
+  ingest-data:
+    runs-on: ubuntu-latest
+    
+    # Geef GitHub toestemming om wijzigingen terug te pushen naar je repository
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Haal de volledige geschiedenis op om rebase-conflicten te voorkomen
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip' # Slaat downloads op voor snellere opeenvolgende runs
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas
+
+    - name: Run Data Ingestion for Market Assets
+      env:
+        IDENTIFIER: ${{ secrets.IDENTIFIER }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        X_CAP_API_KEY: ${{ secrets.X_CAP_API_KEY }}
+      run: |
+        # Voer het script opeenvolgend uit voor je gewenste assets
+        # Pas de --epic codes aan op basis van de exacte Capital.com symbolen die je gebruikt
+        python src/data_ingestion.py --epic OIL_CRUDE
+        python src/data_ingestion.py --epic GOLD
+        python src/data_ingestion.py --epic US500
+
+    - name: Commit and Push Updated Data
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Zorg dat de runner de allerlaatste status heeft voordat we pushen
+        git pull origin main --rebase
+        
+        # Voeg de data map toe
+        git add data/
+        
+        # Alleen committen als er daadwerkelijk nieuwe rijen zijn toegevoegd
+        if git diff --quiet && git diff --staged --quiet; then
+          echo "⚠️ Geen nieuwe data om te committen."
+        else
+          git commit -m "📊 Automated data ingestion: $(date -u +'%Y-%m-%d %H:%M:%S') UTC"
+          git push origin main
+          echo "✅ Nieuwe data succesvol gepusht naar de repository!"
+        fi
