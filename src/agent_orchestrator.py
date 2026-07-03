@@ -33,7 +33,7 @@ def run_agentic_risk_committee():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     gemini_llm = LLM(
-        model="gemini/gemini-2.0-flash", 
+        model="gemini/gemini-2.5-flash", 
         api_key=os.environ["GEMINI_API_KEY"],
         temperature=0.10
     )
