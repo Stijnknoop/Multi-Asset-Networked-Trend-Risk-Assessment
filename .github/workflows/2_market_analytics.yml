@@ -1,0 +1,50 @@
+name: MANTRA Market Analytics & ML
+
+on:
+  workflow_run:
+    workflows: ["MANTRA Market Data Ingestion"]
+    types:
+      - completed
+  workflow_dispatch: # Zodat je hem ook altijd zelf handmatig kunt starten
+
+jobs:
+  machine-learning:
+    # Voer dit alleen uit als de vorige workflow daadwerkelijk geslaagd is (en niet gecrasht)
+    if: ${{ gitea && github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Execute Machine Learning Anomaly Detection
+      run: |
+        python src/anomaly_detection.py
+
+    - name: Commit and Push ML Artifacts
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add data/processed/
+        if git diff --staged --quiet; then
+          echo "⚠️ No new ML insights or report variations detected."
+        else
+          git commit -m "🧠 ML Inference Sync: Anomaly detection vectors and graphics updated"
+          git pull origin main --rebase
+          git push origin main
+        fi
