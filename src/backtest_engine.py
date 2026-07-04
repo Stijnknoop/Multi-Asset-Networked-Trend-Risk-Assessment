@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 INPUT_CSV = os.path.join("data", "analyzed", "analyzed_market_data.csv")
 OUTPUT_DIR = os.path.join("data", "backtest_results")
 OUTPUT_MD = os.path.join(OUTPUT_DIR, "backtest_performance.md")
-# NIEUW ARTIFACT: De grafiek die de trades visueel onderbouwt
 OUTPUT_PLOT = os.path.join(OUTPUT_DIR, "backtest_chart.png")
 
 def run_multi_strategy_backtest():
@@ -30,7 +29,8 @@ def run_multi_strategy_backtest():
     trade_count = 0
     cooldown_counter = 0
     
-    # NIEUW: Tracker om de PnL-ontwikkeling per trade vast te leggen voor de grafiek
+    # NIEUW: Tellers om bij te houden welke specifieke assets er zijn gehandeld
+    asset_counts = {"US500": 0, "GOLD": 0, "OIL_CRUDE": 0}
     trade_history = []
 
     print(f"📈 Analyzing time-series anomalies ({len(df)} bars)...")
@@ -49,6 +49,10 @@ def run_multi_strategy_backtest():
             returns_at_trigger = {asset: df.loc[i, f"{asset}_return"] for asset in assets}
             catalyst_asset = max(returns_at_trigger, key=lambda k: abs(returns_at_trigger[k]))
             trigger_return = returns_at_trigger[catalyst_asset]
+            
+            # NIEUW: Hoog de teller op voor de asset die daadwerkelijk is gehandeld
+            if catalyst_asset in asset_counts:
+                asset_counts[catalyst_asset] += 1
             
             # Calculate future performance
             price_at_trigger = df.loc[i, f"{catalyst_asset}_close"]
@@ -69,12 +73,11 @@ def run_multi_strategy_backtest():
                 strat2_pnl = -future_return
             pnl_momentum += strat2_pnl
 
-            # Sla de statistieken van deze specifieke trade op
             trade_history.append({
                 "time": df.loc[i, 'time'],
                 "asset": catalyst_asset,
-                "mr_trade_return": strat1_pnl * 100,   # in procenten
-                "mom_trade_return": strat2_pnl * 100, # in procenten
+                "mr_trade_return": strat1_pnl * 100,   
+                "mom_trade_return": strat2_pnl * 100, 
                 "mr_cum_pnl": pnl_mean_reversion * 100,
                 "mom_cum_pnl": pnl_momentum * 100
             })
@@ -88,17 +91,14 @@ def run_multi_strategy_backtest():
     best_pnl = results[best_strat] * 100
 
     # =========================================================================
-    # 📊 NIEUW: GENEREEER DE STRATEGIE PERFORMANCE GRAFIEK
+    # 📊 GENEREEER DE STRATEGIE PERFORMANCE GRAFIEK
     # =========================================================================
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
     if trade_history:
-        print("📊 Constructing quantitative equity curves and trade logs...")
         trade_df = pd.DataFrame(trade_history)
-        
         fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))
         
-        # Panel 1: De Equity Curve (Het verloop over de tijd)
         ax1.plot(trade_df['time'], trade_df['mr_cum_pnl'], label='🔄 Strategy 1: Mean-Reversion Spread', color='#2ca02c', marker='o', linewidth=2)
         ax1.plot(trade_df['time'], trade_df['mom_cum_pnl'], label='🚀 Strategy 2: Momentum Breakout', color='#d62728', marker='x', linestyle='--', linewidth=1.5)
         ax1.set_title("MANTRA Strategy Performance: Cumulative Equity Curve Evolution", fontsize=12, fontweight='bold', loc='left')
@@ -106,7 +106,6 @@ def run_multi_strategy_backtest():
         ax1.grid(True, linestyle=':', alpha=0.6)
         ax1.legend(loc="upper left")
         
-        # Panel 2: Losse trade returns van de winnende Mean-Reversion strategie
         colors = ['#2ca02c' if x > 0 else '#d62728' for x in trade_df['mr_trade_return']]
         time_labels = trade_df['time'].dt.strftime('%m-%d %H:%M')
         
@@ -121,11 +120,8 @@ def run_multi_strategy_backtest():
         plt.tight_layout()
         plt.savefig(OUTPUT_PLOT, dpi=300)
         plt.close()
-        print(f"✅ Performance chart successfully saved to: {OUTPUT_PLOT}")
-    else:
-        print("⚠️ No trades recorded. Skipping plot generation.")
 
-    # 4. Compile Corporate Markdown Report (Inclusief automatische afbeelding-link!)
+    # 4. Compile Corporate Markdown Report (NIEUW: Inclusief Asset Breakdown sectie!)
     report_content = f"""# 📊 MANTRA Quantitative Pilot Simulation
     
 This automated research node evaluates the directionality of asset prices immediately following a detected rolling anomaly cluster.
@@ -134,6 +130,11 @@ This automated research node evaluates the directionality of asset prices immedi
 * **Captured Anomaly Signals (Post-Cooldown):** {trade_count}
 * **Position Holding Horizon:** {holding_period} Minutes
 * **Data Scale Basis:** Standard Closing Mid-Prices (Proof of Concept)
+
+### 📦 Asset Class Exposure (What was traded?)
+* **🇺🇸 US500 (S&P 500 Index):** {asset_counts['US500']} trades executed
+* **👑 GOLD Spot:** {asset_counts['GOLD']} trades executed
+* **🛢️ OIL_CRUDE Spot:** {asset_counts['OIL_CRUDE']} trades executed
     
 ### 📈 Directional Leaderboard
 | Directional Strategy | Total Simulated PnL (%) | Baseline Status |
