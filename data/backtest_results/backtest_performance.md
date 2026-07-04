@@ -1,6 +1,6 @@
 # 📊 MANTRA Quantitative Pilot Simulation
     
-This automated research node evaluates the directionality of asset prices immediately following a detected rolling anomaly cluster. 
+This automated research node evaluates the directionality of asset prices immediately following a detected rolling anomaly cluster.
     
 ### 🔬 Pilot Parameters
 * **Captured Anomaly Signals (Post-Cooldown):** 9
@@ -13,5 +13,12 @@ This automated research node evaluates the directionality of asset prices immedi
 | **🔄 Strategy 1: Mean-Reversion Spread** | +0.7501% | 🟢 Positive Horizon |
 | **🚀 Strategy 2: Momentum Breakout** | -0.7501% | 🔴 Negative Horizon |
     
-### 🏁 Pilot Verdict
+### 🏁 Research Verdict
 > **MARKET CHARACTERISTIC:** Following an isolation shock, the asset pricing registry historically favors the **Mean-Reversion Spread** framework (Gross Return: +0.750%). *Note: This baseline pilot model excludes transactional spreads and execution slippage.*
+
+---
+
+### 📉 Visual Backtest Audit Ledger
+Below is the verified performance data logging the equity path and structural distribution of the individual position yields.
+
+![MANTRA Strategy Performance Chart](backtest_chart.png)
