@@ -6,6 +6,11 @@ This automated research node evaluates the directionality of asset prices immedi
 * **Captured Anomaly Signals (Post-Cooldown):** 9
 * **Position Holding Horizon:** 15 Minutes
 * **Data Scale Basis:** Standard Closing Mid-Prices (Proof of Concept)
+
+### 📦 Asset Class Exposure (What was traded?)
+* **🇺🇸 US500 (S&P 500 Index):** 0 trades executed
+* **👑 GOLD Spot:** 1 trades executed
+* **🛢️ OIL_CRUDE Spot:** 8 trades executed
     
 ### 📈 Directional Leaderboard
 | Directional Strategy | Total Simulated PnL (%) | Baseline Status |
