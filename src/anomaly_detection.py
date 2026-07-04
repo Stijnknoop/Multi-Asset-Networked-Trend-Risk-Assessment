@@ -14,7 +14,8 @@ OUTPUT_COMPARE_PLOT = os.path.join(ANALYZED_DIR, "anomaly_diagnostic_dashboard.p
 OUTPUT_ROLLING_PLOT = os.path.join(ANALYZED_DIR, "rolling_anomaly_report.png")
 OUTPUT_JSON = os.path.join(ANALYZED_DIR, "rolling_anomalies.json")
 
-AGGREGATION_MINUTES = 5  
+# COGNITIEVE UPGRADE: We kijken nu naar 15-minuten overlappende macro-rendementen
+AGGREGATION_MINUTES = 15  
 WINDOW_SIZE = 240        
 
 def detect_market_anomalies():
@@ -123,12 +124,11 @@ def detect_market_anomalies():
     print(f"✅ Aggregated Event Risk Ledger exported ({len(json_payload)} macro events): {OUTPUT_JSON}")
 
     # =========================================================================
-    # 📊 DASHBOARD GENERATION (FIXED: Definitions added)
+    # 📊 DASHBOARD GENERATION
     # =========================================================================
     print("📊 Constructing comparative 6-panel verification dashboard...")
     fig, axes = plt.subplots(3, 2, figsize=(16, 16))
     
-    # FIX: Hier zijn de ontbrekende variabelen netjes gedefinieerd!
     batch_anomalies = df[df['is_anomaly_batch'] == 1]
     rolling_anomalies_df = df[df['is_anomaly_rolling'] == 1]
     normal_df = df[(df['is_anomaly_batch'] == 0) & (df['is_anomaly_rolling'] == 0)]
