@@ -311,7 +311,7 @@
     "ticks_in_cluster": 1,
     "peak_telemetry": {
       "peak_timestamp_utc": "2026-07-07 01:31:00",
-      "worst_isolation_score": -0.0009866879883211332
+      "worst_isolation_score": -0.0009866879883212443
     },
     "macro_peak_market_returns": {
       "US500_max_return_pct": -0.021208626608881787,
@@ -343,7 +343,7 @@
     "ticks_in_cluster": 11,
     "peak_telemetry": {
       "peak_timestamp_utc": "2026-07-07 02:40:00",
-      "worst_isolation_score": -0.0680253063262205
+      "worst_isolation_score": -0.06802530632622061
     },
     "macro_peak_market_returns": {
       "US500_max_return_pct": -0.13254161806807163,
@@ -359,7 +359,7 @@
     "ticks_in_cluster": 5,
     "peak_telemetry": {
       "peak_timestamp_utc": "2026-07-07 03:19:00",
-      "worst_isolation_score": -0.04140089491476029
+      "worst_isolation_score": -0.0414008949147604
     },
     "macro_peak_market_returns": {
       "US500_max_return_pct": -0.02918662191384591,
