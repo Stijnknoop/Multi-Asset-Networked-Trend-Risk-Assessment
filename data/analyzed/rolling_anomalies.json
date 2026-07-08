@@ -642,15 +642,15 @@
   {
     "event_id": 41,
     "wave_start_utc": "2026-07-08 10:16:00",
-    "wave_end_utc": "2026-07-08 10:30:00",
-    "total_duration_minutes": 15,
-    "ticks_in_cluster": 15,
+    "wave_end_utc": "2026-07-08 10:36:00",
+    "total_duration_minutes": 21,
+    "ticks_in_cluster": 19,
     "peak_telemetry": {
       "peak_timestamp_utc": "2026-07-08 10:17:00",
       "worst_isolation_score": -0.19940657872050205
     },
     "macro_peak_market_returns": {
-      "US500_max_return_pct": -0.7099202006992433,
+      "US500_max_return_pct": -0.6725559796098235,
       "OIL_CRUDE_max_return_pct": 3.0900283948555263,
       "GOLD_max_return_pct": -0.8534643467453806
     }
