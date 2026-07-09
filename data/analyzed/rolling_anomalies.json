@@ -798,5 +798,69 @@
       "OIL_CRUDE_max_return_pct": -0.10115723881201077,
       "GOLD_max_return_pct": 0.17161032620756078
     }
+  },
+  {
+    "event_id": 51,
+    "wave_start_utc": "2026-07-09 07:11:00",
+    "wave_end_utc": "2026-07-09 07:11:00",
+    "total_duration_minutes": 1,
+    "ticks_in_cluster": 1,
+    "peak_telemetry": {
+      "peak_timestamp_utc": "2026-07-09 07:11:00",
+      "worst_isolation_score": -0.02258724859930994
+    },
+    "macro_peak_market_returns": {
+      "US500_max_return_pct": 0.05734556705430105,
+      "OIL_CRUDE_max_return_pct": -0.25612682321857205,
+      "GOLD_max_return_pct": 0.27445343152940893
+    }
+  },
+  {
+    "event_id": 52,
+    "wave_start_utc": "2026-07-09 07:31:00",
+    "wave_end_utc": "2026-07-09 07:47:00",
+    "total_duration_minutes": 17,
+    "ticks_in_cluster": 11,
+    "peak_telemetry": {
+      "peak_timestamp_utc": "2026-07-09 07:32:00",
+      "worst_isolation_score": -0.04571484223645006
+    },
+    "macro_peak_market_returns": {
+      "US500_max_return_pct": 0.1295025499986613,
+      "OIL_CRUDE_max_return_pct": -0.9752882144827058,
+      "GOLD_max_return_pct": 0.24740848222519762
+    }
+  },
+  {
+    "event_id": 53,
+    "wave_start_utc": "2026-07-09 07:58:00",
+    "wave_end_utc": "2026-07-09 08:02:00",
+    "total_duration_minutes": 5,
+    "ticks_in_cluster": 4,
+    "peak_telemetry": {
+      "peak_timestamp_utc": "2026-07-09 08:00:00",
+      "worst_isolation_score": -0.06428407008506143
+    },
+    "macro_peak_market_returns": {
+      "US500_max_return_pct": 0.12270593256509255,
+      "OIL_CRUDE_max_return_pct": -1.0058857911835362,
+      "GOLD_max_return_pct": 0.5635731074788097
+    }
+  },
+  {
+    "event_id": 54,
+    "wave_start_utc": "2026-07-09 08:13:00",
+    "wave_end_utc": "2026-07-09 08:13:00",
+    "total_duration_minutes": 1,
+    "ticks_in_cluster": 1,
+    "peak_telemetry": {
+      "peak_timestamp_utc": "2026-07-09 08:13:00",
+      "worst_isolation_score": -0.001816684293032833
+    },
+    "macro_peak_market_returns": {
+      "US500_max_return_pct": -0.00799520287827482,
+      "OIL_CRUDE_max_return_pct": 0.6384994576187353,
+      "GOLD_max_return_pct": 0.22655465477969816
+    }
   }
 ]
