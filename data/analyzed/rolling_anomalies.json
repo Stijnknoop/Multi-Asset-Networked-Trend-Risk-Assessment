@@ -1582,5 +1582,21 @@
       "OIL_CRUDE_max_return_pct": 0.8255920944830297,
       "GOLD_max_return_pct": -0.1964831500813724
     }
+  },
+  {
+    "event_id": 100,
+    "wave_start_utc": "2026-07-14 10:07:00",
+    "wave_end_utc": "2026-07-14 10:09:00",
+    "total_duration_minutes": 3,
+    "ticks_in_cluster": 3,
+    "peak_telemetry": {
+      "peak_timestamp_utc": "2026-07-14 10:07:00",
+      "worst_isolation_score": -0.04869670679114246
+    },
+    "macro_peak_market_returns": {
+      "US500_max_return_pct": -0.11042814188020333,
+      "OIL_CRUDE_max_return_pct": 1.0117159201618708,
+      "GOLD_max_return_pct": -0.2305475504322696
+    }
   }
 ]
