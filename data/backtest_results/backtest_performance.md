@@ -3,23 +3,23 @@
 This automated research node evaluates the directionality of asset prices immediately following a detected rolling anomaly cluster.
     
 ### 🔬 Pilot Parameters
-* **Captured Anomaly Signals (Post-Cooldown):** 127
+* **Captured Anomaly Signals (Post-Cooldown):** 131
 * **Position Holding Horizon:** 15 Minutes
 * **Data Scale Basis:** Standard Closing Mid-Prices (Proof of Concept)
 
 ### 📦 Asset Class Exposure (What was traded?)
 * **🇺🇸 US500 (S&P 500 Index):** 6 trades executed
-* **👑 GOLD Spot:** 24 trades executed
-* **🛢️ OIL_CRUDE Spot:** 97 trades executed
+* **👑 GOLD Spot:** 26 trades executed
+* **🛢️ OIL_CRUDE Spot:** 99 trades executed
     
 ### 📈 Directional Leaderboard
 | Directional Strategy | Total Simulated PnL (%) | Baseline Status |
 | :--- | :--- | :--- |
-| **🔄 Strategy 1: Mean-Reversion Spread** | -3.9996% | 🔴 Negative Horizon |
-| **🚀 Strategy 2: Momentum Breakout** | +3.9996% | 🟢 Positive Horizon |
+| **🔄 Strategy 1: Mean-Reversion Spread** | -3.6663% | 🔴 Negative Horizon |
+| **🚀 Strategy 2: Momentum Breakout** | +3.6663% | 🟢 Positive Horizon |
     
 ### 🏁 Research Verdict
-> **MARKET CHARACTERISTIC:** Following an isolation shock, the asset pricing registry historically favors the **Momentum Breakout** framework (Gross Return: +4.000%). *Note: This baseline pilot model excludes transactional spreads and execution slippage.*
+> **MARKET CHARACTERISTIC:** Following an isolation shock, the asset pricing registry historically favors the **Momentum Breakout** framework (Gross Return: +3.666%). *Note: This baseline pilot model excludes transactional spreads and execution slippage.*
 
 ---
 
