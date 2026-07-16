@@ -1,543 +1,680 @@
 # MANTRA Executive Risk Briefing
 
-As Chief Risk Officer, my mandate is to provide clear, actionable verdicts on aggregated market shock events, ensuring the fund's resilience and strategic positioning. This report consolidates the analysis of recent volatility waves, focusing on their systemic impact and our definitive operational response. Our approach prioritizes capital preservation during severe downturns, tactical adjustments for moderate risks, and opportunistic deployment during positive momentum, while maintaining core positions through minor fluctuations.
+This report provides a consolidated review of recent macro shock events, moving beyond granular minute-by-minute analysis to focus on aggregated volatility waves. For each unique Event ID, a definitive operational risk verdict is issued, guiding our strategic posture. Our objective is to ensure explicit, high-level directives for managing portfolio exposure and capitalizing on market shifts.
 
 ## Chronological Shock Logs & Operational Verdicts
 
 **Event ID: 1**
-*   Analysis: Structural decoupling with US500 showing resilience amidst negative moves in commodities. Severity is moderate, but our core equity position is stable.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-03 08:09:00 to 2026-07-03 08:17:00 (9 minutes)
+  Analysis: Moderate severity structural decoupling, with OIL_CRUDE driving negative returns while US500 shows positive movement. The overall market impact is contained.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 2**
-*   Analysis: A synchronized positive momentum wave across all assets, albeit with low-moderate severity. Indicates broad market strength.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-03 08:37:00 to 2026-07-03 08:42:00 (6 minutes)
+  Analysis: Low severity event characterized by synchronized positive momentum across all key assets, indicating a broad upward trend.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 3**
-*   Analysis: A synchronized negative momentum wave with moderate-high severity and negative returns across all key assets. Requires defensive action.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-03 09:11:00 to 2026-07-03 09:22:00 (12 minutes)
+  Analysis: High-moderate severity event with synchronized negative momentum across all assets, including US500. This suggests a broader market downturn requiring defensive action.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 4**
-*   Analysis: Low severity structural decoupling. US500 is only marginally negative, while other assets show positive movement.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-03 10:12:00 to 2026-07-03 10:13:00 (2 minutes)
+  Analysis: Low severity structural decoupling. While US500 is slightly negative, OIL_CRUDE and GOLD show positive returns, indicating no systemic threat.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 5**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, despite a strong positive move in OIL_CRUDE. This divergence warrants caution for equity exposure.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-03 10:48:00 to 2026-07-03 10:52:00 (5 minutes)
+  Analysis: Moderate severity structural decoupling. US500 is negative, but a strong positive surge in OIL_CRUDE suggests a localized commodity dynamic rather than broad market distress.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 6**
-*   Analysis: Low severity, short-duration structural decoupling. US500 is negative but the overall impact is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-03 14:21:00 to 2026-07-03 14:21:00 (1 minute)
+  Analysis: Low severity, short-duration structural decoupling. Minor negative in US500 is offset by positive OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 7**
-*   Analysis: Moderate-high severity structural decoupling. US500 is only slightly negative, demonstrating resilience against strong commodity movements.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-03 15:05:00 to 2026-07-03 15:14:00 (10 minutes)
+  Analysis: High-moderate severity structural decoupling. US500 shows negligible negative movement, while OIL_CRUDE is strongly positive.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 8**
-*   Analysis: Very low severity structural decoupling with negligible impact on US500.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-03 16:08:00 to 2026-07-03 16:08:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Minor fluctuations with no significant market impact.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 9**
-*   Analysis: Moderate-high severity structural decoupling where US500 is positive despite a negative primary driver. Beneficial divergence.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-03 16:23:00 to 2026-07-03 16:24:00 (2 minutes)
+  Analysis: Moderate-high severity structural decoupling. US500 and GOLD are positive, mitigating the negative impact from OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 10**
-*   Analysis: Low severity structural decoupling. US500 is slightly positive, benefiting from the negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-06 00:06:00 to 2026-07-06 00:14:00 (9 minutes)
+  Analysis: Very low severity structural decoupling. Significant negative movement in OIL_CRUDE is balanced by positive returns in US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 11**
-*   Analysis: Moderate severity structural decoupling. US500 is positive, indicating resilience against a strong negative move in GOLD.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-06 01:47:00 to 2026-07-06 01:55:00 (9 minutes)
+  Analysis: Moderate severity structural decoupling. US500 is positive, while GOLD shows a significant negative move. The impact is localized.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 12**
-*   Analysis: Moderate severity structural decoupling with positive returns in US500 and OIL_CRUDE. Indicates positive market sentiment.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-06 02:07:00 to 2026-07-06 02:17:00 (11 minutes)
+  Analysis: Low-moderate severity structural decoupling. Strong positive returns in US500 and OIL_CRUDE, despite negative GOLD, indicate a bullish trend in key sectors.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 13**
-*   Analysis: Moderate-high severity structural decoupling. US500 is slightly negative, but strong positive moves in OIL and GOLD suggest underlying market strength.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-06 03:13:00 to 2026-07-06 03:16:00 (4 minutes)
+  Analysis: High-moderate severity structural decoupling. Strong positive returns in OIL_CRUDE and GOLD outweigh a minor negative in US500.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 14**
-*   Analysis: Low severity structural decoupling. US500 is negative, but the overall event stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-06 03:52:00 to 2026-07-06 03:54:00 (3 minutes)
+  Analysis: Very low severity structural decoupling. A strong positive in OIL_CRUDE mitigates negative movements in US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 15**
-*   Analysis: Low severity structural decoupling. US500 and GOLD are positive, benefiting from negative OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-06 08:28:00 to 2026-07-06 08:37:00 (10 minutes)
+  Analysis: Low severity structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 16**
-*   Analysis: High severity structural decoupling. US500 is positive, demonstrating strong resilience despite a significant negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-06 09:41:00 to 2026-07-06 09:52:00 (12 minutes)
+  Analysis: High severity structural decoupling. Significant negative movement in OIL_CRUDE is balanced by positive returns in US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 17**
-*   Analysis: Low severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-06 10:16:00 to 2026-07-06 10:16:00 (1 minute)
+  Analysis: Low severity, short-duration structural decoupling. Mixed asset performance with no clear systemic risk.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 18**
-*   Analysis: High severity synchronized negative momentum wave across all assets. Requires a defensive posture.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-06 14:22:00 to 2026-07-06 14:34:00 (13 minutes)
+  Analysis: High severity event with synchronized negative momentum across all assets, particularly pronounced in OIL_CRUDE. This indicates a significant market downturn.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 19**
-*   Analysis: Very high severity synchronized positive momentum wave. All assets show strong positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-06 15:19:00 to 2026-07-06 15:34:00 (16 minutes)
+  Analysis: Very high severity event, but driven by strong synchronized positive momentum across all assets. This presents a clear upward opportunity.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 20**
-*   Analysis: Negligible severity structural decoupling with minimal market impact.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-07 01:31:00 to 2026-07-07 01:31:00 (1 minute)
+  Analysis: Extremely low severity, short-duration structural decoupling. Minor fluctuations with no material impact.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 21**
-*   Analysis: Low-moderate severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-07 01:57:00 to 2026-07-07 02:12:00 (16 minutes)
+  Analysis: Low severity structural decoupling. Mixed asset performance with no clear systemic risk.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 22**
-*   Analysis: Moderate-high severity synchronized negative momentum wave. All assets are negative, indicating broad market weakness.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-07 02:26:00 to 2026-07-07 02:41:00 (16 minutes)
+  Analysis: High-moderate severity event with synchronized negative momentum across all assets. This warrants a defensive posture.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 23**
-*   Analysis: Moderate severity synchronized negative momentum wave. All assets are negative.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-07 03:10:00 to 2026-07-07 03:20:00 (11 minutes)
+  Analysis: Moderate severity event with synchronized negative momentum across all assets. A tactical adjustment is prudent.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 24**
-*   Analysis: Moderate-high severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-07 03:37:00 to 2026-07-07 03:42:00 (6 minutes)
+  Analysis: High-moderate severity event, but driven by synchronized positive momentum across all assets. This indicates a strong upward trend.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 25**
-*   Analysis: Low-moderate severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-07 06:08:00 to 2026-07-07 06:09:00 (2 minutes)
+  Analysis: Low severity event with synchronized positive momentum across all assets.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 26**
-*   Analysis: Moderate-high severity structural decoupling. US500 and OIL_CRUDE are positive, offsetting negative GOLD. Beneficial for equity.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-07 07:39:00 to 2026-07-07 07:43:00 (5 minutes)
+  Analysis: Moderate-high severity structural decoupling. Positive US500 and OIL_CRUDE offset negative GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 27**
-*   Analysis: Moderate severity structural decoupling. US500 is positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-07 10:04:00 to 2026-07-07 10:14:00 (11 minutes)
+  Analysis: Moderate severity structural decoupling. Positive US500 and GOLD mitigate negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 28**
-*   Analysis: Low severity structural decoupling. US500 is positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-07 10:25:00 to 2026-07-07 10:31:00 (7 minutes)
+  Analysis: Very low severity structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 29**
-*   Analysis: Moderate severity structural decoupling. US500 is negligible, while OIL_CRUDE is positive.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-07 10:44:00 to 2026-07-07 10:44:00 (1 minute)
+  Analysis: Moderate severity, short-duration structural decoupling. Mixed asset performance with no clear systemic risk.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 30**
-*   Analysis: Very low severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-07 11:11:00 to 2026-07-07 11:11:00 (1 minute)
+  Analysis: Extremely low severity, short-duration event with synchronized positive momentum.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 31**
-*   Analysis: Very low severity synchronized negative momentum wave. US500 is negligible despite strong negative OIL_CRUDE. Overall stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-07 11:28:00 to 2026-07-07 11:28:00 (1 minute)
+  Analysis: Very low severity, short-duration event with synchronized negative momentum, primarily driven by OIL_CRUDE. Despite low severity, synchronized negative movement warrants caution.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 32**
-*   Analysis: Moderate severity structural decoupling. US500 and GOLD are positive, indicating resilience.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-07 14:07:00 to 2026-07-07 14:12:00 (6 minutes)
+  Analysis: Moderate severity structural decoupling. Strong positive GOLD and US500 offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 33**
-*   Analysis: Low-moderate severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-07 15:34:00 to 2026-07-07 15:38:00 (5 minutes)
+  Analysis: Low severity structural decoupling. Strong positive OIL_CRUDE mitigates negative US500.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 34**
-*   Analysis: High severity structural decoupling. US500 and GOLD are strongly negative, despite a strong positive move in OIL_CRUDE. Significant downside risk to equity.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-07 15:55:00 to 2026-07-07 16:19:00 (25 minutes)
+  Analysis: High severity structural decoupling. Significant negative returns in US500 and GOLD, despite a strong positive in OIL_CRUDE, indicate underlying market stress.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 35**
-*   Analysis: Very high severity structural decoupling. US500 and GOLD are significantly negative, while OIL_CRUDE shows an extremely strong positive spike. This divergence poses substantial risk to equity.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-07 20:50:00 to 2026-07-07 21:18:00 (29 minutes)
+  Analysis: Very high severity structural decoupling. Substantial negative returns in US500 and GOLD, despite an extremely strong positive in OIL_CRUDE, signal significant market stress.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 36**
-*   Analysis: Moderate-high severity structural decoupling. US500 and GOLD are positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-08 02:37:00 to 2026-07-08 02:56:00 (20 minutes)
+  Analysis: High-moderate severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 37**
-*   Analysis: Moderate-high severity structural decoupling. US500 is negative, indicating a need for caution.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-08 07:21:00 to 2026-07-08 07:22:00 (2 minutes)
+  Analysis: High-moderate severity, short-duration structural decoupling. Strong positive OIL_CRUDE mitigates negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 38**
-*   Analysis: Very low severity structural decoupling. US500 is negative, but the overall event stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-08 07:41:00 to 2026-07-08 07:41:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Minor negative movements in US500 and OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 39**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-08 09:05:00 to 2026-07-08 09:06:00 (2 minutes)
+  Analysis: Moderate severity, short-duration structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 40**
-*   Analysis: High severity structural decoupling. US500 and GOLD are positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-08 09:21:00 to 2026-07-08 09:34:00 (14 minutes)
+  Analysis: High severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 41**
-*   Analysis: Extremely high severity structural decoupling. US500 and GOLD are very strongly negative, coupled with an unprecedented spike in OIL_CRUDE. This is a critical, systemic risk event.
-*   Verdict: **EMERGENCY DE-RISK**
+  Timeframe: 2026-07-08 10:16:00 to 2026-07-08 10:36:00 (21 minutes)
+  Analysis: Extremely high severity structural decoupling. Significant negative returns in US500 and GOLD, despite an extremely strong positive in OIL_CRUDE, indicate major systemic market stress. Immediate action is required.
+  **Verdict: EMERGENCY DE-RISK**
 
 **Event ID: 42**
-*   Analysis: Very low severity structural decoupling. US500 and GOLD are positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-08 13:47:00 to 2026-07-08 13:47:00 (1 minute)
+  Analysis: Extremely low severity, short-duration structural decoupling. Mixed asset performance with no material impact.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 43**
-*   Analysis: Low-moderate severity structural decoupling. US500 is negative, despite a very strong positive move in OIL_CRUDE. Requires a defensive adjustment.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-08 15:07:00 to 2026-07-08 15:10:00 (4 minutes)
+  Analysis: Low severity structural decoupling. Extremely strong positive OIL_CRUDE mitigates negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 44**
-*   Analysis: High severity structural decoupling. US500 and GOLD are strongly negative, while OIL_CRUDE shows an extremely strong positive spike. Significant downside risk to equity.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-08 16:13:00 to 2026-07-08 16:49:00 (37 minutes)
+  Analysis: High severity structural decoupling. Significant negative returns in US500 and GOLD, despite an extremely strong positive in OIL_CRUDE, indicate underlying market stress.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 45**
-*   Analysis: Moderate severity structural decoupling. US500 and GOLD are positive, benefiting from an extremely strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-08 18:10:00 to 2026-07-08 18:12:00 (3 minutes)
+  Analysis: Moderate severity structural decoupling. Positive US500 and GOLD offset extremely negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 46**
-*   Analysis: Moderate severity structural decoupling. US500 and GOLD are strongly positive, benefiting from a very strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-08 18:51:00 to 2026-07-08 18:53:00 (3 minutes)
+  Analysis: Moderate severity structural decoupling. Positive US500 and GOLD offset extremely negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 47**
-*   Analysis: Very low severity structural decoupling. US500 is negative, but the overall event stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-08 21:47:00 to 2026-07-08 21:48:00 (2 minutes)
+  Analysis: Very low severity, short-duration structural decoupling. Strong positive OIL_CRUDE mitigates negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 48**
-*   Analysis: Low-moderate severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-09 03:17:00 to 2026-07-09 03:19:00 (3 minutes)
+  Analysis: Low severity event with synchronized positive momentum across all assets.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 49**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-09 04:35:00 to 2026-07-09 04:46:00 (12 minutes)
+  Analysis: Moderate severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 50**
-*   Analysis: Very low severity structural decoupling. US500 and GOLD are positive.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-09 05:33:00 to 2026-07-09 05:34:00 (2 minutes)
+  Analysis: Very low severity, short-duration structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 51**
-*   Analysis: Low severity structural decoupling. US500 and GOLD are positive.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-09 07:11:00 to 2026-07-09 07:11:00 (1 minute)
+  Analysis: Low severity, short-duration structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 52**
-*   Analysis: Moderate severity structural decoupling. US500 and GOLD are positive, benefiting from a very strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-09 07:31:00 to 2026-07-09 07:47:00 (17 minutes)
+  Analysis: Moderate severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 53**
-*   Analysis: Moderate-high severity structural decoupling. US500 and GOLD are strongly positive, benefiting from a very strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-09 07:58:00 to 2026-07-09 08:02:00 (5 minutes)
+  Analysis: Moderate-high severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 54**
-*   Analysis: Very low severity structural decoupling with negligible impact on US500.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-09 08:13:00 to 2026-07-09 08:13:00 (1 minute)
+  Analysis: Extremely low severity, short-duration structural decoupling. Strong positive OIL_CRUDE and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 55**
-*   Analysis: Extremely high severity structural decoupling. US500 and GOLD are negative, while OIL_CRUDE shows a very strong positive spike. This is a critical, systemic risk event.
-*   Verdict: **EMERGENCY DE-RISK**
+  Timeframe: 2026-07-09 12:52:00 to 2026-07-09 12:56:00 (5 minutes)
+  Analysis: Extremely high severity structural decoupling. Significant negative returns in US500 and GOLD, despite a strong positive in OIL_CRUDE, indicate major systemic market stress. Immediate action is required.
+  **Verdict: EMERGENCY DE-RISK**
 
 **Event ID: 56**
-*   Analysis: Very low severity structural decoupling. US500 and GOLD are positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-09 13:11:00 to 2026-07-09 13:11:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 57**
-*   Analysis: Moderate severity structural decoupling. US500 and GOLD are positive, benefiting from a very strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-09 15:14:00 to 2026-07-09 15:17:00 (4 minutes)
+  Analysis: Moderate severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 58**
-*   Analysis: Moderate severity structural decoupling. US500 is strongly positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-09 15:46:00 to 2026-07-09 15:47:00 (2 minutes)
+  Analysis: Low-moderate severity, short-duration structural decoupling. Strong positive US500 mitigates negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 59**
-*   Analysis: Moderate severity synchronized negative momentum wave. All assets are strongly negative. Requires a defensive posture.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-09 16:16:00 to 2026-07-09 16:21:00 (6 minutes)
+  Analysis: Moderate severity event with synchronized negative momentum across all assets. This warrants a defensive posture.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 60**
-*   Analysis: Very low severity synchronized positive momentum wave. All assets are strongly positive.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-09 16:35:00 to 2026-07-09 16:36:00 (2 minutes)
+  Analysis: Very low severity, short-duration event with synchronized positive momentum across all assets.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 61**
-*   Analysis: Low severity synchronized negative momentum wave. All assets are negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 02:24:00 to 2026-07-10 02:27:00 (4 minutes)
+  Analysis: Very low severity event with minor synchronized negative momentum. Not significant enough for a hedge.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 62**
-*   Analysis: Low severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 02:45:00 to 2026-07-10 02:45:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Mixed asset performance with no material impact.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 63**
-*   Analysis: Moderate severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-10 03:18:00 to 2026-07-10 03:20:00 (3 minutes)
+  Analysis: Moderate severity event with synchronized positive momentum across all assets.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 64**
-*   Analysis: Moderate severity structural decoupling. US500 is positive, indicating resilience against negative GOLD.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 03:33:00 to 2026-07-10 03:45:00 (13 minutes)
+  Analysis: Moderate severity structural decoupling. Positive US500 and OIL_CRUDE offset significant negative GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 65**
-*   Analysis: Low severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-10 04:51:00 to 2026-07-10 04:51:00 (1 minute)
+  Analysis: Very low severity, short-duration event with synchronized positive momentum.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 66**
-*   Analysis: Very low severity structural decoupling. US500 is positive.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 05:07:00 to 2026-07-10 05:07:00 (1 minute)
+  Analysis: Extremely low severity, short-duration structural decoupling. Mixed asset performance with no material impact.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 67**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-10 05:22:00 to 2026-07-10 05:22:00 (1 minute)
+  Analysis: Moderate severity, short-duration structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 68**
-*   Analysis: Low-moderate severity structural decoupling. US500 is negligible.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 08:02:00 to 2026-07-10 08:02:00 (1 minute)
+  Analysis: Low severity, short-duration structural decoupling. Positive GOLD offsets significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 69**
-*   Analysis: Very low severity structural decoupling. US500 is negative, but the overall event stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 08:23:00 to 2026-07-10 08:33:00 (11 minutes)
+  Analysis: Very low severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 70**
-*   Analysis: Low severity structural decoupling. US500 is positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 09:17:00 to 2026-07-10 09:18:00 (2 minutes)
+  Analysis: Very low severity, short-duration structural decoupling. Positive US500 offsets significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 71**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-10 09:44:00 to 2026-07-10 09:54:00 (11 minutes)
+  Analysis: Moderate severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 72**
-*   Analysis: Moderate severity structural decoupling. US500 is positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 10:08:00 to 2026-07-10 10:19:00 (12 minutes)
+  Analysis: Moderate severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 73**
-*   Analysis: Low-moderate severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 10:30:00 to 2026-07-10 10:38:00 (9 minutes)
+  Analysis: Low severity structural decoupling. Strong positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 74**
-*   Analysis: Moderate severity structural decoupling. US500 is positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 11:16:00 to 2026-07-10 11:18:00 (3 minutes)
+  Analysis: Moderate severity, short-duration structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 75**
-*   Analysis: Moderate-high severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-10 13:34:00 to 2026-07-10 13:39:00 (6 minutes)
+  Analysis: High-moderate severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 76**
-*   Analysis: Very high severity structural decoupling. US500 and GOLD are positive, benefiting from an extremely strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 14:13:00 to 2026-07-10 14:17:00 (5 minutes)
+  Analysis: Very high severity structural decoupling. While US500 and GOLD are positive, the extreme negative movement in OIL_CRUDE, coupled with high severity, warrants a tactical hedge against commodity exposure.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 77**
-*   Analysis: Low severity structural decoupling. US500 is positive, indicating resilience against negative GOLD.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 15:30:00 to 2026-07-10 15:30:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Positive US500 offsets significant negative GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 78**
-*   Analysis: High severity structural decoupling. US500 and GOLD are strongly negative, while OIL_CRUDE shows a very strong positive spike. This is a critical risk event.
-*   Verdict: **EMERGENCY DE-RISK**
+  Timeframe: 2026-07-10 16:32:00 to 2026-07-10 16:33:00 (2 minutes)
+  Analysis: High severity structural decoupling. Significant negative returns in US500 and GOLD, despite a strong positive in OIL_CRUDE, indicate underlying market stress.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 79**
-*   Analysis: Low severity structural decoupling. US500 and GOLD are strongly positive, benefiting from an extremely strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 16:47:00 to 2026-07-10 16:50:00 (4 minutes)
+  Analysis: Very low severity, short-duration structural decoupling. Positive US500 and GOLD offset extremely negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 80**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-10 22:01:00 to 2026-07-10 22:06:00 (6 minutes)
+  Analysis: Low-moderate severity structural decoupling. Positive GOLD offsets negative US500 and OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 81**
-*   Analysis: Extremely high severity structural decoupling. US500 and GOLD are strongly negative, coupled with an unprecedented spike in OIL_CRUDE. This is a critical, systemic risk event.
-*   Verdict: **EMERGENCY DE-RISK**
+  Timeframe: 2026-07-13 00:00:00 to 2026-07-13 00:14:00 (15 minutes)
+  Analysis: Extremely high severity structural decoupling. The highest severity score observed, with significant negative returns in US500 and GOLD, despite an extremely strong positive in OIL_CRUDE. This indicates major systemic market stress.
+  **Verdict: EMERGENCY DE-RISK**
 
 **Event ID: 82**
-*   Analysis: Low severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-13 07:10:00 to 2026-07-13 07:10:00 (1 minute)
+  Analysis: Very low severity, short-duration event with synchronized positive momentum across all assets.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 83**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-13 07:26:00 to 2026-07-13 07:30:00 (5 minutes)
+  Analysis: Moderate severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 84**
-*   Analysis: Low severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-13 07:45:00 to 2026-07-13 07:45:00 (1 minute)
+  Analysis: Very low severity, short-duration event with synchronized positive momentum across all assets.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 85**
-*   Analysis: Moderate severity structural decoupling. US500 is positive, benefiting from strong negative moves in OIL_CRUDE and GOLD.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-13 08:00:00 to 2026-07-13 08:06:00 (7 minutes)
+  Analysis: Moderate severity structural decoupling. Positive US500 offsets negative OIL_CRUDE and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 86**
-*   Analysis: Very low severity structural decoupling. US500 and GOLD are positive.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-13 08:29:00 to 2026-07-13 08:29:00 (1 minute)
+  Analysis: Extremely low severity, short-duration structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 87**
-*   Analysis: Moderate severity structural decoupling. US500 and GOLD are positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-13 10:11:00 to 2026-07-13 10:14:00 (4 minutes)
+  Analysis: Low-moderate severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 88**
-*   Analysis: Low severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-13 12:00:00 to 2026-07-13 12:03:00 (4 minutes)
+  Analysis: Low severity structural decoupling. Strong positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 89**
-*   Analysis: Low severity structural decoupling. US500 is negligible.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-13 12:41:00 to 2026-07-13 12:47:00 (7 minutes)
+  Analysis: Low severity structural decoupling. Positive OIL_CRUDE offsets significant negative GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 90**
-*   Analysis: Very low severity structural decoupling. US500 is negative, but the overall event stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-13 13:20:00 to 2026-07-13 13:20:00 (1 minute)
+  Analysis: Extremely low severity, short-duration structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 91**
-*   Analysis: Low severity structural decoupling. US500 is positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-13 14:58:00 to 2026-07-13 15:01:00 (4 minutes)
+  Analysis: Very low severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 92**
-*   Analysis: High severity structural decoupling. US500 and GOLD are negative, despite a strong positive move in OIL_CRUDE. Significant downside risk to equity.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-13 15:35:00 to 2026-07-13 16:01:00 (27 minutes)
+  Analysis: High severity structural decoupling. Significant negative returns in US500 and GOLD, despite a strong positive in OIL_CRUDE, indicate underlying market stress.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 93**
-*   Analysis: Very high severity structural decoupling. US500 and GOLD are strongly negative, coupled with an extremely strong positive spike in OIL_CRUDE. This is a critical, systemic risk event.
-*   Verdict: **EMERGENCY DE-RISK**
+  Timeframe: 2026-07-13 16:16:00 to 2026-07-13 16:22:00 (7 minutes)
+  Analysis: Very high severity structural decoupling. Significant negative returns in US500 and GOLD, despite an extremely strong positive in OIL_CRUDE, indicate major systemic market stress.
+  **Verdict: EMERGENCY DE-RISK**
 
 **Event ID: 94**
-*   Analysis: Low severity synchronized positive momentum wave. US500 and GOLD are positive.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-13 17:00:00 to 2026-07-13 17:00:00 (1 minute)
+  Analysis: Low severity, short-duration event with synchronized positive momentum in US500 and GOLD.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 95**
-*   Analysis: Very high severity structural decoupling. US500 and GOLD are positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-14 01:59:00 to 2026-07-14 02:01:00 (3 minutes)
+  Analysis: Very high severity structural decoupling. While US500 and GOLD are positive, the extreme negative movement in OIL_CRUDE, coupled with high severity, warrants a tactical hedge against commodity exposure.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 96**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, despite a very strong positive move in OIL_CRUDE. Requires a defensive adjustment.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-14 02:15:00 to 2026-07-14 02:16:00 (2 minutes)
+  Analysis: Moderate severity, short-duration structural decoupling. Extremely strong positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 97**
-*   Analysis: Low severity structural decoupling. US500 and GOLD are positive, benefiting from a negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-14 02:35:00 to 2026-07-14 02:38:00 (4 minutes)
+  Analysis: Low severity structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 98**
-*   Analysis: Moderate severity structural decoupling. US500 and GOLD are positive, benefiting from a very strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-14 07:32:00 to 2026-07-14 07:44:00 (13 minutes)
+  Analysis: Moderate severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 99**
-*   Analysis: Low severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-14 08:26:00 to 2026-07-14 08:29:00 (4 minutes)
+  Analysis: Very low severity structural decoupling. Strong positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 100**
-*   Analysis: Moderate severity structural decoupling. US500 and GOLD are negative, despite a very strong positive move in OIL_CRUDE. Requires a defensive adjustment.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-14 10:07:00 to 2026-07-14 10:09:00 (3 minutes)
+  Analysis: Moderate severity structural decoupling. Strong positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 101**
-*   Analysis: Low severity synchronized negative momentum wave. All assets are negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-14 13:05:00 to 2026-07-14 13:08:00 (4 minutes)
+  Analysis: Very low severity event with minor synchronized negative momentum. Not significant enough for a hedge.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 102**
-*   Analysis: High severity structural decoupling. US500 and GOLD are positive, benefiting from a very strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-14 13:23:00 to 2026-07-14 13:25:00 (3 minutes)
+  Analysis: High-moderate severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 103**
-*   Analysis: Extremely high severity synchronized positive momentum wave. All assets show very strong positive returns. This is a significant upward momentum.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-14 14:30:00 to 2026-07-14 14:41:00 (12 minutes)
+  Analysis: Extremely high severity event, but driven by strong synchronized positive momentum across all assets. This presents a major upward opportunity.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 104**
-*   Analysis: Negligible severity structural decoupling. US500 is negative, but the overall event stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-14 17:43:00 to 2026-07-14 17:43:00 (1 minute)
+  Analysis: Extremely low severity, short-duration structural decoupling. Strong positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 105**
-*   Analysis: High severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-15 02:43:00 to 2026-07-15 02:43:00 (1 minute)
+  Analysis: High severity, short-duration structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 106**
-*   Analysis: Very low severity structural decoupling. US500 and GOLD are positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-15 03:00:00 to 2026-07-15 03:00:00 (1 minute)
+  Analysis: Extremely low severity, short-duration structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 107**
-*   Analysis: Low severity structural decoupling. US500 is positive, indicating resilience.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-15 03:16:00 to 2026-07-15 03:16:00 (1 minute)
+  Analysis: Low severity, short-duration structural decoupling. Positive US500 offsets negative OIL_CRUDE and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 108**
-*   Analysis: Moderate-high severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-15 03:38:00 to 2026-07-15 03:44:00 (7 minutes)
+  Analysis: Moderate-high severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and significant negative GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 109**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-15 09:01:00 to 2026-07-15 09:03:00 (3 minutes)
+  Analysis: Moderate severity structural decoupling. Strong positive OIL_CRUDE offsets negative US500.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 110**
-*   Analysis: Moderate-high severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-15 09:25:00 to 2026-07-15 09:27:00 (3 minutes)
+  Analysis: Moderate-high severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 111**
-*   Analysis: Low severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-15 10:04:00 to 2026-07-15 10:04:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Strong positive OIL_CRUDE offsets negative US500.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 112**
-*   Analysis: Very high severity structural decoupling. US500 is negligible, demonstrating resilience despite an extremely strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-15 10:28:00 to 2026-07-15 10:30:00 (3 minutes)
+  Analysis: Very high severity structural decoupling. While US500 is stable and GOLD is positive, the extreme negative movement in OIL_CRUDE, coupled with high severity, warrants a tactical hedge against commodity exposure.
+  **Verdict: TACTICAL HEDGE**
 
 **Event ID: 113**
-*   Analysis: Very high severity synchronized positive momentum wave. All assets show strong positive returns. This is a significant upward momentum.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-15 14:30:00 to 2026-07-15 14:44:00 (15 minutes)
+  Analysis: Very high severity event, but driven by strong synchronized positive momentum across all assets. This presents a strong upward opportunity.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 114**
-*   Analysis: Low severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-15 15:13:00 to 2026-07-15 15:20:00 (8 minutes)
+  Analysis: Very low severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 115**
-*   Analysis: Low severity structural decoupling. US500 and GOLD are positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-15 16:06:00 to 2026-07-15 16:06:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 116**
-*   Analysis: Very low severity structural decoupling. US500 is negative, but the overall event stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-15 17:15:00 to 2026-07-15 17:15:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Positive OIL_CRUDE offsets negative US500 and significant negative GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 117**
-*   Analysis: Very low severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-15 18:50:00 to 2026-07-15 18:52:00 (3 minutes)
+  Analysis: Very low severity, short-duration event with synchronized positive momentum across all assets.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 118**
-*   Analysis: High severity structural decoupling. US500 and GOLD are strongly positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-15 19:30:00 to 2026-07-15 19:42:00 (13 minutes)
+  Analysis: High severity structural decoupling. Positive US500 and GOLD offset significant negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 119**
-*   Analysis: Low-moderate severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-15 20:29:00 to 2026-07-15 20:30:00 (2 minutes)
+  Analysis: Low severity, short-duration event with synchronized positive momentum across all assets.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 120**
-*   Analysis: Moderate severity structural decoupling. US500 is negative, warranting a defensive stance.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-16 02:56:00 to 2026-07-16 03:07:00 (12 minutes)
+  Analysis: Moderate severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and significant negative GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 121**
-*   Analysis: Low severity synchronized negative momentum wave. All assets are negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-16 03:24:00 to 2026-07-16 03:26:00 (3 minutes)
+  Analysis: Very low severity event with minor synchronized negative momentum. Not significant enough for a hedge.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 122**
-*   Analysis: Low severity structural decoupling. US500 is negative, but the overall event stress is contained.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-16 07:36:00 to 2026-07-16 07:45:00 (10 minutes)
+  Analysis: Low severity structural decoupling. Positive GOLD offsets negative US500 and OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 123**
-*   Analysis: Low severity synchronized positive momentum wave. All assets show positive returns.
-*   Verdict: **OPPORTUNISTIC ENTRY**
+  Timeframe: 2026-07-16 08:07:00 to 2026-07-16 08:09:00 (3 minutes)
+  Analysis: Low severity event with synchronized positive momentum across all assets.
+  **Verdict: OPPORTUNISTIC ENTRY**
 
 **Event ID: 124**
-*   Analysis: Very low severity structural decoupling. US500 is negative, but the overall event stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-16 08:31:00 to 2026-07-16 08:36:00 (6 minutes)
+  Analysis: Very low severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 125**
-*   Analysis: Low severity structural decoupling with negligible impact on US500.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-16 09:29:00 to 2026-07-16 09:29:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Strong positive OIL_CRUDE with negligible movements in US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 126**
-*   Analysis: Low severity structural decoupling. US500 and GOLD are positive.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-16 10:30:00 to 2026-07-16 10:31:00 (2 minutes)
+  Analysis: Low severity, short-duration structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 127**
-*   Analysis: Very low severity structural decoupling. US500 is negative, but the overall event stress is minimal.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-16 11:45:00 to 2026-07-16 11:45:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Strong positive OIL_CRUDE with negligible movements in US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 128**
-*   Analysis: Moderate severity structural decoupling. US500 and GOLD are negative, despite a strong positive move in OIL_CRUDE. Requires a defensive adjustment.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-16 13:46:00 to 2026-07-16 14:17:00 (32 minutes)
+  Analysis: Moderate severity structural decoupling. Positive OIL_CRUDE offsets negative US500 and GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 129**
-*   Analysis: Moderate severity structural decoupling. US500 is positive, indicating resilience against strong negative GOLD.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-16 14:47:00 to 2026-07-16 14:48:00 (2 minutes)
+  Analysis: Moderate severity, short-duration structural decoupling. Positive US500 offsets negative OIL_CRUDE and significant negative GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 130**
-*   Analysis: Low severity structural decoupling. US500 is positive, benefiting from a strong positive move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-16 15:01:00 to 2026-07-16 15:04:00 (4 minutes)
+  Analysis: Low severity structural decoupling. Strong positive OIL_CRUDE and US500 offset significant negative GOLD.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 131**
-*   Analysis: Low-moderate severity structural decoupling. US500 and GOLD are positive, benefiting from a strong negative move in OIL_CRUDE.
-*   Verdict: **MAINTAIN POSITION / HOLD**
+  Timeframe: 2026-07-16 15:17:00 to 2026-07-16 15:17:00 (1 minute)
+  Analysis: Low severity, short-duration structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 **Event ID: 132**
-*   Analysis: Low severity synchronized negative momentum wave. All assets are strongly negative, warranting a defensive stance despite the low overall severity score.
-*   Verdict: **TACTICAL HEDGE**
+  Timeframe: 2026-07-16 15:41:00 to 2026-07-16 15:46:00 (6 minutes)
+  Analysis: Low severity event with synchronized negative momentum across all assets. Despite low severity, the synchronized negative movement warrants a tactical hedge.
+  **Verdict: TACTICAL HEDGE**
+
+**Event ID: 133**
+  Timeframe: 2026-07-16 16:04:00 to 2026-07-16 16:04:00 (1 minute)
+  Analysis: Very low severity, short-duration structural decoupling. Positive US500 and GOLD offset negative OIL_CRUDE.
+  **Verdict: MAINTAIN POSITION / HOLD**
 
 ## Strategic Hedging Framework
 
-Our analysis reveals a recurring pattern of "Structural Decoupling" events, often driven by significant movements in OIL_CRUDE, which frequently diverge from US500 performance. While many of these decoupling events see our core equity positions (US500) remain resilient or even positive, a subset, particularly those with higher "Worst Isolation Scores" and notable negative US500 returns, necessitate a "TACTICAL HEDGE".
+Our analysis reveals a recurring pattern of "Structural Decoupling" events, often driven by significant movements in OIL_CRUDE, which can mask underlying stress or opportunity in other asset classes. While many of these decoupling events do not necessitate immediate de-risking due to offsetting positive movements in key equity indices (US500) or safe-haven assets (GOLD), the most severe instances (e.g., Event IDs 41, 55, 81, 93) demonstrate that extreme volatility in one major asset, even if positive, can coincide with substantial negative impacts on others, demanding an **EMERGENCY DE-RISK**.
 
-"Synchronized Momentum Waves" are more straightforward: positive waves trigger "OPPORTUNISTIC ENTRY" to capitalize on broad market strength, while negative waves, especially those with moderate to high severity, demand "TACTICAL HEDGE" to mitigate systemic downside.
+"Synchronized Momentum (Negative)" events, even at moderate severity (e.g., Event IDs 3, 18, 22, 23, 59, 132), consistently trigger a **TACTICAL HEDGE** verdict, as they signal broad market weakness. Conversely, "Synchronized Momentum (Positive)" events (e.g., Event IDs 2, 19, 24, 25, 30, 48, 60, 63, 65, 82, 84, 94, 103, 113, 117, 119, 123) are consistently identified as **OPPORTUNISTIC ENTRY** points, regardless of their "severity score" (which measures deviation, not direction).
 
-The "EMERGENCY DE-RISK" verdict is reserved for events exhibiting extremely high severity scores (typically > -0.15) coupled with significant negative impacts on US500 and other key assets. These events signal a critical threat to portfolio stability, requiring immediate and decisive action to reduce exposure.
+The "MAINTAIN POSITION / HOLD" verdict is applied to events with low to moderate severity where market dynamics are either minor, localized, or present mixed signals that do not warrant immediate, aggressive action. This reflects our strategy of preserving capital during minor fluctuations and focusing intervention on macro-level shifts.
 
-Our framework emphasizes a data-driven, aggregated view of market shocks, avoiding knee-jerk reactions to isolated minute-by-minute fluctuations. The "Worst Isolation Score" serves as a crucial indicator of overall event stress, guiding our response alongside the magnitude and direction of peak market returns across our diversified asset classes. This disciplined approach ensures that our risk management strategies are both responsive and strategically aligned with the fund's long-term objectives.
+The high frequency of OIL_CRUDE as a primary risk driver, often in decoupling scenarios, highlights its significant influence on cross-asset volatility. Our framework prioritizes the overall portfolio impact, particularly on US500, when determining the appropriate operational response. Continued monitoring of these macro event waves, especially those exhibiting extreme severity or synchronized negative momentum, remains critical for proactive risk management.
