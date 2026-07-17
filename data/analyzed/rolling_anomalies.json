@@ -2126,5 +2126,37 @@
       "OIL_CRUDE_max_return_pct": -0.27685841209116324,
       "GOLD_max_return_pct": 0.12625598400757276
     }
+  },
+  {
+    "event_id": 134,
+    "wave_start_utc": "2026-07-17 03:44:00",
+    "wave_end_utc": "2026-07-17 03:53:00",
+    "total_duration_minutes": 10,
+    "ticks_in_cluster": 3,
+    "peak_telemetry": {
+      "peak_timestamp_utc": "2026-07-17 03:52:00",
+      "worst_isolation_score": -0.026941204453503342
+    },
+    "macro_peak_market_returns": {
+      "US500_max_return_pct": -0.1238876751745055,
+      "OIL_CRUDE_max_return_pct": -0.3395884690848616,
+      "GOLD_max_return_pct": -0.34441329595513714
+    }
+  },
+  {
+    "event_id": 135,
+    "wave_start_utc": "2026-07-17 05:04:00",
+    "wave_end_utc": "2026-07-17 05:22:00",
+    "total_duration_minutes": 19,
+    "ticks_in_cluster": 10,
+    "peak_telemetry": {
+      "peak_timestamp_utc": "2026-07-17 05:06:00",
+      "worst_isolation_score": -0.07158562112334599
+    },
+    "macro_peak_market_returns": {
+      "US500_max_return_pct": 0.10018433918410619,
+      "OIL_CRUDE_max_return_pct": 0.3439173583085875,
+      "GOLD_max_return_pct": 0.39147379105524127
+    }
   }
 ]
