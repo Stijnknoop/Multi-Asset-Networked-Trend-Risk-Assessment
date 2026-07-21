@@ -1,234 +1,635 @@
 # MANTRA Executive Risk Briefing
 
-This report provides a consolidated review of recent macro shock events, translating granular volatility waves into actionable, high-level operational risk verdicts. Our objective is to maintain a dynamic risk posture, swiftly adapting to market shifts while preserving capital and capitalizing on emerging opportunities. The analysis focuses on the nature of the shock (synchronized momentum or structural decoupling) and the primary asset driving volatility, enabling precise and timely strategic responses.
+This report synthesizes recent macro shock events, providing a consolidated view of market dynamics and issuing definitive operational risk verdicts. Our analysis focuses on aggregated volatility waves, identifying primary risk drivers and their cross-asset implications to inform strategic positioning.
 
 ## Chronological Shock Logs & Operational Verdicts
 
-Each event block represents an aggregated macro shock, with a single, definitive corporate verdict issued based on its cross-asset impact and severity.
+**Event ID: 1**
+  **Analysis:** Moderate severity, oil-driven structural decoupling with significant negative crude movement. US500 showed minor positive resilience.
+  **Verdict:** TACTICAL HEDGE
 
-*   **Event ID 1:** Structural Decoupling driven by OIL_CRUDE (-0.4334%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 2:** Synchronized Momentum Wave (Upward) driven by GOLD (0.2171%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 3:** Synchronized Momentum Wave (Downward) driven by OIL_CRUDE (-0.4134%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 4:** Structural Decoupling driven by OIL_CRUDE (0.3215%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 5:** Structural Decoupling driven by OIL_CRUDE (0.6602%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 6:** Structural Decoupling driven by OIL_CRUDE (0.2420%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 7:** Structural Decoupling driven by OIL_CRUDE (0.5057%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 8:** Structural Decoupling driven by OIL_CRUDE (0.2987%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 9:** Structural Decoupling driven by OIL_CRUDE (-0.3777%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 10:** Structural Decoupling driven by OIL_CRUDE (-0.6488%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 11:** Structural Decoupling driven by GOLD (-0.4856%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 12:** Structural Decoupling driven by OIL_CRUDE (0.4912%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 13:** Structural Decoupling driven by OIL_CRUDE (0.7113%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 14:** Structural Decoupling driven by OIL_CRUDE (0.6359%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 15:** Structural Decoupling driven by OIL_CRUDE (-0.3620%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 16:** Structural Decoupling driven by OIL_CRUDE (-0.8990%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 17:** Structural Decoupling driven by GOLD (-0.2087%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 18:** Synchronized Momentum Wave (Downward) driven by OIL_CRUDE (-0.7863%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 19:** Synchronized Momentum Wave (Upward) driven by OIL_CRUDE (0.8079%).
-    *   **Verdict:** OPPORTUNISTIC ENTRY
-*   **Event ID 20:** Structural Decoupling driven by OIL_CRUDE (0.2272%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 21:** Structural Decoupling driven by OIL_CRUDE (0.1818%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 22:** Synchronized Momentum Wave (Downward) driven by GOLD (-0.2394%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 23:** Synchronized Momentum Wave (Downward) driven by OIL_CRUDE (-0.3266%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 24:** Synchronized Momentum Wave (Upward) driven by GOLD (0.3010%).
-    *   **Verdict:** OPPORTUNISTIC ENTRY
-*   **Event ID 25:** Synchronized Momentum Wave (Upward) driven by GOLD (0.2873%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 26:** Structural Decoupling driven by GOLD (-0.2265%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 27:** Structural Decoupling driven by OIL_CRUDE (-0.4812%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 28:** Structural Decoupling driven by OIL_CRUDE (-0.5117%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 29:** Structural Decoupling driven by OIL_CRUDE (0.3766%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 30:** Synchronized Momentum Wave (Upward) driven by OIL_CRUDE (0.5192%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 31:** Synchronized Momentum Wave (Downward) driven by OIL_CRUDE (-0.6603%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 32:** Structural Decoupling driven by GOLD (0.4486%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 33:** Structural Decoupling driven by OIL_CRUDE (0.4405%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 34:** Structural Decoupling driven by OIL_CRUDE (0.8876%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 35:** Structural Decoupling driven by OIL_CRUDE (1.5060%).
-    *   **Verdict:** EMERGENCY DE-RISK
-*   **Event ID 36:** Structural Decoupling driven by OIL_CRUDE (-0.6058%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 37:** Structural Decoupling driven by OIL_CRUDE (0.5112%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 38:** Structural Decoupling driven by OIL_CRUDE (-0.3922%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 39:** Structural Decoupling driven by OIL_CRUDE (0.3172%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 40:** Structural Decoupling driven by OIL_CRUDE (-0.7249%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 41:** Structural Decoupling driven by OIL_CRUDE (3.0900%).
-    *   **Verdict:** EMERGENCY DE-RISK
-*   **Event ID 42:** Structural Decoupling driven by OIL_CRUDE (-0.5584%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 43:** Structural Decoupling driven by OIL_CRUDE (1.2652%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 44:** Structural Decoupling driven by OIL_CRUDE (1.6354%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 45:** Structural Decoupling driven by OIL_CRUDE (-1.1797%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 46:** Structural Decoupling driven by OIL_CRUDE (-1.0109%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 47:** Structural Decoupling driven by OIL_CRUDE (0.7607%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 48:** Synchronized Momentum Wave (Upward) driven by OIL_CRUDE (0.5882%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 49:** Structural Decoupling driven by OIL_CRUDE (0.3230%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 50:** Structural Decoupling driven by GOLD (0.1716%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 51:** Structural Decoupling driven by GOLD (0.2745%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 52:** Structural Decoupling driven by OIL_CRUDE (-0.9753%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 53:** Structural Decoupling driven by OIL_CRUDE (-1.0059%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 54:** Structural Decoupling driven by OIL_CRUDE (0.6385%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 55:** Structural Decoupling driven by OIL_CRUDE (1.2047%).
-    *   **Verdict:** EMERGENCY DE-RISK
-*   **Event ID 56:** Structural Decoupling driven by OIL_CRUDE (-0.7196%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 57:** Structural Decoupling driven by OIL_CRUDE (-0.9971%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 58:** Structural Decoupling driven by OIL_CRUDE (-0.5412%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 59:** Synchronized Momentum Wave (Downward) driven by OIL_CRUDE (-0.5297%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 60:** Synchronized Momentum Wave (Upward) driven by US500 (0.2872%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 61:** Synchronized Momentum Wave (Downward) driven by GOLD (-0.1016%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 62:** Structural Decoupling driven by GOLD (0.1498%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 63:** Synchronized Momentum Wave (Upward) driven by OIL_CRUDE (0.3347%).
-    *   **Verdict:** OPPORTUNISTIC ENTRY
-*   **Event ID 64:** Structural Decoupling driven by GOLD (-0.3088%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 65:** Synchronized Momentum Wave (Upward) driven by OIL_CRUDE (0.1804%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 66:** Structural Decoupling driven by OIL_CRUDE (-0.2355%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 67:** Structural Decoupling driven by GOLD (-0.2470%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 68:** Structural Decoupling driven by OIL_CRUDE (-0.4435%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 69:** Structural Decoupling driven by OIL_CRUDE (0.2441%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 70:** Structural Decoupling driven by OIL_CRUDE (-0.5221%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 71:** Structural Decoupling driven by OIL_CRUDE (0.3302%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 72:** Structural Decoupling driven by OIL_CRUDE (-0.5527%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 73:** Structural Decoupling driven by OIL_CRUDE (0.8474%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 74:** Structural Decoupling driven by OIL_CRUDE (-0.5708%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 75:** Structural Decoupling driven by OIL_CRUDE (0.4299%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 76:** Structural Decoupling driven by OIL_CRUDE (-1.5681%).
-    *   **Verdict:** EMERGENCY DE-RISK
-*   **Event ID 77:** Structural Decoupling driven by GOLD (-0.4008%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 78:** Structural Decoupling driven by OIL_CRUDE (1.2502%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 79:** Structural Decoupling driven by OIL_CRUDE (-1.1382%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 80:** Structural Decoupling driven by GOLD (0.2471%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 81:** Structural Decoupling driven by OIL_CRUDE (3.8755%).
-    *   **Verdict:** EMERGENCY DE-RISK
-*   **Event ID 82:** Synchronized Momentum Wave (Upward) driven by GOLD (0.3986%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 83:** Structural Decoupling driven by GOLD (-0.2779%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 84:** Synchronized Momentum Wave (Upward) driven by OIL_CRUDE (0.4088%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 85:** Structural Decoupling driven by OIL_CRUDE (-0.5735%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 86:** Structural Decoupling driven by GOLD (0.2550%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 87:** Structural Decoupling driven by OIL_CRUDE (-0.8518%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 88:** Structural Decoupling driven by OIL_CRUDE (0.7981%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 89:** Structural Decoupling driven by GOLD (-0.3799%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 90:** Structural Decoupling driven by OIL_CRUDE (0.3734%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 91:** Structural Decoupling driven by OIL_CRUDE (-0.8757%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 92:** Structural Decoupling driven by OIL_CRUDE (0.7495%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 93:** Structural Decoupling driven by OIL_CRUDE (1.8953%).
-    *   **Verdict:** EMERGENCY DE-RISK
-*   **Event ID 94:** Synchronized Momentum Wave (Upward) driven by GOLD (0.2581%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 95:** Structural Decoupling driven by OIL_CRUDE (-0.8893%).
-    *   **Verdict:** EMERGENCY DE-RISK
-*   **Event ID 96:** Structural Decoupling driven by OIL_CRUDE (1.3158%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 97:** Structural Decoupling driven by OIL_CRUDE (-0.4989%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 98:** Structural Decoupling driven by OIL_CRUDE (-1.0246%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 99:** Structural Decoupling driven by OIL_CRUDE (0.8256%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 100:** Structural Decoupling driven by OIL_CRUDE (1.0117%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 101:** Synchronized Momentum Wave (Downward) driven by OIL_CRUDE (-0.2412%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 102:** Structural Decoupling driven by OIL_CRUDE (-0.9737%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 103:** Synchronized Momentum Wave (Upward) driven by GOLD (1.7263%).
-    *   **Verdict:** OPPORTUNISTIC ENTRY
-*   **Event ID 104:** Structural Decoupling driven by OIL_CRUDE (1.2428%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 105:** Structural Decoupling driven by OIL_CRUDE (0.4083%).
-    *   **Verdict:** TACTICAL HEDGE
-*   **Event ID 106:** Structural Decoupling driven by OIL_CRUDE (-0.5507%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
-*   **Event ID 107:** Structural Decoupling driven by OIL_CRUDE (-0.5507%).
-    *   **Verdict:** MAINTAIN POSITION / HOLD
+**Event ID: 2**
+  **Analysis:** Low-moderate severity, positive synchronized momentum across assets, led by gold. Overall favorable market conditions.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 3**
+  **Analysis:** Moderate-high severity, negative synchronized momentum led by oil, impacting all core assets negatively.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 4**
+  **Analysis:** Low severity, short-duration oil-driven decoupling. Minor market impact.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 5**
+  **Analysis:** Moderate severity, significant oil-driven decoupling with oil strongly positive while US500 and Gold were negative.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 6**
+  **Analysis:** Low severity, brief oil-driven decoupling. Limited market impact.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 7**
+  **Analysis:** High severity, pronounced oil-driven decoupling with strong positive oil returns contrasting negative Gold and US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 8**
+  **Analysis:** Very low severity, brief oil-driven decoupling. Negligible market impact.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 9**
+  **Analysis:** Moderate-high severity, oil-driven decoupling with negative oil returns while US500 and Gold were positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 10**
+  **Analysis:** Low severity, but significant oil-driven decoupling with strong negative oil returns and positive US500/Gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 11**
+  **Analysis:** Moderate severity, gold-driven decoupling with significant negative gold movement and positive US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 12**
+  **Analysis:** Low-moderate severity, oil-driven decoupling with strong positive oil returns, mixed with other assets.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 13**
+  **Analysis:** High severity, oil-driven decoupling with very strong positive oil returns and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 14**
+  **Analysis:** Very low severity, but strong oil-driven decoupling with oil significantly positive and US500/Gold negative.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 15**
+  **Analysis:** Low severity, oil-driven decoupling with negative oil returns and positive US500/Gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 16**
+  **Analysis:** High severity, very strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 17**
+  **Analysis:** Low severity, gold-driven decoupling with negative gold and US500, and positive oil.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 18**
+  **Analysis:** High severity, strong negative synchronized momentum across all assets, led by oil.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 19**
+  **Analysis:** Very high severity, strong positive synchronized momentum across all assets, led by oil.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 20**
+  **Analysis:** Extremely low severity, brief oil-driven decoupling. Negligible market impact.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 21**
+  **Analysis:** Low-moderate severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 22**
+  **Analysis:** Moderate-high severity, negative synchronized momentum across all assets, led by gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 23**
+  **Analysis:** Moderate severity, negative synchronized momentum across all assets, led by oil.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 24**
+  **Analysis:** High severity, positive synchronized momentum across all assets, led by gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 25**
+  **Analysis:** Low-moderate severity, positive synchronized momentum across all assets, led by gold.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 26**
+  **Analysis:** Moderate-high severity, gold-driven decoupling with negative gold and positive US500/Oil.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 27**
+  **Analysis:** Moderate severity, oil-driven decoupling with significantly negative oil and positive US500/Gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 28**
+  **Analysis:** Low severity, but significant oil-driven decoupling with strong negative oil and positive US500/Gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 29**
+  **Analysis:** Moderate severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 30**
+  **Analysis:** Very low severity, but strong oil-led positive synchronized momentum.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 31**
+  **Analysis:** Very low severity, but strong oil-led negative synchronized momentum across all assets.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 32**
+  **Analysis:** Moderate severity, gold-driven decoupling with strong positive gold and negative oil.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 33**
+  **Analysis:** Low-moderate severity, oil-driven decoupling with positive oil and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 34**
+  **Analysis:** High severity, very strong oil-driven decoupling with oil significantly positive and US500/Gold significantly negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 35**
+  **Analysis:** Very high severity, extreme oil-driven decoupling with oil massively positive and US500/Gold severely negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 36**
+  **Analysis:** Moderate-high severity, oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 37**
+  **Analysis:** Moderate-high severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 38**
+  **Analysis:** Very low severity, but notable oil-driven decoupling with negative oil/US500 and positive Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 39**
+  **Analysis:** Moderate severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 40**
+  **Analysis:** High severity, strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 41**
+  **Analysis:** EXTREME severity, massive oil-driven decoupling with oil astronomically positive and US500/Gold severely negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 42**
+  **Analysis:** Very low severity, but strong oil-driven decoupling with oil negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 43**
+  **Analysis:** Low-moderate severity, but extreme oil-driven decoupling with oil massively positive and US500/Gold negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 44**
+  **Analysis:** High severity, extreme oil-driven decoupling with oil massively positive and US500/Gold significantly negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 45**
+  **Analysis:** Moderate severity, extreme oil-driven decoupling with oil massively negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 46**
+  **Analysis:** Moderate severity, extreme oil-driven decoupling with oil massively negative and US500/Gold significantly positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 47**
+  **Analysis:** Very low severity, but strong oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 48**
+  **Analysis:** Low-moderate severity, strong oil-led positive synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 49**
+  **Analysis:** Moderate severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 50**
+  **Analysis:** Very low severity, gold-driven decoupling with positive Gold/US500 and negative oil.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 51**
+  **Analysis:** Low severity, gold-driven decoupling with positive Gold/US500 and negative oil.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 52**
+  **Analysis:** Moderate severity, very strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 53**
+  **Analysis:** Moderate-high severity, very strong oil-driven decoupling with oil significantly negative and US500/Gold strongly positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 54**
+  **Analysis:** Extremely low severity, but strong oil-driven decoupling with positive oil and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 55**
+  **Analysis:** EXTREME severity, very strong oil-driven decoupling with oil massively positive and US500/Gold negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 56**
+  **Analysis:** Very low severity, but strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 57**
+  **Analysis:** Moderate severity, very strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 58**
+  **Analysis:** Low-moderate severity, oil-driven decoupling with negative oil and positive US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 59**
+  **Analysis:** Moderate severity, strong negative synchronized momentum across all assets.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 60**
+  **Analysis:** Very low severity, but strong US500-led positive synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 61**
+  **Analysis:** Low severity, negative synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 62**
+  **Analysis:** Very low severity, gold-driven decoupling with positive gold and negative US500/Oil.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 63**
+  **Analysis:** Moderate severity, positive synchronized momentum across all assets, led by oil.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 64**
+  **Analysis:** Moderate severity, gold-driven decoupling with negative gold and positive US500/Oil.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 65**
+  **Analysis:** Very low severity, positive synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 66**
+  **Analysis:** Very low severity, oil-driven decoupling with negative oil and positive US500/Gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 67**
+  **Analysis:** Moderate severity, gold-driven decoupling with negative gold/US500 and positive oil.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 68**
+  **Analysis:** Low-moderate severity, oil-driven decoupling with significantly negative oil and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 69**
+  **Analysis:** Very low severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 70**
+  **Analysis:** Low severity, but strong oil-driven decoupling with significantly negative oil and positive US500.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 71**
+  **Analysis:** Moderate severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 72**
+  **Analysis:** Moderate severity, strong oil-driven decoupling with significantly negative oil and positive US500/Gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 73**
+  **Analysis:** Low-moderate severity, but very strong oil-driven decoupling with significantly positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 74**
+  **Analysis:** Moderate severity, strong oil-driven decoupling with significantly negative oil and positive US500/Gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 75**
+  **Analysis:** High severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 76**
+  **Analysis:** Very high severity, extreme oil-driven decoupling with oil massively negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 77**
+  **Analysis:** Low severity, but strong gold-driven decoupling with significantly negative gold and positive US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 78**
+  **Analysis:** High severity, extreme oil-driven decoupling with oil massively positive and US500/Gold significantly negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 79**
+  **Analysis:** Low severity, but extreme oil-driven decoupling with oil massively negative and US500/Gold strongly positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 80**
+  **Analysis:** Low-moderate severity, gold-driven decoupling with positive gold and negative US500/Oil.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 81**
+  **Analysis:** EXTREME severity, unprecedented oil-driven decoupling with oil astronomically positive and US500/Gold severely negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 82**
+  **Analysis:** Low severity, positive synchronized momentum across all assets, led by gold.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 83**
+  **Analysis:** Moderate severity, gold-driven decoupling with negative gold/US500 and positive oil.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 84**
+  **Analysis:** Very low severity, but strong oil-led positive synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 85**
+  **Analysis:** Moderate severity, strong oil-driven decoupling with significantly negative oil and negative gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 86**
+  **Analysis:** Extremely low severity, gold-driven decoupling with positive gold/US500 and negative oil.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 87**
+  **Analysis:** Low-moderate severity, very strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 88**
+  **Analysis:** Low severity, but very strong oil-driven decoupling with oil significantly positive and US500/Gold negative.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 89**
+  **Analysis:** Low severity, but strong gold-driven decoupling with significantly negative gold and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 90**
+  **Analysis:** Extremely low severity, but notable oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 91**
+  **Analysis:** Low severity, but very strong oil-driven decoupling with oil significantly negative and positive US500.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 92**
+  **Analysis:** High severity, strong oil-driven decoupling with oil significantly positive and US500/Gold significantly negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 93**
+  **Analysis:** Very high severity, extreme oil-driven decoupling with oil massively positive and US500/Gold severely negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 94**
+  **Analysis:** Low severity, positive synchronized momentum across US500 and Gold, with oil flat.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 95**
+  **Analysis:** Very high severity, strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 96**
+  **Analysis:** Moderate severity, but extreme oil-driven decoupling with oil massively positive and US500/Gold negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 97**
+  **Analysis:** Low severity, but strong oil-driven decoupling with oil significantly negative and US500/Gold strongly positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 98**
+  **Analysis:** Moderate severity, very strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 99**
+  **Analysis:** Low severity, but very strong oil-driven decoupling with oil significantly positive and US500/Gold negative.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 100**
+  **Analysis:** Moderate severity, very strong oil-driven decoupling with oil significantly positive and US500/Gold negative.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 101**
+  **Analysis:** Low severity, negative synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 102**
+  **Analysis:** High severity, very strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 103**
+  **Analysis:** EXTREME severity, massive positive synchronized momentum across all assets, led by gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 104**
+  **Analysis:** Extremely low severity, but extreme oil-driven decoupling with oil massively positive and US500/Gold significantly negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 105**
+  **Analysis:** High severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 106**
+  **Analysis:** Very low severity, but strong oil-driven decoupling with oil significantly negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 107**
+  **Analysis:** Low severity, oil-driven decoupling with negative oil and negative gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 108**
+  **Analysis:** Moderate-high severity, strong gold-driven decoupling with significantly negative gold and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 109**
+  **Analysis:** Moderate severity, very strong oil-driven decoupling with significantly positive oil and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 110**
+  **Analysis:** Moderate-high severity, oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 111**
+  **Analysis:** Very low severity, but very strong oil-driven decoupling with significantly positive oil and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 112**
+  **Analysis:** Very high severity, extreme oil-driven decoupling with oil massively negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 113**
+  **Analysis:** Very high severity, strong positive synchronized momentum across all assets, led by gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 114**
+  **Analysis:** Low severity, but strong oil-driven decoupling with significantly positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 115**
+  **Analysis:** Low severity, but strong oil-driven decoupling with significantly negative oil and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 116**
+  **Analysis:** Very low severity, but strong gold-driven decoupling with significantly negative gold and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 117**
+  **Analysis:** Very low severity, positive synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 118**
+  **Analysis:** High severity, strong oil-driven decoupling with significantly negative oil and US500/Gold strongly positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 119**
+  **Analysis:** Low-moderate severity, strong oil-led positive synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 120**
+  **Analysis:** Moderate severity, strong gold-driven decoupling with significantly negative gold and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 121**
+  **Analysis:** Low severity, negative synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 122**
+  **Analysis:** Low severity, oil-driven decoupling with negative oil/US500 and positive gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 123**
+  **Analysis:** Low severity, positive synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 124**
+  **Analysis:** Very low severity, but notable oil-driven decoupling with positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 125**
+  **Analysis:** Low severity, but strong oil-driven decoupling with significantly positive oil and slightly negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 126**
+  **Analysis:** Low severity, gold-driven decoupling with positive gold/US500 and negative oil.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 127**
+  **Analysis:** Very low severity, but strong oil-driven decoupling with significantly positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 128**
+  **Analysis:** Moderate severity, strong oil-driven decoupling over a longer duration, with significantly positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 129**
+  **Analysis:** Moderate severity, strong gold-driven decoupling with significantly negative gold and negative oil.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 130**
+  **Analysis:** Low severity, but strong oil-driven decoupling with significantly positive oil and significantly negative gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 131**
+  **Analysis:** Low-moderate severity, strong oil-driven decoupling with significantly negative oil and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 132**
+  **Analysis:** Low severity, but strong negative synchronized momentum across all assets, led by gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 133**
+  **Analysis:** Very low severity, oil-driven decoupling with negative oil and positive US500/Gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 134**
+  **Analysis:** Low severity, but notable negative synchronized momentum across all assets.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 135**
+  **Analysis:** High severity, strong positive synchronized momentum across all assets, led by gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 136**
+  **Analysis:** Moderate-high severity, very strong oil-driven decoupling with significantly negative oil and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 137**
+  **Analysis:** Low severity, but strong oil-led positive synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 138**
+  **Analysis:** Low severity, but very strong oil-driven decoupling with significantly positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 139**
+  **Analysis:** High severity, US500-driven decoupling with significantly negative US500/Gold.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 140**
+  **Analysis:** Low severity, negative synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 141**
+  **Analysis:** High severity, strong negative synchronized momentum across all assets, led by gold.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 142**
+  **Analysis:** Moderate-high severity, very strong oil-driven decoupling with significantly positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 143**
+  **Analysis:** High severity, very strong positive synchronized momentum across all assets, led by gold.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 144**
+  **Analysis:** Low-moderate severity, but very strong oil-driven decoupling with significantly negative oil and negative US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 145**
+  **Analysis:** Moderate severity, negative synchronized momentum across all assets, led by US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 146**
+  **Analysis:** Low severity, positive synchronized momentum across all assets.
+  **Verdict:** MAINTAIN POSITION / HOLD
+
+**Event ID: 147**
+  **Analysis:** EXTREME severity, massive oil-driven decoupling with oil astronomically positive and US500/Gold severely negative.
+  **Verdict:** EMERGENCY DE-RISK
+
+**Event ID: 148**
+  **Analysis:** High severity, extreme oil-driven decoupling with oil massively negative and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
+
+**Event ID: 149**
+  **Analysis:** Very high severity, extreme oil-driven decoupling with oil massively negative, positive US500, and negative Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 150**
+  **Analysis:** Low severity, but strong US500-driven decoupling with significantly negative US500 and negative Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 151**
+  **Analysis:** Low severity, gold-driven decoupling with negative gold and positive US500.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 152**
+  **Analysis:** Very low severity, but very strong oil-driven decoupling with significantly positive oil and negative US500/Gold.
+  **Verdict:** TACTICAL HEDGE
+
+**Event ID: 153**
+  **Analysis:** Very high severity, strong oil-driven decoupling with significantly negative oil and US500/Gold positive.
+  **Verdict:** OPPORTUNISTIC ENTRY
 
 ## Strategic Hedging Framework
 
-The observed market dynamics highlight a persistent theme of **Structural Decoupling**, predominantly driven by significant volatility in OIL_CRUDE. While US500 and GOLD often exhibit counter-movements or milder reactions, the sheer magnitude of energy market swings frequently necessitates specific risk management.
+The observed market dynamics highlight a persistent and often extreme influence of OIL_CRUDE, frequently driving structural decoupling events. These events, particularly when oil's movements are substantial and diverge negatively from core equity (US500) and safe-haven (Gold) assets, necessitate immediate and decisive action.
 
-Our operational verdicts reflect a tiered response strategy:
-*   **EMERGENCY DE-RISK** is reserved for events with extreme severity scores (absolute value > 0.10) coupled with substantial negative impacts on core equity holdings (US500) or highly disruptive commodity shocks that could cascade across the portfolio. This indicates a need for immediate, broad-based risk reduction.
-*   **TACTICAL HEDGE** is deployed for high-moderate to high severity events (absolute value 0.03 - 0.10), particularly those involving significant negative movements in primary assets or structural decoupling where one asset's extreme move could pose systemic risk or require targeted protection. This allows for precise, asset-specific or sector-specific adjustments without a full portfolio overhaul.
-*   **OPPORTUNISTIC ENTRY** is triggered by strong, synchronized upward momentum waves or significant positive structural decoupling in key assets, especially when severity scores are high, indicating robust market conviction or a clear buying signal.
-*   **MAINTAIN POSITION / HOLD** is the default for low-severity events (absolute value < 0.03), minor market fluctuations, or positive momentum that does not yet warrant aggressive entry, ensuring we avoid overtrading on noise.
+Our strategic framework is calibrated to respond to these patterns:
 
-The prevalence of OIL_CRUDE as a primary risk driver, whether positive or negative, underscores its critical role in current market volatility. Our framework prioritizes agile responses to these commodity-driven shocks, often through targeted hedging, while reserving broader de-risking for truly systemic threats. We remain vigilant for shifts in correlation structures and the emergence of new primary risk drivers.
+1.  **Proactive Oil Volatility Management:** Given the frequent and high-magnitude movements in OIL_CRUDE, often acting as the primary risk driver, our portfolio requires continuous monitoring and dynamic hedging strategies specifically tailored to oil exposure. This includes both long and short positions, depending on the decoupling direction and broader market context.
+
+2.  **Severity-Based Escalation:** Events categorized as "Extreme" or "Very High" severity, especially those exhibiting significant negative impact on US500 or broad synchronized downturns, trigger an **EMERGENCY DE-RISK** protocol. This involves rapid reduction of exposure to vulnerable assets and/or aggressive hedging across the portfolio.
+
+3.  **Leveraging Decoupling for Alpha:** When structural decoupling occurs with a strong negative move in the primary risk driver (e.g., OIL_CRUDE) while other core assets (US500, GOLD) show positive momentum, it presents an **OPPORTUNISTIC ENTRY**. Conversely, when the primary driver moves strongly positive and other assets are negative, it signals a need for **TACTICAL HEDGE** or **EMERGENCY DE-RISK**.
+
+4.  **Contextual Hedging for Synchronized Waves:** Synchronized momentum waves, whether positive or negative, require a holistic portfolio view. Significant negative waves warrant **TACTICAL HEDGE** or **EMERGENCY DE-RISK**, while positive waves present opportunities for **OPPORTUNISTIC ENTRY** or simply to **MAINTAIN POSITION / HOLD** if current allocations are optimal.
+
+5.  **Maintaining Core Positions:** Low-severity events or those with minimal cross-asset impact generally warrant a **MAINTAIN POSITION / HOLD** verdict, avoiding over-trading on minor fluctuations.
+
+This framework ensures that our responses are proportionate to the risk and opportunity presented by each macro shock event, maintaining portfolio resilience while capitalizing on market dislocations.
