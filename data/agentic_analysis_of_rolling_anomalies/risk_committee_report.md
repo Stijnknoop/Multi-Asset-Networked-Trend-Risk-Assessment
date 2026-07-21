@@ -1,374 +1,689 @@
 # MANTRA Executive Risk Briefing
 
-This report provides a consolidated review of recent macro shock events, distilling complex market telemetry into actionable, high-level operational verdicts. Our objective is to maintain robust portfolio integrity while capitalizing on transient market dislocations. Each event block represents an aggregated volatility wave, not granular minute-by-minute fluctuations, ensuring a strategic perspective on risk and opportunity.
+This report provides a consolidated review of recent macro shock events, moving beyond granular minute-by-minute analysis to deliver high-level operational risk verdicts. Our focus is on identifying systemic shifts and issuing definitive directives to optimize portfolio positioning and risk exposure. The overarching goal is to ensure robust risk management while capitalizing on market dislocations.
 
 ## Chronological Shock Logs & Operational Verdicts
 
-### Event ID: 1
-*   **Timeframe:** 2026-07-03 08:09:00 to 08:17:00 (9 minutes)
-*   **Analysis:** Moderate severity structural decoupling driven by a significant decline in OIL_CRUDE (-0.43%), while US500 showed minor positive movement. This indicates a commodity-specific shock with limited immediate systemic contagion to broader equities.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 2
-*   **Timeframe:** 2026-07-03 08:37:00 to 08:42:00 (6 minutes)
-*   **Analysis:** Low severity synchronized positive momentum, with all assets showing modest gains, led by GOLD (+0.21%). This suggests a minor, broad-based risk-on sentiment without significant market stress.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 3
-*   **Timeframe:** 2026-07-03 09:11:00 to 09:22:00 (12 minutes)
-*   **Analysis:** Moderate severity synchronized negative momentum, primarily driven by a notable drop in OIL_CRUDE (-0.41%), with US500 and GOLD also declining. This indicates a broad, albeit contained, risk-off shift.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 4
-*   **Timeframe:** 2026-07-03 10:12:00 to 10:13:00 (2 minutes)
-*   **Analysis:** Low severity structural decoupling, with a moderate rise in OIL_CRUDE (+0.32%) while US500 remained largely flat. The overall market impact is minimal.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 5
-*   **Timeframe:** 2026-07-03 10:48:00 to 10:52:00 (5 minutes)
-*   **Analysis:** Moderate severity structural decoupling, characterized by a significant surge in OIL_CRUDE (+0.66%) against a slight dip in US500. This points to a pronounced commodity-specific event.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 6
-*   **Timeframe:** 2026-07-03 14:21:00 to 14:21:00 (1 minutes)
-*   **Analysis:** Low severity structural decoupling, with a moderate OIL_CRUDE rise (+0.24%) and minor movements in other assets. The event is short-lived and low impact.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 7
-*   **Timeframe:** 2026-07-03 15:05:00 to 15:14:00 (10 minutes)
-*   **Analysis:** High severity structural decoupling, dominated by a substantial increase in OIL_CRUDE (+0.50%). US500 remained relatively stable, indicating a concentrated commodity shock.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 8
-*   **Timeframe:** 2026-07-03 16:08:00 to 16:08:00 (1 minutes)
-*   **Analysis:** Very low severity structural decoupling, with moderate OIL_CRUDE movement (+0.29%) and negligible impact on US500. This is market noise.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 9
-*   **Timeframe:** 2026-07-03 16:23:00 to 16:24:00 (2 minutes)
-*   **Analysis:** Moderate severity structural decoupling, driven by a significant drop in OIL_CRUDE (-0.37%). US500 showed a slight positive return, suggesting a localized commodity impact.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 10
-*   **Timeframe:** 2026-07-06 00:06:00 to 00:14:00 (9 minutes)
-*   **Analysis:** Low severity structural decoupling, but with a substantial decline in OIL_CRUDE (-0.64%). US500 was largely unaffected, indicating a specific commodity-driven event.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 11
-*   **Timeframe:** 2026-07-06 01:47:00 to 01:55:00 (9 minutes)
-*   **Analysis:** Moderate severity structural decoupling, primarily due to a significant drop in GOLD (-0.48%). US500 remained stable, suggesting a specific safe-haven asset re-evaluation.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 12
-*   **Timeframe:** 2026-07-06 02:07:00 to 02:17:00 (11 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a notable rise in OIL_CRUDE (+0.49%) while US500 posted moderate gains. This indicates a commodity-led move with some positive spillover.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 13
-*   **Timeframe:** 2026-07-06 03:13:00 to 03:16:00 (4 minutes)
-*   **Analysis:** High severity structural decoupling, marked by a very strong surge in OIL_CRUDE (+0.71%). US500 experienced a minor dip, highlighting a significant commodity-specific shock.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 14
-*   **Timeframe:** 2026-07-06 03:52:00 to 03:54:00 (3 minutes)
-*   **Analysis:** Very low severity structural decoupling, but with a substantial rise in OIL_CRUDE (+0.63%) and a moderate dip in US500. The low overall severity suggests contained impact despite the oil move.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 15
-*   **Timeframe:** 2026-07-06 08:28:00 to 08:37:00 (10 minutes)
-*   **Analysis:** Low severity structural decoupling, with a moderate decline in OIL_CRUDE (-0.36%) and positive US500 returns. This is a contained commodity event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 16
-*   **Timeframe:** 2026-07-06 09:41:00 to 09:52:00 (12 minutes)
-*   **Analysis:** High severity structural decoupling, characterized by an extreme drop in OIL_CRUDE (-0.89%). US500 showed positive returns, indicating a significant commodity-specific risk without broad equity contagion.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 17
-*   **Timeframe:** 2026-07-06 10:16:00 to 10:16:00 (1 minutes)
-*   **Analysis:** Low severity structural decoupling, with moderate GOLD decline (-0.20%) and minor US500 dip. This is a low-impact, short-duration event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 18
-*   **Timeframe:** 2026-07-06 14:22:00 to 14:34:00 (13 minutes)
-*   **Analysis:** High severity synchronized negative momentum, with significant declines across OIL_CRUDE (-0.78%), GOLD (-0.29%), and a moderate dip in US500 (-0.08%). This indicates a broad risk-off shift.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 19
-*   **Timeframe:** 2026-07-06 15:19:00 to 15:34:00 (16 minutes)
-*   **Analysis:** Very high severity synchronized positive momentum, with strong gains across US500 (+0.21%), OIL_CRUDE (+0.80%), and GOLD (+0.22%). Despite the high anomaly score, the synchronized positive returns signal a robust risk-on rally.
-*   **Verdict:** OPPORTUNISTIC ENTRY
-
-### Event ID: 20
-*   **Timeframe:** 2026-07-07 01:31:00 to 01:31:00 (1 minutes)
-*   **Analysis:** Extremely low severity structural decoupling, with minor movements across all assets. This is negligible market noise.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 21
-*   **Timeframe:** 2026-07-07 01:57:00 to 02:12:00 (16 minutes)
-*   **Analysis:** Low severity structural decoupling, with minor movements in OIL_CRUDE (+0.18%) and GOLD (-0.18%), and a slight dip in US500. Overall impact is limited.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 22
-*   **Timeframe:** 2026-07-07 02:26:00 to 02:41:00 (16 minutes)
-*   **Analysis:** Moderate severity synchronized negative momentum, led by GOLD (-0.23%), with US500 and OIL_CRUDE also declining. This indicates a broad, but contained, risk-off move.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 23
-*   **Timeframe:** 2026-07-07 03:10:00 to 03:20:00 (11 minutes)
-*   **Analysis:** Moderate severity synchronized negative momentum, with notable declines in OIL_CRUDE (-0.32%) and GOLD (-0.30%), and a minor dip in US500. This suggests a broad risk-off sentiment.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 24
-*   **Timeframe:** 2026-07-07 03:37:00 to 03:42:00 (6 minutes)
-*   **Analysis:** High severity synchronized positive momentum, led by GOLD (+0.30%) and OIL_CRUDE (+0.29%), with US500 showing minor gains. Despite the positive direction, the high severity warrants caution.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 25
-*   **Timeframe:** 2026-07-07 06:08:00 to 06:09:00 (2 minutes)
-*   **Analysis:** Low severity synchronized positive momentum, with moderate gains across assets, led by GOLD (+0.28%). US500 showed minor positive movement.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 26
-*   **Timeframe:** 2026-07-07 07:39:00 to 07:43:00 (5 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a notable decline in GOLD (-0.22%) while US500 and OIL_CRUDE posted gains. This suggests a specific safe-haven asset re-pricing.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 27
-*   **Timeframe:** 2026-07-07 10:04:00 to 10:14:00 (11 minutes)
-*   **Analysis:** Moderate severity structural decoupling, driven by a significant drop in OIL_CRUDE (-0.48%) while US500 showed positive returns. This is a commodity-specific event.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 28
-*   **Timeframe:** 2026-07-07 10:25:00 to 10:31:00 (7 minutes)
-*   **Analysis:** Low severity structural decoupling, but with a significant decline in OIL_CRUDE (-0.51%) while US500 posted positive returns. The magnitude of the oil move warrants attention.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 29
-*   **Timeframe:** 2026-07-07 10:44:00 to 10:44:00 (1 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a notable rise in OIL_CRUDE (+0.37%) and US500 remaining flat. This is a contained commodity shock.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 30
-*   **Timeframe:** 2026-07-07 11:11:00 to 11:11:00 (1 minutes)
-*   **Analysis:** Very low severity synchronized positive momentum, with a strong surge in OIL_CRUDE (+0.51%) and minor positive US500 returns. Despite the oil magnitude, the low severity and positive US500 suggest no immediate threat.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 31
-*   **Timeframe:** 2026-07-07 11:28:00 to 11:28:00 (1 minutes)
-*   **Analysis:** Very low severity synchronized negative momentum, but with a substantial decline in OIL_CRUDE (-0.66%). US500 remained flat. The oil magnitude warrants a cautious approach.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 32
-*   **Timeframe:** 2026-07-07 14:07:00 to 14:12:00 (6 minutes)
-*   **Analysis:** Moderate severity structural decoupling, driven by a significant rise in GOLD (+0.44%) while US500 posted positive returns. This indicates a specific safe-haven asset rally.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 33
-*   **Timeframe:** 2026-07-07 15:34:00 to 15:38:00 (5 minutes)
-*   **Analysis:** Low severity structural decoupling, with a notable rise in OIL_CRUDE (+0.44%) and a moderate dip in US500 (-0.12%). The combination of negative US500 and volatile oil warrants a tactical response.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 34
-*   **Timeframe:** 2026-07-07 15:55:00 to 16:19:00 (25 minutes)
-*   **Analysis:** High severity structural decoupling, featuring a significant decline in US500 (-0.28%) and an extreme surge in OIL_CRUDE (+0.88%). This combination of equity weakness and commodity volatility signals heightened systemic risk.
-*   **Verdict:** EMERGENCY DE-RISK
-
-### Event ID: 35
-*   **Timeframe:** 2026-07-07 20:50:00 to 21:18:00 (29 minutes)
-*   **Analysis:** Very high severity structural decoupling, with a significant drop in US500 (-0.21%) and an unprecedented surge in OIL_CRUDE (+1.50%). This represents a severe market dislocation.
-*   **Verdict:** EMERGENCY DE-RISK
-
-### Event ID: 36
-*   **Timeframe:** 2026-07-08 02:37:00 to 02:56:00 (20 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a significant decline in OIL_CRUDE (-0.60%) and a notable rise in GOLD (+0.46%), while US500 posted positive returns. This indicates a complex commodity and safe-haven re-pricing.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 37
-*   **Timeframe:** 2026-07-08 07:21:00 to 07:22:00 (2 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a strong rise in OIL_CRUDE (+0.51%) and a moderate dip in US500 (-0.06%). This suggests a commodity-driven risk.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 38
-*   **Timeframe:** 2026-07-08 07:41:00 to 07:41:00 (1 minutes)
-*   **Analysis:** Very low severity structural decoupling, with a moderate decline in OIL_CRUDE (-0.39%) and minor US500 dip. This is a low-impact event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 39
-*   **Timeframe:** 2026-07-08 09:05:00 to 09:06:00 (2 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a moderate rise in OIL_CRUDE (+0.31%) and a notable dip in US500 (-0.10%). This warrants a cautious approach.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 40
-*   **Timeframe:** 2026-07-08 09:21:00 to 09:34:00 (14 minutes)
-*   **Analysis:** High severity structural decoupling, marked by a very strong decline in OIL_CRUDE (-0.72%) while US500 posted positive returns. This is a significant commodity-specific event.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 41
-*   **Timeframe:** 2026-07-08 10:16:00 to 10:36:00 (21 minutes)
-*   **Analysis:** Extreme severity structural decoupling, featuring a massive decline in US500 (-0.67%) and an unprecedented surge in OIL_CRUDE (+3.09%). This is a critical, systemic market shock.
-*   **Verdict:** EMERGENCY DE-RISK
-
-### Event ID: 42
-*   **Timeframe:** 2026-07-08 13:47:00 to 13:47:00 (1 minutes)
-*   **Analysis:** Very low severity structural decoupling, but with significant movements in OIL_CRUDE (-0.55%) and GOLD (+0.53%), while US500 posted strong positive returns. The commodity volatility warrants a tactical response despite low overall severity.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 43
-*   **Timeframe:** 2026-07-08 15:07:00 to 15:10:00 (4 minutes)
-*   **Analysis:** Low severity structural decoupling, but with an extreme surge in OIL_CRUDE (+1.26%) and a moderate dip in US500 (-0.09%). While overall severity is low, the magnitude of the oil shock is significant.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 44
-*   **Timeframe:** 2026-07-08 16:13:00 to 16:49:00 (37 minutes)
-*   **Analysis:** High severity structural decoupling, characterized by a significant decline in US500 (-0.26%) and an extreme surge in OIL_CRUDE (+1.63%). This indicates a severe market dislocation.
-*   **Verdict:** EMERGENCY DE-RISK
-
-### Event ID: 45
-*   **Timeframe:** 2026-07-08 18:10:00 to 18:12:00 (3 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with US500 posting strong positive returns (+0.24%) but OIL_CRUDE experiencing an extreme decline (-1.17%). This is a significant commodity-specific volatility event.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 46
-*   **Timeframe:** 2026-07-08 18:51:00 to 18:53:00 (3 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with US500 posting strong positive returns (+0.26%) but OIL_CRUDE experiencing an extreme decline (-1.01%). Similar to Event 45, this is a significant commodity-specific volatility event.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 47
-*   **Timeframe:** 2026-07-08 21:47:00 to 21:48:00 (2 minutes)
-*   **Analysis:** Very low severity structural decoupling, but with a strong rise in OIL_CRUDE (+0.76%) and a minor dip in US500. The oil magnitude warrants attention.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 48
-*   **Timeframe:** 2026-07-09 03:17:00 to 03:19:00 (3 minutes)
-*   **Analysis:** Low severity synchronized positive momentum, with a strong rise in OIL_CRUDE (+0.58%) and minor positive US500 returns. This indicates a positive, but not overwhelmingly strong, risk-on environment.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 49
-*   **Timeframe:** 2026-07-09 04:35:00 to 04:46:00 (12 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a moderate rise in OIL_CRUDE (+0.32%) and a notable dip in US500 (-0.12%). This warrants a cautious approach.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 50
-*   **Timeframe:** 2026-07-09 05:33:00 to 05:34:00 (2 minutes)
-*   **Analysis:** Very low severity structural decoupling, with US500 posting moderate positive returns (+0.16%) and minor movements in commodities. This is a low-impact event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 51
-*   **Timeframe:** 2026-07-09 07:11:00 to 07:11:00 (1 minutes)
-*   **Analysis:** Low severity structural decoupling, with moderate GOLD rise (+0.27%) and minor positive US500 returns. This is a low-impact event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 52
-*   **Timeframe:** 2026-07-09 07:31:00 to 07:47:00 (17 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with US500 posting positive returns (+0.12%) but OIL_CRUDE experiencing an extreme decline (-0.97%). This is a significant commodity-specific volatility event.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 53
-*   **Timeframe:** 2026-07-09 07:58:00 to 08:02:00 (5 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with US500 posting positive returns (+0.12%) but OIL_CRUDE experiencing an extreme decline (-1.00%). This is a significant commodity-specific volatility event.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 54
-*   **Timeframe:** 2026-07-09 08:13:00 to 08:13:00 (1 minutes)
-*   **Analysis:** Extremely low severity structural decoupling, but with a strong rise in OIL_CRUDE (+0.63%) and flat US500. The oil magnitude warrants attention.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 55
-*   **Timeframe:** 2026-07-09 12:52:00 to 12:56:00 (5 minutes)
-*   **Analysis:** Extreme severity structural decoupling, with a moderate decline in US500 (-0.17%) and an extreme surge in OIL_CRUDE (+1.20%). The combination of equity weakness and extreme commodity volatility signals heightened systemic risk.
-*   **Verdict:** EMERGENCY DE-RISK
-
-### Event ID: 56
-*   **Timeframe:** 2026-07-09 13:11:00 to 13:11:00 (1 minutes)
-*   **Analysis:** Very low severity structural decoupling, but with a strong decline in OIL_CRUDE (-0.71%) and positive US500 returns. The oil magnitude warrants a tactical response.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 57
-*   **Timeframe:** 2026-07-09 15:14:00 to 15:17:00 (4 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with US500 posting minor positive returns (+0.04%) but OIL_CRUDE experiencing an extreme decline (-0.99%). This is a significant commodity-specific volatility event.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 58
-*   **Timeframe:** 2026-07-09 15:46:00 to 15:47:00 (2 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with US500 posting strong positive returns (+0.36%) despite a significant decline in OIL_CRUDE (-0.54%). The strong equity performance presents an opportunity.
-*   **Verdict:** OPPORTUNISTIC ENTRY
-
-### Event ID: 59
-*   **Timeframe:** 2026-07-09 16:16:00 to 16:21:00 (6 minutes)
-*   **Analysis:** Moderate severity synchronized negative momentum, with a significant decline in US500 (-0.36%) and notable drops in OIL_CRUDE (-0.52%) and GOLD (-0.45%). This indicates a broad and concerning risk-off shift.
-*   **Verdict:** EMERGENCY DE-RISK
-
-### Event ID: 60
-*   **Timeframe:** 2026-07-09 16:35:00 to 16:36:00 (2 minutes)
-*   **Analysis:** Very low severity synchronized positive momentum, with strong gains across US500 (+0.28%), OIL_CRUDE (+0.21%), and GOLD (+0.27%). This is a clear risk-on signal.
-*   **Verdict:** OPPORTUNISTIC ENTRY
-
-### Event ID: 61
-*   **Timeframe:** 2026-07-10 02:24:00 to 02:27:00 (4 minutes)
-*   **Analysis:** Low severity synchronized negative momentum, with minor declines across all assets. This is a low-impact, contained risk-off event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 62
-*   **Timeframe:** 2026-07-10 02:45:00 to 02:45:00 (1 minutes)
-*   **Analysis:** Low severity structural decoupling, with minor movements across assets, led by a moderate rise in GOLD (+0.14%). This is a low-impact event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 63
-*   **Timeframe:** 2026-07-10 03:18:00 to 03:20:00 (3 minutes)
-*   **Analysis:** Moderate severity synchronized positive momentum, led by OIL_CRUDE (+0.33%) with minor positive US500 returns. Despite the positive direction, the moderate severity warrants caution.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 64
-*   **Timeframe:** 2026-07-10 03:33:00 to 03:45:00 (13 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a notable decline in GOLD (-0.30%) while US500 remained flat. This indicates a specific safe-haven asset re-pricing.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 65
-*   **Timeframe:** 2026-07-10 04:51:00 to 04:51:00 (1 minutes)
-*   **Analysis:** Low severity synchronized positive momentum, with minor gains across all assets. This is a low-impact, positive event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 66
-*   **Timeframe:** 2026-07-10 05:07:00 to 05:07:00 (1 minutes)
-*   **Analysis:** Very low severity structural decoupling, with minor movements across assets. This is negligible market noise.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 67
-*   **Timeframe:** 2026-07-10 05:22:00 to 05:22:00 (1 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a notable decline in GOLD (-0.24%) and a minor dip in US500. This warrants a cautious approach.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 68
-*   **Timeframe:** 2026-07-10 08:02:00 to 08:02:00 (1 minutes)
-*   **Analysis:** Low severity structural decoupling, with a significant decline in OIL_CRUDE (-0.44%) and flat US500. The oil magnitude warrants attention.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 69
-*   **Timeframe:** 2026-07-10 08:23:00 to 08:33:00 (11 minutes)
-*   **Analysis:** Very low severity structural decoupling, with minor movements across assets. This is a low-impact event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID: 70
-*   **Timeframe:** 2026-07-10 09:17:00 to 09:18:00 (2 minutes)
-*   **Analysis:** Low severity structural decoupling, but with a significant decline in OIL_CRUDE (-0.52%) and positive US500 returns. The oil magnitude warrants a tactical response.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 71
-*   **Timeframe:** 2026-07-10 09:44:00 to 09:54:00 (11 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a moderate rise in OIL_CRUDE (+0.33%) and a notable dip in US500 (-0.09%). This warrants a cautious approach.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 72
-*   **Timeframe:** 2026-07-10 10:08:00 to 10:19:00 (12 minutes)
-*   **Analysis:** Moderate severity structural decoupling, with a significant decline in OIL_CRUDE (-0.55%) and positive US500 returns. The oil magnitude warrants a tactical response.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID: 73
-*   **Timeframe:** 2026-07-10 10:30:00 to 10:38:00 (9 minutes)
-*   **Analysis:** Low severity structural decoupling, but with a very strong surge in OIL_CRUDE (+0.84%) and a moderate dip in US500 (-0.07%). The extreme oil volatility warrants a tactical response.
-*   **Verdict:** TACTICAL HEDGE
+**Event ID: 1**
+*Analysis:* A structural decoupling event driven by a moderate negative return in OIL_CRUDE. US500 showed resilience with a positive return, and overall severity was moderate. No immediate systemic threat to our core equity positions.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 2**
+*Analysis:* A low-severity, synchronized positive momentum wave across all key assets, led by GOLD. This indicates broad risk-on sentiment.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID: 3**
+*Analysis:* A moderate-to-high severity synchronized negative momentum wave, with all assets, including US500, experiencing declines. This signals a broad market downturn requiring defensive action.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID: 4**
+*Analysis:* A short-duration, low-severity structural decoupling. While US500 saw a minor dip, OIL_CRUDE and GOLD were positive, indicating isolated commodity-driven movement rather than systemic risk.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 5**
+*Analysis:* A moderate-severity structural decoupling. US500 and GOLD experienced negative returns, but OIL_CRUDE showed strong positive momentum. The equity impact was not severe enough to warrant immediate de-risking.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 6**
+*Analysis:* A very short, low-severity structural decoupling. Similar to Event 5, with mixed asset performance and minimal overall impact on equity.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 7**
+*Analysis:* A high-severity structural decoupling. Despite the high telemetry score, US500's negative return was negligible, while OIL_CRUDE was strongly positive. This suggests a significant commodity-specific event with limited spillover to broader equity.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 8**
+*Analysis:* An extremely low-severity, very short structural decoupling with minimal market impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 9**
+*Analysis:* A moderate-to-high severity structural decoupling. US500 showed positive returns, offsetting negative movement in OIL_CRUDE. Equity resilience is noted.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 10**
+*Analysis:* A very low-severity structural decoupling. US500 remained positive despite a significant negative move in OIL_CRUDE, supported by positive GOLD returns.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 11**
+*Analysis:* A moderate-severity structural decoupling. GOLD was the primary driver with a significant negative return, but US500 maintained positive territory.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 12**
+*Analysis:* A low-to-moderate severity structural decoupling. US500 and OIL_CRUDE showed positive returns, indicating a favorable environment for risk assets despite negative GOLD performance.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID: 13**
+*Analysis:* A high-severity structural decoupling. US500 experienced only a minor negative return, while OIL_CRUDE and GOLD were strongly positive. This suggests a commodity-led rally with minimal equity drag.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 14**
+*Analysis:* A very low-severity structural decoupling. US500 saw a moderate negative return, but OIL_CRUDE was strongly positive. The short duration and low severity limit broader concern.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 15**
+*Analysis:* A low-severity structural decoupling. US500 and GOLD were positive, while OIL_CRUDE was negative. Overall positive for equity.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 16**
+*Analysis:* A high-severity structural decoupling. US500 and GOLD were positive, demonstrating resilience despite a significant negative move in OIL_CRUDE.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 17**
+*Analysis:* A short, low-severity structural decoupling. Mixed asset performance with no significant threat to equity.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 18**
+*Analysis:* A high-severity synchronized negative momentum wave. All assets, including US500, experienced notable declines, indicating a broad market risk-off event.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID: 19**
+*Analysis:* A very high-severity synchronized positive momentum wave. All assets, including US500, showed strong positive returns, signaling a significant risk-on opportunity.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID: 20**
+*Analysis:* An extremely low-severity, very short structural decoupling with negligible market impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 21**
+*Analysis:* A low-severity structural decoupling. US500 and GOLD were negative, but OIL_CRUDE was positive. The equity impact was contained.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 22**
+*Analysis:* A moderate-to-high severity synchronized negative momentum wave. All assets, including US500, experienced declines, warranting a defensive posture.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID: 23**
+*Analysis:* A moderate-severity synchronized negative momentum wave. While US500's decline was minor, the synchronized negative movement across all assets suggests a need for caution.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID: 24**
+*Analysis:* A high-severity synchronized positive momentum wave. All assets showed positive returns, indicating a strong risk-on environment.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID: 25**
+*Analysis:* A short, low-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID: 26**
+*Analysis:* A moderate-to-high severity structural decoupling. US500 and OIL_CRUDE were positive, while GOLD was negative. Equity demonstrated strength.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 27**
+*Analysis:* A moderate-severity structural decoupling. US500 and GOLD were positive, despite a significant negative return in OIL_CRUDE. Equity resilience is key.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 28**
+*Analysis:* A very low-severity structural decoupling. US500 and GOLD were positive, with a notable negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 29**
+*Analysis:* A short, moderate-severity structural decoupling. US500 was negligible, while OIL_CRUDE was positive and GOLD negative. No significant equity threat.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID: 30**
+*Analysis:* An extremely low-severity, very short synchronized positive momentum wave.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID: 31**
+*Analysis:* An extremely low-severity, very short synchronized negative momentum wave. Despite low severity, the synchronized negative movement across all assets warrants a minor defensive adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 32**
+*Analysis:* A moderate-severity structural decoupling. US500 and GOLD were positive, while OIL_CRUDE was negative. Equity remained positive.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 33**
+*Analysis:* A low-severity structural decoupling. US500 saw a moderate negative return, but OIL_CRUDE was strongly positive. The overall impact on equity was contained.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 34**
+*Analysis:* A high-severity, long-duration structural decoupling. US500 and GOLD experienced significant negative returns, while OIL_CRUDE was strongly positive. This indicates notable equity pressure.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 35**
+*Analysis:* An extremely high-severity, long-duration structural decoupling. US500 and GOLD were severely negative, while OIL_CRUDE was astronomically positive. This represents a critical market stress event with significant equity and safe-haven asset pressure.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 36**
+*Analysis:* A moderate-to-high severity, long-duration structural decoupling. US500 and GOLD were positive, despite a significant negative return in OIL_CRUDE. Equity demonstrated resilience.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 37**
+*Analysis:* A short, moderate-to-high severity structural decoupling. US500 saw a minor negative return, while OIL_CRUDE was strongly positive. No major equity threat.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 38**
+*Analysis:* An extremely low-severity, very short structural decoupling with minimal market impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 39**
+*Analysis:* A short, moderate-severity structural decoupling. US500 experienced a notable negative return, alongside negative GOLD, despite positive OIL_CRUDE. This warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 40**
+*Analysis:* A high-severity structural decoupling. US500 and GOLD were positive, demonstrating resilience despite a significant negative move in OIL_CRUDE.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 41**
+*Analysis:* An extremely high-severity, long-duration structural decoupling. US500 and GOLD were severely negative, while OIL_CRUDE was extremely positive. This is a critical market stress event with severe equity and safe-haven asset pressure.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 42**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 43**
+*Analysis:* A low-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was extremely positive. The moderate equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 44**
+*Analysis:* A high-severity, very long-duration structural decoupling. US500 and GOLD experienced significant negative returns, while OIL_CRUDE was extremely positive. This indicates substantial equity pressure.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 45**
+*Analysis:* A moderate-severity structural decoupling. US500 and GOLD were positive, despite an extremely negative move in OIL_CRUDE. Equity demonstrated strength.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 46**
+*Analysis:* A moderate-severity structural decoupling. US500 and GOLD were strongly positive, despite an extremely negative move in OIL_CRUDE. Equity demonstrated strong resilience.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 47**
+*Analysis:* An extremely low-severity, short structural decoupling. US500 saw a minor negative return, while OIL_CRUDE was strongly positive. Minimal equity impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 48**
+*Analysis:* A short, low-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 49**
+*Analysis:* A moderate-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 50**
+*Analysis:* An extremely low-severity, short structural decoupling. US500 and GOLD were positive, despite a minor negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 51**
+*Analysis:* A short, low-severity structural decoupling. US500 and GOLD were positive, despite a negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 52**
+*Analysis:* A moderate-severity, long-duration structural decoupling. US500 and GOLD were positive, despite an extremely negative move in OIL_CRUDE. Equity demonstrated resilience.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 53**
+*Analysis:* A moderate-to-high severity structural decoupling. US500 and GOLD were strongly positive, despite an extremely negative move in OIL_CRUDE. Equity demonstrated strong resilience.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 54**
+*Analysis:* An extremely low-severity, very short structural decoupling with minimal market impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 55**
+*Analysis:* An extremely high-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was extremely positive. This indicates significant equity pressure during a period of extreme market stress.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 56**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 57**
+*Analysis:* A moderate-severity structural decoupling. US500 and GOLD were positive, despite an extremely negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 58**
+*Analysis:* A short, low-to-moderate severity structural decoupling. US500 was strongly positive, despite a significant negative move in OIL_CRUDE. Equity demonstrated strength.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 59**
+*Analysis:* A moderate-severity synchronized negative momentum wave. All assets experienced significant negative returns, indicating a broad market downturn.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 60**
+*Analysis:* An extremely low-severity, short synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 61**
+*Analysis:* A very low-severity, short synchronized negative momentum wave. All assets experienced minor declines, warranting a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 62**
+*Analysis:* A very short, very low-severity structural decoupling. US500 and OIL_CRUDE saw minor negative returns, but GOLD was positive. Minimal equity impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 63**
+*Analysis:* A short, moderate-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 64**
+*Analysis:* A moderate-severity, long-duration structural decoupling. US500 and OIL_CRUDE were positive, despite a negative move in GOLD. Equity remained positive.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 65**
+*Analysis:* A very short, very low-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 66**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were positive, despite a negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 67**
+*Analysis:* A short, moderate-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 68**
+*Analysis:* A short, low-severity structural decoupling. US500 was negligible, OIL_CRUDE significantly negative, and GOLD positive. Minimal equity impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 69**
+*Analysis:* An extremely low-severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The equity dip was moderate for the low severity.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 70**
+*Analysis:* A short, very low-severity structural decoupling. US500 was positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 71**
+*Analysis:* A moderate-severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 72**
+*Analysis:* A moderate-severity, long-duration structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 73**
+*Analysis:* A low-severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 74**
+*Analysis:* A short, moderate-severity structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 75**
+*Analysis:* A high-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 76**
+*Analysis:* An extremely high-severity structural decoupling. US500 and GOLD were positive, but OIL_CRUDE was extremely negative. Despite positive equity, the extreme severity and massive commodity volatility indicate significant market stress.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 77**
+*Analysis:* A very short, very low-severity structural decoupling. US500 was positive, despite significant negative GOLD and negative OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 78**
+*Analysis:* A short, high-severity structural decoupling. US500 and GOLD were severely negative, while OIL_CRUDE was extremely positive. This indicates significant equity pressure.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 79**
+*Analysis:* A short, very low-severity structural decoupling. US500 and GOLD were positive, despite an extremely negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 80**
+*Analysis:* A low-to-moderate severity structural decoupling. US500 and OIL_CRUDE were negative, while GOLD was positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 81**
+*Analysis:* A critical emergency-level severity, long-duration structural decoupling. US500 and GOLD were severely negative, while OIL_CRUDE was astronomically positive. This is a critical market stress event.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 82**
+*Analysis:* A very short, very low-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 83**
+*Analysis:* A moderate-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 84**
+*Analysis:* A very short, very low-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 85**
+*Analysis:* A moderate-severity structural decoupling. US500 was positive, despite negative OIL_CRUDE and GOLD. Equity remained resilient.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 86**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were positive, despite a negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 87**
+*Analysis:* A short, low-to-moderate severity structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 88**
+*Analysis:* A short, low-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 89**
+*Analysis:* A low-severity structural decoupling. US500 was negligible, GOLD negative, and OIL_CRUDE positive. Minimal equity impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 90**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The equity dip was moderate for the low severity.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 91**
+*Analysis:* A short, very low-severity structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 92**
+*Analysis:* A high-severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. This indicates significant equity pressure.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 93**
+*Analysis:* An extremely high-severity structural decoupling. US500 and GOLD were severely negative, while OIL_CRUDE was extremely positive. This is a critical market stress event.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 94**
+*Analysis:* A short, low-severity synchronized positive momentum wave. US500 and GOLD were positive.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 95**
+*Analysis:* An extremely high-severity structural decoupling. US500 and GOLD were positive, but OIL_CRUDE was significantly negative. Despite positive equity, the extreme severity and large commodity volatility indicate significant market stress.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 96**
+*Analysis:* A short, moderate-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was extremely positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 97**
+*Analysis:* A short, low-severity structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 98**
+*Analysis:* A moderate-severity, long-duration structural decoupling. US500 and GOLD were positive, despite an extremely negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 99**
+*Analysis:* A short, very low-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 100**
+*Analysis:* A short, moderate-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 101**
+*Analysis:* A short, very low-severity synchronized negative momentum wave. All assets experienced declines, with US500 showing a moderate negative return. This warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 102**
+*Analysis:* A short, high-severity structural decoupling. US500 and GOLD were positive, despite an extremely negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 103**
+*Analysis:* A critical emergency-level severity, long-duration synchronized positive momentum wave. All assets, including US500, showed extremely strong positive returns. This is a massive risk-on opportunity.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 104**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was extremely positive. The equity dip was notable for the low severity.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 105**
+*Analysis:* A short, high-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 106**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 107**
+*Analysis:* A short, low-severity structural decoupling. US500 was positive, despite negative OIL_CRUDE and GOLD. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 108**
+*Analysis:* A moderate-to-high severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 109**
+*Analysis:* A short, moderate-severity structural decoupling. US500 and GOLD were positive, while OIL_CRUDE was strongly positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 110**
+*Analysis:* A short, moderate-to-high severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 111**
+*Analysis:* A very short, very low-severity structural decoupling. US500 was negative, while OIL_CRUDE was strongly positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 112**
+*Analysis:* An extremely high-severity structural decoupling. US500 and GOLD were positive, but OIL_CRUDE was extremely negative. Despite positive equity, the extreme severity and massive commodity volatility indicate significant market stress.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 113**
+*Analysis:* An extremely high-severity, long-duration synchronized positive momentum wave. All assets, including US500, showed strong positive returns. This is a major risk-on opportunity.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 114**
+*Analysis:* A very low-severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 115**
+*Analysis:* A very short, very low-severity structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 116**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 117**
+*Analysis:* A short, extremely low-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 118**
+*Analysis:* A high-severity, long-duration structural decoupling. US500 and GOLD were strongly positive, despite a significant negative move in OIL_CRUDE. Equity demonstrated strong resilience.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 119**
+*Analysis:* A short, low-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 120**
+*Analysis:* A moderate-severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 121**
+*Analysis:* A short, very low-severity synchronized negative momentum wave. All assets experienced declines, warranting a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 122**
+*Analysis:* A low-severity, long-duration structural decoupling. US500 and OIL_CRUDE were negative, while GOLD was positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 123**
+*Analysis:* A short, low-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 124**
+*Analysis:* An extremely low-severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The equity dip was moderate for the low severity.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 125**
+*Analysis:* A very short, very low-severity structural decoupling. US500 was negligible, OIL_CRUDE strongly positive, and GOLD negative. Minimal equity impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 126**
+*Analysis:* A short, low-severity structural decoupling. US500 and GOLD were positive, despite a negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 127**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 was negative, OIL_CRUDE strongly positive, and GOLD negligible. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 128**
+*Analysis:* A moderate-severity, very long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. This indicates significant equity pressure.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 129**
+*Analysis:* A short, moderate-severity structural decoupling. US500 was positive, despite negative OIL_CRUDE and GOLD. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 130**
+*Analysis:* A short, low-severity structural decoupling. US500 and OIL_CRUDE were positive, despite a significant negative move in GOLD. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 131**
+*Analysis:* A short, low-severity structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 132**
+*Analysis:* A low-severity, long-duration synchronized negative momentum wave. All assets experienced significant negative returns, indicating a broad market downturn.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 133**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were positive, despite a negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 134**
+*Analysis:* A low-severity, long-duration synchronized negative momentum wave. All assets experienced declines, with US500 showing a moderate negative return. This warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 135**
+*Analysis:* A high-severity, long-duration synchronized positive momentum wave across all assets. This indicates a strong risk-on environment.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 136**
+*Analysis:* A moderate-to-high severity, long-duration structural decoupling. US500 and OIL_CRUDE were significantly negative, while GOLD was positive. This indicates notable equity pressure.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 137**
+*Analysis:* A low-severity, long-duration synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 138**
+*Analysis:* A low-severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 139**
+*Analysis:* A short, high-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. This indicates significant equity pressure.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 140**
+*Analysis:* A very short, very low-severity synchronized negative momentum wave. All assets experienced declines, with US500 showing a moderate negative return. This warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 141**
+*Analysis:* A high-severity, long-duration synchronized negative momentum wave. All assets experienced declines, with US500 showing a moderate negative return. This warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 142**
+*Analysis:* A moderate-to-high severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. This indicates significant equity pressure.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 143**
+*Analysis:* A high-severity, very long-duration synchronized positive momentum wave. All assets, including US500, showed strongly positive returns. This is a major risk-on opportunity.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 144**
+*Analysis:* A short, low-severity structural decoupling. US500 and OIL_CRUDE were significantly negative, while GOLD was positive. This indicates significant equity pressure.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 145**
+*Analysis:* A short, moderate-severity synchronized negative momentum wave. All assets experienced declines, with US500 showing a notable negative return. This warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 146**
+*Analysis:* A short, very low-severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 147**
+*Analysis:* A critical emergency-level severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was astronomically positive. This is a critical market stress event.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 148**
+*Analysis:* A high-severity, long-duration structural decoupling. US500 and GOLD were positive, despite an extremely negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 149**
+*Analysis:* An extremely high-severity, very long-duration structural decoupling. US500 was positive, but GOLD was negative and OIL_CRUDE extremely negative. Despite positive equity, the extreme severity and massive commodity volatility indicate significant market stress.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 150**
+*Analysis:* A short, very low-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The significant equity pressure for the low severity warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 151**
+*Analysis:* A very short, low-severity structural decoupling. US500 was positive, GOLD negative, and OIL_CRUDE flat. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 152**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was strongly positive. The equity dip was notable for the low severity.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 153**
+*Analysis:* An extremely high-severity structural decoupling. US500 and GOLD were positive, but OIL_CRUDE was significantly negative. Despite positive equity, the extreme severity and large commodity volatility indicate significant market stress.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 154**
+*Analysis:* A moderate-severity, long-duration structural decoupling. US500 and GOLD were positive, despite a negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 155**
+*Analysis:* A very low-severity, long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. Minimal equity impact.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 156**
+*Analysis:* A short, low-to-moderate severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 157**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 and GOLD were positive, despite a negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 158**
+*Analysis:* An extremely high-severity, very long-duration structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. This indicates significant equity pressure during a period of extreme market stress.
+*Verdict: EMERGENCY DE-RISK*
+
+**Event ID 159**
+*Analysis:* A very low-severity, long-duration structural decoupling. US500 was negative, OIL_CRUDE significantly negative, and GOLD positive. The equity dip was minor.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 160**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 was positive, despite significant negative OIL_CRUDE and negative GOLD. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 161**
+*Analysis:* A short, low-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The moderate equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 162**
+*Analysis:* A short, moderate-severity structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 163**
+*Analysis:* A moderate-severity, long-duration structural decoupling. US500 was negative, while OIL_CRUDE and GOLD were positive. The notable equity dip warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 164**
+*Analysis:* A short, moderate-severity structural decoupling. US500 and OIL_CRUDE were positive, despite a negative move in GOLD. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 165**
+*Analysis:* A short, low-severity structural decoupling. US500 and GOLD were negative, while OIL_CRUDE was positive. The significant equity pressure warrants a tactical adjustment.
+*Verdict: TACTICAL HEDGE*
+
+**Event ID 166**
+*Analysis:* A moderate-to-high severity, long-duration structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 167**
+*Analysis:* A short, moderate-to-high severity synchronized positive momentum wave across all assets.
+*Verdict: OPPORTUNISTIC ENTRY*
+
+**Event ID 168**
+*Analysis:* A short, low-severity structural decoupling. US500 and GOLD were positive, despite a significant negative move in OIL_CRUDE. Equity remained strong.
+*Verdict: MAINTAIN POSITION / HOLD*
+
+**Event ID 169**
+*Analysis:* An extremely low-severity, very short structural decoupling. US500 was negative, while OIL_CRUDE and GOLD were positive. Minimal equity impact.
+*Verdict: MAINTAIN POSITION / HOLD*
 
 ## Strategic Hedging Framework
 
-Our risk management philosophy remains anchored on proactive capital preservation and opportunistic growth. The observed market dynamics, particularly the frequent and often severe structural decoupling events driven by commodity volatility (primarily OIL_CRUDE), underscore the importance of dynamic hedging strategies. While synchronized negative momentum events necessitate broad de-risking, isolated commodity shocks, even with high magnitude, often call for targeted tactical hedges to protect specific exposures without unnecessarily liquidating broader portfolio positions. Conversely, clear synchronized positive momentum, especially when accompanied by strong equity performance, presents compelling entry points. We will continue to monitor these macro shock waves, refining our thresholds and execution protocols to optimize risk-adjusted returns.
+The analysis reveals a recurring pattern of "Structural Decoupling" events, often driven by significant volatility in OIL_CRUDE, with varying impacts on US500 and GOLD. While many of these events see equity markets remain resilient or even positive, a subset of these decoupling events, particularly those with **Severity scores below -0.10** and **significant negative returns in US500 and/or GOLD**, necessitate immediate and decisive action. These are classified as **EMERGENCY DE-RISK**.
+
+Conversely, "Synchronized Momentum Wave (Positive)" events, especially those with high severity, present clear **OPPORTUNISTIC ENTRY** points. "Synchronized Momentum Wave (Negative)" events, even at lower severity, generally warrant a **TACTICAL HEDGE** due to the broad market downturn.
+
+Our strategy must remain agile, distinguishing between isolated commodity shocks that our diversified portfolio can absorb (MAINTAIN POSITION / HOLD) and those structural shifts or synchronized downturns that demand active risk mitigation (TACTICAL HEDGE) or aggressive capital preservation (EMERGENCY DE-RISK). The prevalence of OIL_CRUDE as a primary driver, often decoupling from other assets, underscores the importance of dynamic commodity risk management within our broader portfolio strategy. We will continue to monitor these macro waves, prioritizing capital preservation during extreme negative shocks and deploying capital strategically during confirmed positive momentum.
