@@ -1,73 +1,167 @@
 # MANTRA Executive Risk Briefing
 
-This report provides a consolidated review of recent market volatility waves, moving beyond granular minute-by-minute data to assess macro shock events. Our focus remains on identifying systemic risks, tactical opportunities, and ensuring portfolio resilience. Each event block is analyzed for its underlying drivers and market impact, culminating in a definitive operational verdict.
+This report synthesizes macro shock event waves, providing a consolidated risk assessment and actionable operational verdicts for C-suite consideration. Our focus remains on aggregated volatility patterns and cross-asset dynamics, moving beyond granular minute-by-minute noise to identify systemic shifts and strategic opportunities.
 
 ## Chronological Shock Logs & Operational Verdicts
 
-### Event ID 1: 2026-07-03 08:09:00 to 08:17:00
-*   **Analysis:** A moderate severity structural decoupling event, primarily driven by a significant decline in crude oil and gold, while the US500 showed resilience with a slight positive return. This suggests a localized commodity-specific shock rather than broad market distress.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID 2: 2026-07-03 08:37:00 to 08:42:00
-*   **Analysis:** A low-to-moderate severity synchronized momentum wave, characterized by positive returns across all major assets, led by gold. This indicates a general positive sentiment or minor risk-on shift.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID 3: 2026-07-03 09:11:00 to 09:22:00
-*   **Analysis:** A high severity synchronized momentum wave where all assets, particularly crude oil, experienced significant negative returns. The negative movement in the US500 alongside commodities and gold signals a broader risk-off sentiment.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID 4: 2026-07-03 10:12:00 to 10:13:00
-*   **Analysis:** A low severity structural decoupling event. Crude oil and gold saw positive movements, while the US500 experienced a minimal decline. The short duration and low overall severity suggest a contained, commodity-driven positive impulse with limited equity impact.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID 5: 2026-07-03 10:48:00 to 10:52:00
-*   **Analysis:** A moderate-to-high severity structural decoupling. Crude oil surged significantly, while the US500 and gold declined. This pattern often indicates inflation concerns or supply shocks impacting equities negatively despite commodity strength.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID 6: 2026-07-03 14:21:00 to 14:21:00
-*   **Analysis:** A low severity, brief structural decoupling. Crude oil rose, while the US500 and gold saw minor declines. This was a short-lived, localized event with minimal systemic impact.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID 7: 2026-07-03 15:05:00 to 15:14:00
-*   **Analysis:** A very high severity structural decoupling event. Crude oil experienced a substantial positive surge, gold declined, and the US500 showed only a marginal negative return. Despite the equity resilience, the extreme severity driven by commodities warrants caution.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID 8: 2026-07-03 16:08:00 to 16:08:00
-*   **Analysis:** A very low severity, brief structural decoupling. Crude oil rose, gold declined, and the US500 was largely unaffected. This was an insignificant market event.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID 9: 2026-07-03 16:23:00 to 16:24:00
-*   **Analysis:** A high severity structural decoupling. Crude oil saw a significant decline, while the US500 and gold posted positive returns. This suggests a specific negative shock to oil that was decoupled from broader market sentiment, potentially creating opportunities elsewhere.
-*   **Verdict:** OPPORTUNISTIC ENTRY
-
-### Event ID 10: 2026-07-06 00:06:00 to 00:14:00
-*   **Analysis:** A very low severity structural decoupling, despite a substantial drop in crude oil. The US500 remained flat, and gold rose. The low overall severity score indicates that the significant oil movement had minimal systemic impact on the broader portfolio.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID 11: 2026-07-06 01:47:00 to 01:55:00
-*   **Analysis:** A moderate severity structural decoupling. Gold experienced a very significant decline, while the US500 posted positive returns. This suggests a specific negative shock to gold, potentially a shift in safe-haven demand, creating a potential entry point for long-term gold positions.
-*   **Verdict:** OPPORTUNISTIC ENTRY
-
-### Event ID 12: 2026-07-06 02:07:00 to 02:17:00
-*   **Analysis:** A moderate severity structural decoupling. Crude oil and the US500 both showed strong positive returns, while gold declined. This pattern suggests a "risk-on" environment driven by growth optimism, with gold losing its safe-haven appeal.
-*   **Verdict:** MAINTAIN POSITION / HOLD
-
-### Event ID 13: 2026-07-06 03:13:00 to 03:16:00
-*   **Analysis:** A very high severity structural decoupling. Crude oil surged extremely, gold also rose, while the US500 saw a slight decline. The extreme commodity movement and high severity, coupled with a negative equity response, signals potential inflationary pressures or supply concerns requiring protective measures.
-*   **Verdict:** TACTICAL HEDGE
-
-### Event ID 14: 2026-07-06 03:52:00 to 03:54:00
-*   **Analysis:** A very low severity structural decoupling. Crude oil surged significantly, but the US500 experienced a noticeable decline, while gold also fell. Despite the asset movements, the very low overall severity score indicates a contained event with limited systemic risk.
-*   **Verdict:** MAINTAIN POSITION / HOLD
+**Event ID: 1** - TACTICAL HEDGE
+**Event ID: 2** - OPPORTUNISTIC ENTRY
+**Event ID: 3** - TACTICAL HEDGE
+**Event ID: 4** - MAINTAIN POSITION / HOLD
+**Event ID: 5** - TACTICAL HEDGE
+**Event ID: 6** - MAINTAIN POSITION / HOLD
+**Event ID: 7** - TACTICAL HEDGE
+**Event ID: 8** - MAINTAIN POSITION / HOLD
+**Event ID: 9** - TACTICAL HEDGE
+**Event ID: 10** - MAINTAIN POSITION / HOLD
+**Event ID: 11** - TACTICAL HEDGE
+**Event ID: 12** - TACTICAL HEDGE
+**Event ID: 13** - OPPORTUNISTIC ENTRY
+**Event ID: 14** - MAINTAIN POSITION / HOLD
+**Event ID: 15** - MAINTAIN POSITION / HOLD
+**Event ID: 16** - TACTICAL HEDGE
+**Event ID: 17** - MAINTAIN POSITION / HOLD
+**Event ID: 18** - EMERGENCY DE-RISK
+**Event ID: 19** - OPPORTUNISTIC ENTRY
+**Event ID: 20** - MAINTAIN POSITION / HOLD
+**Event ID: 21** - MAINTAIN POSITION / HOLD
+**Event ID: 22** - TACTICAL HEDGE
+**Event ID: 23** - TACTICAL HEDGE
+**Event ID: 24** - OPPORTUNISTIC ENTRY
+**Event ID: 25** - MAINTAIN POSITION / HOLD
+**Event ID: 26** - TACTICAL HEDGE
+**Event ID: 27** - TACTICAL HEDGE
+**Event ID: 28** - MAINTAIN POSITION / HOLD
+**Event ID: 29** - MAINTAIN POSITION / HOLD
+**Event ID: 30** - MAINTAIN POSITION / HOLD
+**Event ID: 31** - MAINTAIN POSITION / HOLD
+**Event ID: 32** - TACTICAL HEDGE
+**Event ID: 33** - MAINTAIN POSITION / HOLD
+**Event ID: 34** - TACTICAL HEDGE
+**Event ID: 35** - EMERGENCY DE-RISK
+**Event ID: 36** - TACTICAL HEDGE
+**Event ID: 37** - MAINTAIN POSITION / HOLD
+**Event ID: 38** - MAINTAIN POSITION / HOLD
+**Event ID: 39** - MAINTAIN POSITION / HOLD
+**Event ID: 40** - TACTICAL HEDGE
+**Event ID: 41** - EMERGENCY DE-RISK
+**Event ID: 42** - MAINTAIN POSITION / HOLD
+**Event ID: 43** - MAINTAIN POSITION / HOLD
+**Event ID: 44** - EMERGENCY DE-RISK
+**Event ID: 45** - TACTICAL HEDGE
+**Event ID: 46** - TACTICAL HEDGE
+**Event ID: 47** - MAINTAIN POSITION / HOLD
+**Event ID: 48** - MAINTAIN POSITION / HOLD
+**Event ID: 49** - TACTICAL HEDGE
+**Event ID: 50** - MAINTAIN POSITION / HOLD
+**Event ID: 51** - MAINTAIN POSITION / HOLD
+**Event ID: 52** - TACTICAL HEDGE
+**Event ID: 53** - TACTICAL HEDGE
+**Event ID: 54** - MAINTAIN POSITION / HOLD
+**Event ID: 55** - EMERGENCY DE-RISK
+**Event ID: 56** - MAINTAIN POSITION / HOLD
+**Event ID: 57** - TACTICAL HEDGE
+**Event ID: 58** - MAINTAIN POSITION / HOLD
+**Event ID: 59** - TACTICAL HEDGE
+**Event ID: 60** - MAINTAIN POSITION / HOLD
+**Event ID: 61** - MAINTAIN POSITION / HOLD
+**Event ID: 62** - MAINTAIN POSITION / HOLD
+**Event ID: 63** - OPPORTUNISTIC ENTRY
+**Event ID: 64** - TACTICAL HEDGE
+**Event ID: 65** - MAINTAIN POSITION / HOLD
+**Event ID: 66** - MAINTAIN POSITION / HOLD
+**Event ID: 67** - MAINTAIN POSITION / HOLD
+**Event ID: 68** - MAINTAIN POSITION / HOLD
+**Event ID: 69** - MAINTAIN POSITION / HOLD
+**Event ID: 70** - MAINTAIN POSITION / HOLD
+**Event ID: 71** - TACTICAL HEDGE
+**Event ID: 72** - TACTICAL HEDGE
+**Event ID: 73** - MAINTAIN POSITION / HOLD
+**Event ID: 74** - TACTICAL HEDGE
+**Event ID: 75** - TACTICAL HEDGE
+**Event ID: 76** - TACTICAL HEDGE
+**Event ID: 77** - MAINTAIN POSITION / HOLD
+**Event ID: 78** - EMERGENCY DE-RISK
+**Event ID: 79** - MAINTAIN POSITION / HOLD
+**Event ID: 80** - MAINTAIN POSITION / HOLD
+**Event ID: 81** - EMERGENCY DE-RISK
+**Event ID: 82** - MAINTAIN POSITION / HOLD
+**Event ID: 83** - TACTICAL HEDGE
+**Event ID: 84** - MAINTAIN POSITION / HOLD
+**Event ID: 85** - TACTICAL HEDGE
+**Event ID: 86** - MAINTAIN POSITION / HOLD
+**Event ID: 87** - MAINTAIN POSITION / HOLD
+**Event ID: 88** - MAINTAIN POSITION / HOLD
+**Event ID: 89** - MAINTAIN POSITION / HOLD
+**Event ID: 90** - MAINTAIN POSITION / HOLD
+**Event ID: 91** - MAINTAIN POSITION / HOLD
+**Event ID: 92** - TACTICAL HEDGE
+**Event ID: 93** - EMERGENCY DE-RISK
+**Event ID: 94** - MAINTAIN POSITION / HOLD
+**Event ID: 95** - TACTICAL HEDGE
+**Event ID: 96** - TACTICAL HEDGE
+**Event ID: 97** - MAINTAIN POSITION / HOLD
+**Event ID: 98** - TACTICAL HEDGE
+**Event ID: 99** - MAINTAIN POSITION / HOLD
+**Event ID: 100** - TACTICAL HEDGE
+**Event ID: 101** - MAINTAIN POSITION / HOLD
+**Event ID: 102** - TACTICAL HEDGE
+**Event ID: 103** - OPPORTUNISTIC ENTRY
+**Event ID: 104** - MAINTAIN POSITION / HOLD
+**Event ID: 105** - TACTICAL HEDGE
+**Event ID: 106** - MAINTAIN POSITION / HOLD
+**Event ID: 107** - MAINTAIN POSITION / HOLD
+**Event ID: 108** - TACTICAL HEDGE
+**Event ID: 109** - OPPORTUNISTIC ENTRY
+**Event ID: 110** - TACTICAL HEDGE
+**Event ID: 111** - MAINTAIN POSITION / HOLD
+**Event ID: 112** - TACTICAL HEDGE
+**Event ID: 113** - OPPORTUNISTIC ENTRY
+**Event ID: 114** - MAINTAIN POSITION / HOLD
+**Event ID: 115** - MAINTAIN POSITION / HOLD
+**Event ID: 116** - MAINTAIN POSITION / HOLD
+**Event ID: 117** - MAINTAIN POSITION / HOLD
+**Event ID: 118** - TACTICAL HEDGE
+**Event ID: 119** - MAINTAIN POSITION / HOLD
+**Event ID: 120** - TACTICAL HEDGE
+**Event ID: 121** - MAINTAIN POSITION / HOLD
+**Event ID: 122** - MAINTAIN POSITION / HOLD
+**Event ID: 123** - MAINTAIN POSITION / HOLD
+**Event ID: 124** - MAINTAIN POSITION / HOLD
+**Event ID: 125** - MAINTAIN POSITION / HOLD
+**Event ID: 126** - MAINTAIN POSITION / HOLD
+**Event ID: 127** - MAINTAIN POSITION / HOLD
+**Event ID: 128** - TACTICAL HEDGE
+**Event ID: 129** - TACTICAL HEDGE
+**Event ID: 130** - MAINTAIN POSITION / HOLD
+**Event ID: 131** - MAINTAIN POSITION / HOLD
+**Event ID: 132** - TACTICAL HEDGE
+**Event ID: 133** - MAINTAIN POSITION / HOLD
+**Event ID: 134** - MAINTAIN POSITION / HOLD
+**Event ID: 135** - OPPORTUNISTIC ENTRY
+**Event ID: 136** - TACTICAL HEDGE
+**Event ID: 137** - MAINTAIN POSITION / HOLD
+**Event ID: 138** - MAINTAIN POSITION / HOLD
+**Event ID: 139** - TACTICAL HEDGE
+**Event ID: 140** - MAINTAIN POSITION / HOLD
+**Event ID: 141** - EMERGENCY DE-RISK
+**Event ID: 142** - TACTICAL HEDGE
+**Event ID: 143** - OPPORTUNISTIC ENTRY
+**Event ID: 144** - MAINTAIN POSITION / HOLD
+**Event ID: 145** - TACTICAL HEDGE
+**Event ID: 146** - MAINTAIN POSITION / HOLD
+**Event ID: 147** - EMERGENCY DE-RISK
+**Event ID: 148** - TACTICAL HEDGE
+**Event ID: 149** - TACTICAL HEDGE
+**Event ID: 150** - MAINTAIN POSITION / HOLD
+**Event ID: 151** - MAINTAIN POSITION / HOLD
+**Event ID: 152** - MAINTAIN POSITION / HOLD
+**Event ID: 153** - TACTICAL HEDGE
+**Event ID: 154** - TACTICAL HEDGE
+**Event ID: 155** - MAINTAIN POSITION / HOLD
+**Event ID: 156** - MAINTAIN POSITION / HOLD
+**Event ID: 157** - MAINTAIN POSITION / HOLD
 
 ## Strategic Hedging Framework
 
-The observed volatility waves highlight a recurring theme of structural decoupling, often driven by significant movements in crude oil, with varying impacts on equities and gold. While some events indicate localized commodity shocks that do not warrant broad de-risking, others, particularly those with high severity and negative equity correlation, necessitate tactical adjustments.
-
-Our strategy remains agile:
-1.  **Monitor Commodity-Driven Inflationary Pressures:** Frequent and significant oil movements, especially those with high severity and negative equity correlation (Events 5, 7, 13), require vigilance. We will continue to employ tactical hedges to mitigate potential equity downside from sustained commodity price increases.
-2.  **Leverage Decoupling Opportunities:** Events where a primary asset experiences a significant, isolated shock while other core holdings remain resilient or move favorably (Events 9, 11) present opportunities for strategic entry or rebalancing within specific asset classes.
-3.  **Maintain Core Positions During Localized Shocks:** Low-severity events or those where the US500 demonstrates resilience despite commodity or gold volatility (Events 1, 4, 6, 8, 10, 12, 14) do not warrant knee-jerk reactions. Our long-term conviction in core holdings remains paramount.
-4.  **Proactive Risk Mitigation for Synchronized Downturns:** High-severity synchronized negative momentum waves (Event 3) are critical indicators for broader market stress. Our framework ensures immediate tactical hedging to protect against systemic risk.
-
-Our operational verdicts are designed to be precise, minimizing unnecessary portfolio churn while ensuring robust protection against identified macro risks and capitalizing on transient market dislocations. We will continue to refine our models to better anticipate the secondary effects of structural decoupling events on our diversified portfolio.
+Our risk management framework is designed to dynamically respond to evolving market conditions, prioritizing capital preservation during systemic shocks while capitalizing on transient dislocations. The prevalence of "Structural Decoupling" events, often driven by significant moves in OIL_CRUDE, underscores the need for agile cross-asset hedging strategies. "Synchronized Momentum Waves," particularly those with high severity, demand decisive action—either aggressive de-risking in downturns or strategic entry during robust rallies. Continuous monitoring of the "Worst Isolation Score" serves as our primary indicator for overall market stress, guiding the intensity of our operational responses.
