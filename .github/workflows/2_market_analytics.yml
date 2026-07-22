@@ -2,9 +2,9 @@ name: MANTRA Market Analytics & ML
 
 on:
   workflow_run:
-    workflows: ["MANTRA Market Data Ingestion"]
-    types:
-      - completed
+   # workflows: ["MANTRA Market Data Ingestion"]
+   # types:
+   #   - completed
   workflow_dispatch: # Allows manual triggering anytime
 
 jobs:
