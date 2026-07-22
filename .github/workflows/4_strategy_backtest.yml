@@ -2,10 +2,10 @@ name: MANTRA Quantitative Strategy Backtest
 
 on:
   workflow_run:
-    workflows: ["MANTRA Market Analytics & ML"]
-    types:
-      - completed
-  workflow_dispatch: # Allows manual triggering anytime
+    #workflows: ["MANTRA Market Analytics & ML"]
+    #types:
+     # - completed
+ # workflow_dispatch: # Allows manual triggering anytime
 
 jobs:
   execute-backtest:
