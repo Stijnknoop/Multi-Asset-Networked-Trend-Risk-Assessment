@@ -2,10 +2,10 @@ name: MANTRA AI Risk Agents Committee
 
 on:
   workflow_run:
-    workflows: ["MANTRA Market Analytics & ML"]
-    types:
-      - completed
-  workflow_dispatch: # Allows manual triggering anytime
+    #workflows: ["MANTRA Market Analytics & ML"]
+    #types:
+      #- completed
+  #workflow_dispatch: # Allows manual triggering anytime
 
 jobs:
   agentic-risk-briefing:
