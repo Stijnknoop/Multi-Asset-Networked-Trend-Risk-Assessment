@@ -1,9 +1,9 @@
 name: MANTRA Market Data Ingestion
 
 on:
-  schedule:
-    - cron: '0 * * * 1-5' # Every hour, Mon-Fri
-  workflow_dispatch: # Manual trigger
+  #schedule:
+  #  - cron: '0 * * * 1-5' # Every hour, Mon-Fri
+  #workflow_dispatch: # Manual trigger
 
 jobs:
   ingest-and-align:
